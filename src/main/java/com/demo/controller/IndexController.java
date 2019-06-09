@@ -27,6 +27,7 @@ public class IndexController {
 
         User u = new User(id, username, password, fullName, email, phoneNumber, address);
         System.out.println(u.toString());
+
         modelMap.addAttribute("name", "tran huu hong son");
         return "index";
 

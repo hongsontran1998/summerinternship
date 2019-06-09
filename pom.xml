@@ -42,7 +42,16 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+
+        <!--tự động load java code vào container mà không cần chạy lại spring boot (giống auto reload của eclipse)-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-devtools</artifactId>
+            <optional>true</optional>
+        </dependency>
+
     </dependencies>
+
 
     <build>
         <plugins>
