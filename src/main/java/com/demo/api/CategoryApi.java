@@ -16,6 +16,4 @@ public interface CategoryApi {
 
     @GetMapping("categories")
     ResponseEntity<List<Category>> findAll();
-
-
 }
