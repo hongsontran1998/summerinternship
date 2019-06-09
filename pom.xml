@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.demo</groupId>
-    <artifactId>summerintership</artifactId>
+    <artifactId>summerinternship</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>summerintership</name>
+    <name>summerinternship</name>
     <description>summer intership 2019</description>
 
     <properties>
