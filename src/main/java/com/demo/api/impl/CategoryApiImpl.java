@@ -15,10 +15,11 @@ public class CategoryApiImpl implements CategoryApi {
 
     private final CategoryService categoryService;
 
+    //constructor injection
     public CategoryApiImpl(CategoryService categoryService) {
         this.categoryService = categoryService;
     }
-
+    //post this question on spring framework fb group
 
     @Override
     public ResponseEntity<List<Category>> findAll() {
