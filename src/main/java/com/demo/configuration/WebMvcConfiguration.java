@@ -25,7 +25,7 @@ public class WebMvcConfiguration implements WebMvcConfigurer {
                 .addPathPatterns("/admin/*")//
                 .excludePathPatterns("/admin/oldLogin");*/
         registry.addInterceptor(new ApplicationInterceptor())
-                .addPathPatterns("/*");
+                .addPathPatterns("/*"); //
     }
 
 }
