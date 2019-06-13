@@ -1,6 +1,5 @@
 package com.demo.controller;
 
-import com.demo.entity.User;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -25,8 +24,11 @@ public class IndexController {
         String phoneNumber = "";
         String address = "";
 
-        User u = new User(id, username, password, fullName, email, phoneNumber, address);
-        System.out.println(u.toString());
+//        User u = new User(id, username, password, fullName, email, phoneNumber, address);
+//        System.out.println("i am tran huu hong son");
+//        System.out.println(u);
+//        System.out.println("u = " + u);
+        System.out.println("IndexController.demo");
 
         modelMap.addAttribute("name", "tran huu hong son");
         return "index";
@@ -38,5 +40,9 @@ public class IndexController {
         modelAndView.setViewName("index");
         modelAndView.addObject("name", "tranhuuhongson");
         return modelAndView;
+    }
+    @GetMapping("demo3")
+    public String demo3() {
+        return "view";
     }
 }
