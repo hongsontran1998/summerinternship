@@ -7,15 +7,15 @@ import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 @Configuration
-public class WebMvcConfiguration implements WebMvcConfigurer {
+public class WebMvcConfig implements WebMvcConfigurer {
 
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
 
 //        registry.addInterceptor(new ApplicationInterceptor())
 ////                .addPathPatterns("/*");
-        registry.addInterceptor(new DemoInterceptor())
-                .addPathPatterns("/demo");
+//        registry.addInterceptor(new DemoInterceptor())
+//                .addPathPatterns("/demo");
     }
 
 }
