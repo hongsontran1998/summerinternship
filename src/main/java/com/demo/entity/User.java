@@ -1,25 +1,36 @@
 package com.demo.entity;
 
+import javax.persistence.*;
+import java.util.List;
+
+@Entity
+@Table(name = "users")
 public class User {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
+
     private String username;
+
     private String password;
-    private String fullName;
-    private String email;
-    private String phoneNumber;
-    private String address;
+
+    private Integer active;
+    private String fullname;
+
+    @ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.MERGE)
+    @JoinTable(name = "user_role", joinColumns = {@JoinColumn(name = "userId")}, inverseJoinColumns = {
+            @JoinColumn(name = "roleId")})
+    private List<Role> roles;
 
     public User() {
     }
 
-    public User(Integer id, String username, String password, String fullName, String email, String phoneNumber, String address) {
-        this.id = id;
+    public User(String username, String password, Integer active, String fullname, List<Role> roles) {
         this.username = username;
         this.password = password;
-        this.fullName = fullName;
-        this.email = email;
-        this.phoneNumber = phoneNumber;
-        this.address = address;
+        this.active = active;
+        this.fullname = fullname;
+        this.roles = roles;
     }
 
     public Integer getId() {
@@ -46,48 +57,27 @@ public class User {
         this.password = password;
     }
 
-    public String getFullName() {
-        return fullName;
+    public Integer getActive() {
+        return active;
     }
 
-    public void setFullName(String fullName) {
-        this.fullName = fullName;
+    public void setActive(Integer active) {
+        this.active = active;
     }
 
-    public String getEmail() {
-        return email;
+    public String getFullname() {
+        return fullname;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setFullname(String fullname) {
+        this.fullname = fullname;
     }
 
-    public String getPhoneNumber() {
-        return phoneNumber;
+    public List<Role> getRoles() {
+        return roles;
     }
 
-    public void setPhoneNumber(String phoneNumber) {
-        this.phoneNumber = phoneNumber;
-    }
-
-    public String getAddress() {
-        return address;
-    }
-
-    public void setAddress(String address) {
-        this.address = address;
-    }
-
-    @Override
-    public String toString() {
-        return "User{" +
-                "id=" + id +
-                ", username='" + username + '\'' +
-                ", password='" + password + '\'' +
-                ", fullName='" + fullName + '\'' +
-                ", email='" + email + '\'' +
-                ", phoneNumber='" + phoneNumber + '\'' +
-                ", address='" + address + '\'' +
-                '}';
+    public void setRoles(List<Role> roles) {
+        this.roles = roles;
     }
 }

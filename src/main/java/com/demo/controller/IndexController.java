@@ -1,5 +1,6 @@
 package com.demo.controller;
 
+import com.demo.security.UserDetailsUtil;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -29,6 +30,7 @@ public class IndexController {
 //        System.out.println(u);
 //        System.out.println("u = " + u);
         System.out.println("IndexController.demo");
+        UserDetailsUtil.getUserDetails();
 
         modelMap.addAttribute("name", "tran huu hong son");
         return "index";

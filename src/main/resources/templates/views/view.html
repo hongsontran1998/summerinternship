@@ -5,5 +5,14 @@
     layout:fragment="content">
 
     <div>content</div>
+    <div class="container-fluid">
+        <div class="row phantrang">
+            <div class="col-sm-12">
+                <nav class="d-flex justify-content-center mt-2">
+                    <th:block th:replace="'../util/pagination' :: pagination(2, 14, '/demo3')" />
+                </nav>
+            </div>
+        </div>
+    </div>
 
 </th:block>
