@@ -38,7 +38,7 @@ public class UserDetailsServiceImpl implements UserDetailsService {
         }
 
         UserDetailsImpl userDetails = new UserDetailsImpl(user.getUsername(),
-                user.getPassword(), user.getFullname(),
+                user.getPassword(), user.getFullName(),
                 user.getActive(), user.getRoles(), authorities);
         BeanUtils.copyProperties(user, userDetails);
         return userDetails;

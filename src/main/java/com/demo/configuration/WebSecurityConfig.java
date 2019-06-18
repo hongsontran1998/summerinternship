@@ -31,14 +31,15 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 //        super.configure(auth);
         BCryptPasswordEncoder encoder = passwordEncoder();
         //create user for demo
-        auth.
-                inMemoryAuthentication()
-                    .withUser("admin")
-                    .password(encoder.encode("123"))
-                    .roles("ADMIN")
-                    .and()
-                    .passwordEncoder(encoder);
+//        auth.
+//                inMemoryAuthentication()
+//                    .withUser("admin")
+//                    .password(encoder.encode("123"))
+//                    .roles("ADMIN")
+//                    .and()
+//                    .passwordEncoder(encoder);
         //authenticate from database
+        auth.inMemoryAuthentication();//phải có dòng này chứ không là nó lấy form login mặc định
         auth.userDetailsService(userDetailsService).passwordEncoder(encoder);
     }
 
