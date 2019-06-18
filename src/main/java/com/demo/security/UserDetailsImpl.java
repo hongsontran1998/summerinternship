@@ -13,16 +13,16 @@ public class UserDetailsImpl implements UserDetails {
 
     private String userName;
     private String password;
-    private String fullname;
+    private String fullName;
     private Integer active;
     private List<Role> roles;
     private List<GrantedAuthority> authorities;
 
-    public UserDetailsImpl(String userName, String password, String fullname,
+    public UserDetailsImpl(String userName, String password, String fullName,
                            Integer active, List<Role> roles, List<GrantedAuthority> authorities) {
         this.userName = userName;
         this.password = password;
-        this.fullname = fullname;
+        this.fullName = fullName;
         this.active = active;
         this.roles = roles;
         this.authorities = authorities;
@@ -67,8 +67,8 @@ public class UserDetailsImpl implements UserDetails {
         return userName;
     }
 
-    public String getFullname() {
-        return fullname;
+    public String getFullName() {
+        return fullName;
     }
 
     public Integer getActive() {
