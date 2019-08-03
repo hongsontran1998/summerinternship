@@ -7,8 +7,11 @@ import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.MimeMessageHelper;
 import org.springframework.stereotype.Component;
 import org.springframework.ui.velocity.VelocityEngineUtils;
+import org.springframework.util.ResourceUtils;
 
 import javax.mail.internet.MimeMessage;
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Random;
@@ -40,6 +43,13 @@ public class EmailSendingSystem {
         mimeMessageHelper.setTo(address);
         mimeMessageHelper.setSubject("email submit");
         mimeMessageHelper.setText(text, true);
+
+        try {
+            File file =  ResourceUtils.getFile("classpath:static/abc.png");
+            mimeMessageHelper.addAttachment("xxx.png", file);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
 
         javaMailSender.send(mimeMessage);
     }
