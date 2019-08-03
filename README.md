@@ -14,7 +14,7 @@
     <li>Java project lombok</li>
 </ul>
 
-<h6>#Start mogodb server<h6>
+<h6>#Start mogodb server</h6>
 <p>
 mongod --dbpath your_db_location<br>
 example: E:\InstallSoftware\MongoDB\DULIEU
