@@ -38,9 +38,9 @@ spring.datasource.url=jdbc:mysql://localhost:3306/your_database_name?useUnicode=
 spring.datasource.username=your_database_username
 spring.datasource.password=your_database_password
 <br>#mongodb<br>
-spring.data.mongodb.host=localhost
-spring.data.mongodb.port=27017
-spring.data.mongodb.database=your_database_name
+spring.data.mongodb.host=localhost<br>
+spring.data.mongodb.port=27017<br>
+spring.data.mongodb.database=your_database_name<br>
 </p>
 
 <h6>#fix port already use problem</h6>
