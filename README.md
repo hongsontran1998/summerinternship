@@ -49,5 +49,5 @@ change port: server.port=8081 => server.port=another_port<br>
 if after port changing, still get error: open task manager and kill JavaTM program
 </p>
 
-<h6>#Tips use Intellij Idea IDE</h6>
-<h6>#Tips use Eclipse IDE</h6>
+<h6>#Tips for using Intellij Idea IDE</h6>
+<h6>#Tips for using Eclipse IDE</h6>
