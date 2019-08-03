@@ -20,7 +20,7 @@ mongod --dbpath your_db_location<br>
 example: E:\InstallSoftware\MongoDB\DULIEU
 </p>
 
-<h6>#Application properties<h6>
+<h6>#Application properties</h6>
 <p>
 #email<br>
 spring.mail.username=your_email_address
