@@ -1,6 +1,8 @@
 package com.demo.controller;
 
+import com.demo.repository.TestDAO;
 import com.demo.security.UserDetailsUtil;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -43,8 +45,13 @@ public class IndexController {
         modelAndView.addObject("name", "tranhuuhongson");
         return modelAndView;
     }
+
+    @Autowired
+    TestDAO testDAO;
     @GetMapping("demo3")
     public String demo3() {
+        testDAO.testQueryOOP();
         return "view";
     }
+
 }

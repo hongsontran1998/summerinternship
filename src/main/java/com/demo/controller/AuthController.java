@@ -31,13 +31,13 @@ public class AuthController {
 //        List<Category> list = testDAO.test();
 //        LOGGER.trace("This is TRACE");
 //        LOGGER.debug("This is DEBUG");
-        LOGGER.info("Login infomation: ");
-        LOGGER.info("getRemoteAddr: " + request.getRemoteAddr());
-        LOGGER.info("getLocalAddr: " + request.getLocalAddr());
-        LOGGER.info("getLocalPort: " + request.getLocalPort());
-        LOGGER.info("getLocalName: " + request.getLocalName());
-        LOGGER.info("getRemoteUser: " + request.getRemoteUser());
-        LOGGER.info("getRemotePort: " + request.getRemotePort());
+//        LOGGER.info("Login infomation: ");
+//        LOGGER.info("getRemoteAddr: " + request.getRemoteAddr());
+//        LOGGER.info("getLocalAddr: " + request.getLocalAddr());
+//        LOGGER.info("getLocalPort: " + request.getLocalPort());
+//        LOGGER.info("getLocalName: " + request.getLocalName());
+//        LOGGER.info("getRemoteUser: " + request.getRemoteUser());
+//        LOGGER.info("getRemotePort: " + request.getRemotePort());
 //        LOGGER.warn("This is WARN");
 //        LOGGER.error("This is ERROR");
 
