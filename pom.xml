@@ -76,6 +76,7 @@
             <scope>provided</scope>
         </dependency>
 
+        <!--START EMAIL-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-mail</artifactId>
@@ -103,15 +104,18 @@
             <artifactId>velocity-tools-view-jsp</artifactId>
             <version>3.0</version>
         </dependency>
-        <dependency>
+        <dependency><!--support velocity-->
             <groupId>org.springframework</groupId>
             <artifactId>spring-context-support</artifactId>
             <version>4.1.4.RELEASE</version>
         </dependency>
+        <!--END EMAIL-->
 
-
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-mongodb</artifactId>
+        </dependency>
     </dependencies>
-
 
     <build>
         <plugins>
