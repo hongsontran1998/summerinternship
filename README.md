@@ -14,6 +14,13 @@
     <li>Java project lombok</li>
 </ul>
 
+<h6>#Setting plugins</h6>
+<p>
+Project lombok:<br>
+Intellij: https://projectlombok.org/setup/intellij<br>
+Eclipse, Spring Tools Suite: https://projectlombok.org/setup/eclipse 
+</p>
+
 <h6>#Start mogodb server</h6>
 <p>
 cd E:\MongoDB\Server\4.0\bin (ignore this step if you created the mongodb's environment variable)<br>
@@ -41,3 +48,5 @@ spring.data.mongodb.database=your_database_name
 change port: server.port=8081 => server.port=another_port<br>
 if after port changing, still get error: open task manager and kill JavaTM program
 </p>
+
+<h6>#Tips use Intellij Idea IDE</h6>
