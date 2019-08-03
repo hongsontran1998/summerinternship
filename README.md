@@ -34,3 +34,8 @@ spring.data.mongodb.host=localhost
 spring.data.mongodb.port=27017
 spring.data.mongodb.database=your_database_name
 </p>
+
+<h6>#fixed port already use problem</h6>
+<p>
+open task manager kill JavaTM program 
+</p>

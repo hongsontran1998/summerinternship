@@ -1,6 +1,7 @@
 package com.demo.api;
 
 import com.demo.entity.Category;
+import com.demo.entity.Employee;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -12,8 +13,8 @@ import java.util.List;
 @RestController
 @RequestMapping("api")
 @CrossOrigin(origins = "*", allowedHeaders = "*")
-public interface CategoryApi {
+public interface EmployeeApi {
 
-    @GetMapping("category")
-    ResponseEntity<List<Category>> findAll();
+    @GetMapping("employee")
+    ResponseEntity<List<Employee>> findAll();
 }
