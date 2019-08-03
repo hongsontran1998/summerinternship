@@ -39,5 +39,4 @@ spring.data.mongodb.database=your_database_name
 <p>
 change port: server.port=8081 => server.port=another_port<br>
 if after port changing, still get error: open task manager and kill JavaTM program
-if after port changing, still get error: open task manager and kill JavaTM program
 </p>
