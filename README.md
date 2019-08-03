@@ -16,8 +16,9 @@
 
 <h6>#Start mogodb server</h6>
 <p>
-mongod --dbpath your_db_location<br>
-example: E:\InstallSoftware\MongoDB\DULIEU
+cd E:\MongoDB\Server\4.0\bin (ignore this step if you created the mongodb's environment variable)<br>
+mongod --dbpath your_db_location or mongod<br>
+example: mongod --dppath E:\MongoDB\Data
 </p>
 
 <h6>#Application properties</h6>
