@@ -1,6 +1,6 @@
 package com.demo.controller;
 
-import com.demo.repository.TestDAO;
+import com.demo.repository.SpringBootHibernateDAO;
 import com.demo.security.UserDetailsUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -32,7 +32,11 @@ public class IndexController {
 //        System.out.println(u);
 //        System.out.println("u = " + u);
         System.out.println("IndexController.demo");
-        UserDetailsUtil.getUserDetails();
+        try {
+            UserDetailsUtil.getUserDetails();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
 
         modelMap.addAttribute("name", "tran huu hong son");
         return "index";
@@ -47,7 +51,7 @@ public class IndexController {
     }
 
     @Autowired
-    TestDAO testDAO;
+    SpringBootHibernateDAO testDAO;
     @GetMapping("demo3")
     public String demo3() {
         testDAO.testQueryOOP();

@@ -13,7 +13,7 @@ import java.util.Date;
 @NoArgsConstructor
 @AllArgsConstructor
 @Document(collection = "Employee")
-public class Employee {
+public class Employee { //entends để dùng mongodb thuần, còn ko dùng thì ko cần
 
     @Id
     private Long id;

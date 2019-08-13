@@ -9,7 +9,7 @@ import java.util.List;
 
 public class UserDetailsUtil {
     //static để dùng bên jsp
-    public static UserDetailsImpl getUserDetails() {
+    public static UserDetailsImpl getUserDetails() throws Exception {
         return (UserDetailsImpl) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
     }
 

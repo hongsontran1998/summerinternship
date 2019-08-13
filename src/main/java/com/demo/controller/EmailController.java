@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 public class EmailController {
 
     @Autowired
-    EmailSendingSystem emailSendingSystem;
+    private EmailSendingSystem emailSendingSystem;
 
     @GetMapping("send")
     @ResponseBody

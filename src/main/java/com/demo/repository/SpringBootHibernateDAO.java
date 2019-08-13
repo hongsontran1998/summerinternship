@@ -7,20 +7,22 @@ import org.springframework.stereotype.Repository;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
+import javax.persistence.criteria.CriteriaBuilder;
 import java.util.List;
 
 @Repository
-public class TestDAO {
+public class SpringBootHibernateDAO {
     @PersistenceContext
     private EntityManager entityManager;
 
     public List<Category> test() {
-        List<Category> list = entityManager.createQuery("select  c FROM Category c", Category.class)
+        List<Category> list = entityManager
+                .createQuery("select  c FROM Category c", Category.class)
                 .getResultList();
         return list;
     }
 
     public void testQueryOOP() {
-        System.out.println("hahahahah");
+        CriteriaBuilder criteriaBuilder = entityManager.getCriteriaBuilder();
     }
 }

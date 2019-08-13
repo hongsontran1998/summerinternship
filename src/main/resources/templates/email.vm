@@ -1,4 +1,12 @@
 <html>
+<head>
+    <style>
+        h3 {
+            color: red;
+        }
+    </style>
+</head>
+
 <body>
 <p>Hi ${user.username}</p>
 <h3>${title}</h3>
