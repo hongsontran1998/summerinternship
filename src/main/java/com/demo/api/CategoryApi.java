@@ -2,18 +2,22 @@ package com.demo.api;
 
 import com.demo.entity.Category;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 @RestController
-@RequestMapping("api")
+@RequestMapping("api/category")
 @CrossOrigin(origins = "*", allowedHeaders = "*")
 public interface CategoryApi {
 
-    @GetMapping("categories")
-    ResponseEntity<List<Category>> findAll();
+    @GetMapping("")
+    ResponseEntity<Object> findAll();
+
+    @GetMapping("/{id}")
+    ResponseEntity<Object> findOneById(@PathVariable Integer id);
+
+    @PostMapping("")
+    ResponseEntity<Object> insertOne(@RequestBody Category category);
+
 }

@@ -1,0 +1,20 @@
+<th:block
+    xmlns:th="http://www.thymeleaf.org"
+    xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+    layout:decorate="~{../layout/template}">
+
+    <div class="container" layout:fragment="content">
+        This dashboard
+    </div>
+
+    <th:block layout:fragment="pageScript">
+        <script th:src="@{/page-script.js}"></script>
+    </th:block>
+
+    <th:block layout:fragment="pageStyleSheet">
+        <!--<link rel="stylesheet" th:href="@{page-style.css}">-->
+        <link rel="stylesheet" th:href="${@environment.getProperty('app.url')+'/page-style.css'}">
+    </th:block>
+
+</th:block>
+

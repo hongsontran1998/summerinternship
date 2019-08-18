@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="vi" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" >
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="url" th:content="${@environment.getProperty('app.url')}"/>
+        <meta name="_csrf" th:content="${_csrf.token}"/>
+        <meta name="_csrf_header" th:content="${_csrf.headerName}"/>
+
+        <title>title</title>
+        <link rel="stylesheet" th:href="@{/bootstrap.min.css}"/>
+        <link rel="stylesheet" th:href="${@environment.getProperty('app.url')+'/style.css'}">
+
+        <th:block layout:fragment="pageStyleSheet" />
+    </head>
+    <body>
+
+        <th:block th:replace="'../layout/header' :: header" />
+        <!--it's mean: a fragment whose name is header of header.html file-->
+
+        <th:block layout:fragment="content" />
+
+        <th:block th:replace="'../layout/footer' :: footer" />
+
+        <script th:src="@{/jquery-3.4.1.min.js}"></script>
+        <script th:src="@{/popper.min.js}"></script>
+        <script th:src="@{/bootstrap.min.js}"></script>
+
+        <th:block layout:fragment="pageScript" />
+    </body>
+</html>
