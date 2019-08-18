@@ -23,6 +23,7 @@
     <li>Spring security
         <ul>
             <li>Authentication</li>
+            <li>Authorization</li>
             <li>Password encoding</li>
             <li>Csrf</li>
             <li>Cors</li>
