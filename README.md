@@ -34,6 +34,7 @@
     <li>Spring thymeleaf template engine
         <ul>
             <li>Fragment</li>
+            <li>Fragment as a function</li>
             <li>Master layout, extending layout</li>
             <li>Thymeleaf - spring security - taglibs</li>
         </ul>
