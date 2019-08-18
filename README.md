@@ -41,7 +41,7 @@
     </li>
     <li>Spring email sending
         <ul>
-            <li>Email sending in rhread</li>
+            <li>Email sending in thread</li>
             <li>Velocity template</li>
             <li>Freemarker template</li>
         </ul>
