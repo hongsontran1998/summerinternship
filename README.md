@@ -72,7 +72,7 @@ spring.mail.username=your_email_address<br>
 spring.mail.password=your_email_password
 <br>#mysql<br>
 spring.datasource.url=jdbc:mysql://localhost:3306/your_database_name?useUnicode=yes&characterEncoding=UTF-8
-spring.datasource.username=your_database_username
+spring.datasource.username=your_database_username<br>
 spring.datasource.password=your_database_password
 <br>#mongodb<br>
 spring.data.mongodb.host=localhost<br>
