@@ -26,12 +26,26 @@ public class CategoryServiceImpl implements CategoryService {
     }
 
     @Override
-    public Category findOneById(Integer id) {
+    public Category updateOne(Category category) {
+        if (findOneById(category.getId()) != null) {
+            return categoryRepository.save(category);
+        }
+        return null;
+    }
+
+    @Override
+    public Integer deleteOneById(Integer id) {
         Optional<Category> optional = categoryRepository.findById(id);
         if (optional.isPresent()) {
-            return optional.get();
+            categoryRepository.deleteById(optional.get().getId());
+            return 1;
         }
+        return 0;
+    }
 
-        return null;
+    @Override
+    public Category findOneById(Integer id) {
+        Optional<Category> optional = categoryRepository.findById(id);
+        return optional.orElse(null);
     }
 }

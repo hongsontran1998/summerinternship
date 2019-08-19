@@ -1,10 +1,7 @@
 package com.demo.controller;
 
-import com.demo.repository.SpringBootHibernateDAO;
-import com.demo.security.UserDetailsUtil;
 import com.demo.service.StorageService;
 import org.apache.commons.io.FileUtils;
-import org.apache.commons.io.FilenameUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.InputStreamResource;
 import org.springframework.http.HttpHeaders;
@@ -12,25 +9,27 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.ModelMap;
 import org.springframework.util.FileCopyUtils;
 import org.springframework.util.ResourceUtils;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.commons.CommonsMultipartFile;
-import org.springframework.web.servlet.ModelAndView;
 
-import javax.servlet.ServletContext;
-import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.io.*;
-import java.util.List;
+import java.io.BufferedInputStream;
+import java.io.ByteArrayInputStream;
+import java.io.File;
+import java.io.InputStream;
 
 @Controller
 @RequestMapping("admin")
 public class AdminController {
 
+    private final StorageService storageService;
+
     @Autowired
-    StorageService storageService;
+    public AdminController(StorageService storageService) {
+        this.storageService = storageService;
+    }
 
     @GetMapping("dashboard")
     public String dashboard() {
@@ -55,15 +54,8 @@ public class AdminController {
         return "redirect:/admin/upload?upload=ok";
     }
 
-    //// TODO: 8/13 error 405
-    //error 405
-    @PostMapping("uploads")
-    public String test() {
-        return "redirect:/admin/upload?upload=ok";
-    }
-
     @RequestMapping(value = "/download1", method = RequestMethod.GET)
-    public void download1(HttpServletResponse response) throws IOException {
+    public void download1(HttpServletResponse response) {
         try {
             File file = ResourceUtils.getFile("classpath:static/abc.png");
             byte[] data = FileUtils.readFileToByteArray(file);
@@ -79,7 +71,7 @@ public class AdminController {
     }
 
     @RequestMapping(value = "/download2", method = RequestMethod.GET)
-    public ResponseEntity<InputStreamResource> download2(HttpServletRequest request) throws IOException {
+    public ResponseEntity<InputStreamResource> download2() {
         HttpHeaders responseHeader = new HttpHeaders();
         try {
             File file = ResourceUtils.getFile("classpath:static/abc.png");
@@ -91,9 +83,9 @@ public class AdminController {
             responseHeader.setContentLength(data.length);
             InputStream inputStream = new BufferedInputStream(new ByteArrayInputStream(data));
             InputStreamResource inputStreamResource = new InputStreamResource(inputStream);
-            return new ResponseEntity<InputStreamResource>(inputStreamResource, responseHeader, HttpStatus.OK);
+            return new ResponseEntity<>(inputStreamResource, responseHeader, HttpStatus.OK);
         } catch (Exception ex) {
-            return new ResponseEntity<InputStreamResource>(null, responseHeader, HttpStatus.INTERNAL_SERVER_ERROR);
+            return new ResponseEntity<>(null, responseHeader, HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
 }

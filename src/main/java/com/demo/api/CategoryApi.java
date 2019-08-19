@@ -1,10 +1,12 @@
 package com.demo.api;
 
 import com.demo.entity.Category;
+import com.demo.service.Result;
 import org.springframework.http.ResponseEntity;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.List;
+import javax.validation.Valid;
 
 @RestController
 @RequestMapping("api/category")
@@ -12,12 +14,18 @@ import java.util.List;
 public interface CategoryApi {
 
     @GetMapping("")
-    ResponseEntity<Object> findAll();
+    ResponseEntity<Result> findAll();
 
-    @GetMapping("/{id}")
-    ResponseEntity<Object> findOneById(@PathVariable Integer id);
+    @GetMapping("{id}")
+    ResponseEntity<Result> findOneById(@PathVariable Integer id);
 
     @PostMapping("")
-    ResponseEntity<Object> insertOne(@RequestBody Category category);
+    ResponseEntity<Result> insertOne(@Valid @RequestBody Category category, BindingResult br);
+
+    @PutMapping("")
+    ResponseEntity<Result> updateOne(@Valid @RequestBody Category category, BindingResult br);
+
+    @DeleteMapping("{id}")
+    ResponseEntity<Result> deleteOneById(@PathVariable Integer id);
 
 }

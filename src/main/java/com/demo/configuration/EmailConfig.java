@@ -11,7 +11,7 @@ import java.util.Properties;
 @Configuration
 public class EmailConfig {
     @Bean
-    public VelocityEngine velocityEngine() throws IOException {
+    public VelocityEngine velocityEngine() {
         VelocityEngine velocityEngine = new VelocityEngine();
         Properties props = new Properties();
         props.put("resource.loader", "class");

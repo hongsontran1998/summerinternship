@@ -6,6 +6,8 @@ import java.util.List;
 
 public interface CategoryService {
     List<Category> findAll();
-    Category insertOne(Category category);
     Category findOneById(Integer id);
+    Category insertOne(Category category);
+    Category updateOne(Category category);
+    Integer deleteOneById(Integer id);
 }

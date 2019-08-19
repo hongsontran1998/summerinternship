@@ -25,7 +25,7 @@ public class CheckCurrentLoggedUserInterceptor implements HandlerInterceptor {
 
     @Override
     public boolean preHandle(HttpServletRequest request,
-                             HttpServletResponse response, Object handler) throws Exception {
+                             HttpServletResponse response, Object handler) {
         //System.out.println("ApplicationInterceptor.preHandle");
         try {
             //ModelMap modelMap = modelAndView.getModelMap();
@@ -47,13 +47,13 @@ public class CheckCurrentLoggedUserInterceptor implements HandlerInterceptor {
 
     @Override
     public void postHandle(HttpServletRequest request,
-                           HttpServletResponse response, Object handler, ModelAndView modelAndView) throws Exception {
+                           HttpServletResponse response, Object handler, ModelAndView modelAndView) {
         //System.out.println("ApplicationInterceptor.postHandle");
     }
 
     @Override
     public void afterCompletion(HttpServletRequest request,
-                                HttpServletResponse response, Object handler, Exception ex) throws Exception {
+                                HttpServletResponse response, Object handler, Exception ex) {
         //System.out.println("ApplicationInterceptor.afterCompletion");
     }
 }

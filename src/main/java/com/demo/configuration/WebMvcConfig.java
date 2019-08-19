@@ -4,15 +4,18 @@ package com.demo.configuration;
 import com.demo.interceptor.CheckCurrentLoggedUserInterceptor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 @Configuration
 public class WebMvcConfig implements WebMvcConfigurer {
 
+    private final CheckCurrentLoggedUserInterceptor checkCurrentLoggedUserInterceptor;
+
     @Autowired
-    private CheckCurrentLoggedUserInterceptor checkCurrentLoggedUserInterceptor;
+    public WebMvcConfig(CheckCurrentLoggedUserInterceptor checkCurrentLoggedUserInterceptor) {
+        this.checkCurrentLoggedUserInterceptor = checkCurrentLoggedUserInterceptor;
+    }
 
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
