@@ -1,8 +1,10 @@
 package com.demo.service.service.impl;
 
+import com.demo.service.StorageProperties;
 import com.demo.service.StorageService;
 import org.apache.commons.io.FilenameUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -13,10 +15,15 @@ import java.io.IOException;
 @Service
 public class StorageServiceImpl implements StorageService {
 
-    private static final String UPLOAD_DIR = "files";
-
     @Autowired
     ServletContext servletContext;
+
+    private String uploadDir;
+
+    @Autowired
+    public StorageServiceImpl(StorageProperties properties) {
+        uploadDir = properties.getLocation();
+    }
 
     @Override
     public int store(MultipartFile file) {
@@ -65,7 +72,7 @@ public class StorageServiceImpl implements StorageService {
     }
 
     private File createFolder() {
-        final String DIR_PATH = servletContext.getRealPath("") + UPLOAD_DIR;
+        final String DIR_PATH = servletContext.getRealPath("") + uploadDir;
         File dir = new File(DIR_PATH);
         if (!dir.exists()) {
             dir.mkdirs();
