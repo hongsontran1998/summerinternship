@@ -5,7 +5,7 @@
     <li>Spring boot web
         <ul>
             <li>application.properties configuration - make bean</li>
-            <li>Java code confirguration - @Configuration</li>
+            <li>Java code confirguration - @Configuration - @ConfigurationProperties</li>
         </ul>
     </li>
     <li>Spring interceptor</li>
