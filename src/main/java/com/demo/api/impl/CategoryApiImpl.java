@@ -37,11 +37,13 @@ public class CategoryApiImpl implements CategoryApi {
         if (category == null) {
             result.setMessage("Category is not found");
             result.setStatus(Result.Status.FAILED);
+            return new ResponseEntity<>(result, HttpStatus.NOT_FOUND);
         } else {
             result.setStatus(Result.Status.SUCCESS);
             result.setData(category);
+            return new ResponseEntity<>(result, HttpStatus.OK);
         }
-        return new ResponseEntity<>(result, HttpStatus.NOT_FOUND);
+
     }
 
     @Override
@@ -51,7 +53,7 @@ public class CategoryApiImpl implements CategoryApi {
         if (message != null) { //HAS ERRORS 400 BAD REQUEST
             result.setStatus(Result.Status.FAILED);
             result.setMessage(message);
-            return new ResponseEntity<>(result, HttpStatus.BAD_REQUEST);
+            return new ResponseEntity<>(result, HttpStatus.OK);
         } else {
             Category newCategory = categoryService.insertOne(category);
             result.setStatus(Result.Status.SUCCESS);
@@ -67,7 +69,7 @@ public class CategoryApiImpl implements CategoryApi {
         if (message != null) {
             result.setMessage(message);
             result.setStatus(Result.Status.FAILED);
-            return new ResponseEntity<>(result, HttpStatus.BAD_REQUEST);
+            return new ResponseEntity<>(result, HttpStatus.OK);
         } else {
             Category newCategory = categoryService.updateOne(category);
             if (newCategory != null) {
