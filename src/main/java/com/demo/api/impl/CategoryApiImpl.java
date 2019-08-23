@@ -23,9 +23,14 @@ public class CategoryApiImpl implements CategoryApi {
     }
 
     @Override
-    public ResponseEntity<Result> findAll() {
+    public ResponseEntity<Result> findAllOrFilter(
+            String searchingText,
+            Integer offset,
+            Integer limit,
+            String sortBy,
+            String direction) {
         Result result = new Result();
-        result.setData(categoryService.findAll());
+        result.setData(categoryService.findAllOrFilter(searchingText, offset, limit, sortBy, direction));
         result.setStatus(Result.Status.SUCCESS);
         return new ResponseEntity<>(result, HttpStatus.OK);
     }
@@ -58,6 +63,7 @@ public class CategoryApiImpl implements CategoryApi {
             Category newCategory = categoryService.insertOne(category);
             result.setStatus(Result.Status.SUCCESS);
             result.setData(newCategory);
+
             return new ResponseEntity<>(result, HttpStatus.CREATED);
         }
     }

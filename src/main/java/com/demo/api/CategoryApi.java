@@ -14,7 +14,12 @@ import javax.validation.Valid;
 public interface CategoryApi {
 
     @GetMapping("")
-    ResponseEntity<Result> findAll();
+    ResponseEntity<Result> findAllOrFilter(
+            @RequestParam(name = "q", required = false) String searchingText,
+            @RequestParam(name = "offset", required = false) Integer offset,
+            @RequestParam(name = "limit", required = false) Integer limit,
+            @RequestParam(name = "sort_by", required = false) String sortBy,
+            @RequestParam(name = "direction", required = false) String direction);
 
     @GetMapping("{id}")
     ResponseEntity<Result> findOneById(@PathVariable Integer id);

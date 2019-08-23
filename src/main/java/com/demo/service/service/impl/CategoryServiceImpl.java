@@ -3,10 +3,13 @@ package com.demo.service.service.impl;
 import com.demo.entity.Category;
 import com.demo.repository.CategoryRepository;
 import com.demo.service.CategoryService;
+import com.demo.util.OffsetBasedPageRequest;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -16,8 +19,31 @@ public class CategoryServiceImpl implements CategoryService {
     private CategoryRepository categoryRepository;
 
     @Override
-    public List<Category> findAll() {
-        return (List<Category>) categoryRepository.findAll();
+    public Page<Category> findAllOrFilter(String searchingText, Integer offset, Integer limit, String sortBy, String direction) {
+        Pageable pageable = getPageable(offset, limit, sortBy, direction);
+        return categoryRepository.findAllOrFilter(searchingText, pageable);
+    }
+
+    private Pageable getPageable(Integer offset, Integer limit, String sortBy, String direction) {
+        Sort sort = null;
+        if (sortBy != null) {
+            if ("desc".equalsIgnoreCase(direction) || direction == null) {
+                sort = Sort.by(sortBy).descending();
+            } else if ("asc".equalsIgnoreCase(direction)) {
+                sort = Sort.by(sortBy).ascending();
+            }
+        } else {
+            sort = Sort.by("id").descending();
+        }
+
+        if (offset == null) {
+            offset = 0;
+        }
+        if (limit == null) {
+            limit = Integer.MAX_VALUE;
+        }
+        Pageable pageable = new OffsetBasedPageRequest(offset, limit, sort);
+        return pageable;
     }
 
     @Override

@@ -49,7 +49,7 @@ public class AuthController {
 
 //        System.out.println(new BCryptPasswordEncoder().encode("123"));
 //        User u = userRepository.findById(1).get();
-//        List<User> users = (List<User>) userRepository.findAll();
+//        List<User> users = (List<User>) userRepository.findAllOrFilter();
 //        List<Category> list = testDAO.test();
 //        LOGGER.trace("This is TRACE");
 //        LOGGER.debug("This is DEBUG");
