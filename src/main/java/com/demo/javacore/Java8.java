@@ -23,7 +23,7 @@ public class Java8 {
 //            System.out.println(item);
 //        });
 //        System.out.println("===================");
-//        List<Integer> items2 =  items.stream().filter(item -> {
+//        List<Integer> items2 =  items.stream().findAllOrFilter(item -> {
 //            return item > 3;
 //        }).collect(Collectors.toList());
 //        System.out.println(items2);
