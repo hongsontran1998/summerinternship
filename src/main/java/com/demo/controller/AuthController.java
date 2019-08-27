@@ -1,5 +1,8 @@
 package com.demo.controller;
 
+import com.demo.repository.CategoryRepository;
+import com.demo.repository.CategoryRepositoryCustom;
+import com.demo.entity.Category;
 import com.demo.repository.SpringBootHibernateDAO;
 import com.demo.repository.UserRepository;
 import org.slf4j.Logger;
@@ -11,6 +14,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 
 import javax.servlet.http.HttpServletRequest;
+import java.util.List;
 
 @Controller
 public class AuthController {
@@ -22,6 +26,9 @@ public class AuthController {
 
     @Autowired
     private HttpServletRequest request;
+
+    @Autowired
+    private CategoryRepository categoryRepository;
 
     @Autowired
     Environment env;
@@ -41,6 +48,8 @@ public class AuthController {
 
     @GetMapping("login")
     public String login(@Value("${app.url}") String testUrl) {
+        List<Category> list = categoryRepository.findByHibernate();
+        List<Category> list2 = categoryRepository.findByCriteriaBuilder();
         //3 way to get application.properties value
 //        System.out.println(env.getProperty("app.url"));
 //        System.out.println(appUrl);
