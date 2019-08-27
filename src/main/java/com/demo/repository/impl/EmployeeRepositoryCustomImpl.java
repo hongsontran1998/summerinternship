@@ -1,6 +1,7 @@
-package com.demo.repository;
+package com.demo.repository.impl;
 
 import com.demo.entity.Employee;
+import com.demo.repository.EmployeeRepositoryCustom;
 import com.mongodb.client.result.UpdateResult;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Sort;

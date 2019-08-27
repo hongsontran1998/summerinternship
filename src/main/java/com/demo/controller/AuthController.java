@@ -1,9 +1,7 @@
 package com.demo.controller;
 
 import com.demo.repository.CategoryRepository;
-import com.demo.repository.CategoryRepositoryCustom;
 import com.demo.entity.Category;
-import com.demo.repository.SpringBootHibernateDAO;
 import com.demo.repository.UserRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

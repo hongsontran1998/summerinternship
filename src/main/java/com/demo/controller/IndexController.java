@@ -1,6 +1,5 @@
 package com.demo.controller;
 
-import com.demo.repository.SpringBootHibernateDAO;
 import com.demo.security.UserDetailsUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -12,8 +11,6 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class IndexController {
 
-    @Autowired
-    SpringBootHibernateDAO testDAO;
 
     @GetMapping("index")
     @ResponseBody
@@ -45,7 +42,6 @@ public class IndexController {
 
     @GetMapping("demo3")
     public String demo3() {
-        testDAO.testQueryOOP();
         return "view";
     }
 

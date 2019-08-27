@@ -28,9 +28,6 @@ public class MongoDbController {
     private static final String[] NAMES = { "Tom", "Jerry", "Donald" };
 
     @Autowired
-    private EmployeeRepositoryCustom employeeRepositoryCustom;
-
-    @Autowired
     private EmployeeRepository employeeRepository;
 
     @ResponseBody
@@ -50,7 +47,7 @@ public class MongoDbController {
     @RequestMapping("testInsert")
     public String testInsert() {
         Employee employee = new Employee();
-        long id = this.employeeRepositoryCustom.getMaxEmpId() + 1;
+        long id = employeeRepository.getMaxEmpId() + 1;
         int idx = (int) (id % NAMES.length);
         String fullName = NAMES[idx] + " " + id;
         employee.setId(id);
