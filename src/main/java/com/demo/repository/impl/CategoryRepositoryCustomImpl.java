@@ -1,7 +1,10 @@
 package com.demo.repository.impl;
 
-import com.demo.repository.CategoryRepositoryCustom;
 import com.demo.entity.Category;
+import com.demo.repository.CategoryRepositoryCustom;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.core.BeanPropertyRowMapper;
+import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
 import javax.persistence.EntityManager;
@@ -18,6 +21,9 @@ public class CategoryRepositoryCustomImpl implements CategoryRepositoryCustom {
 
     @PersistenceContext
     private EntityManager entityManager;
+
+    @Autowired
+    private JdbcTemplate jdbcTemplate;
 
     @Override
     public List<Category> findByHibernate() {
@@ -36,5 +42,11 @@ public class CategoryRepositoryCustomImpl implements CategoryRepositoryCustom {
 
         TypedQuery<Category> q = entityManager.createQuery(query);
         return q.getResultList();
+    }
+
+    @Override
+    public List<Category> findByJdbcTemplate() {
+        String sql = "select * from categories where id > ?";
+        return jdbcTemplate.query(sql, new Object[]{10}, new BeanPropertyRowMapper<>(Category.class));
     }
 }

@@ -7,4 +7,5 @@ import java.util.List;
 public interface CategoryRepositoryCustom {
     List<Category> findByHibernate();
     List<Category> findByCriteriaBuilder();
+    List<Category> findByJdbcTemplate();
 }

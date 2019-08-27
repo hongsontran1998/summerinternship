@@ -50,6 +50,7 @@ public class AuthController {
     public String login(@Value("${app.url}") String testUrl) {
         List<Category> list = categoryRepository.findByHibernate();
         List<Category> list2 = categoryRepository.findByCriteriaBuilder();
+        List<Category> list3 = categoryRepository.findByJdbcTemplate();
         //3 way to get application.properties value
 //        System.out.println(env.getProperty("app.url"));
 //        System.out.println(appUrl);
