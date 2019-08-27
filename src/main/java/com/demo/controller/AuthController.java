@@ -20,9 +20,6 @@ public class AuthController {
     private UserRepository userRepository;
 
     @Autowired
-    private SpringBootHibernateDAO testDAO;
-
-    @Autowired
     private HttpServletRequest request;
 
     @Autowired
