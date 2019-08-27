@@ -13,11 +13,13 @@
     <li>Spring data mongodb (Mongodb)</li>
         <li>Spring MongodbTemplate</li>
         <li>Mongodb pure manupulating</li>
-    <li>Spring boot hibernate module
+    <li>Spring boot hibernate & data jpa module
         <ul>
             <li>Entity</li>
             <li>Hql query</li>
+            <li>Jpql query</li>
             <li>CriteriaBuilder query</li>
+            <li>Composable repositories.</li>
         </ul>
     </li>
     <li>Spring security
