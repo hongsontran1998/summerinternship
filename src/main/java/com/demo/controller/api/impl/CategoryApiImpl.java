@@ -1,10 +1,11 @@
-package com.demo.api.impl;
+package com.demo.controller.api.impl;
 
-import com.demo.api.CategoryApi;
+import com.demo.controller.api.CategoryApi;
 import com.demo.entity.Category;
 import com.demo.service.CategoryService;
 import com.demo.service.Result;
 import com.demo.util.ValidationUtil;
+import org.springframework.data.domain.Page;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
@@ -30,7 +31,10 @@ public class CategoryApiImpl implements CategoryApi {
             String sortBy,
             String direction) {
         Result result = new Result();
-        result.setData(categoryService.findAllOrFilter(searchingText, offset, limit, sortBy, direction));
+        //Page<Category> categories = categoryService.findAllOrFilter(searchingText, offset, limit, sortBy, direction);
+        Page<Category> categories =
+                categoryService.findAllOrFilterCriteria(searchingText, offset, limit, sortBy, direction);
+        result.setData(categories);
         result.setStatus(Result.Status.SUCCESS);
         return new ResponseEntity<>(result, HttpStatus.OK);
     }

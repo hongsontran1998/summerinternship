@@ -1,4 +1,4 @@
-package com.demo.controller;
+package com.demo.controller.web;
 
 import com.demo.excel.ExcelService;
 import org.springframework.beans.factory.annotation.Autowired;

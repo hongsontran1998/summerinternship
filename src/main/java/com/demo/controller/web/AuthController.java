@@ -1,4 +1,4 @@
-package com.demo.controller;
+package com.demo.controller.web;
 
 import com.demo.repository.CategoryRepository;
 import com.demo.entity.Category;
@@ -44,7 +44,7 @@ public class AuthController {
     @GetMapping("login")
     public String login(@Value("${app.url}") String testUrl) {
         List<Category> list = categoryRepository.findByHibernate();
-        List<Category> list2 = categoryRepository.findByCriteriaBuilder();
+//        List<Category> list2 = categoryRepository.findAllOrFilter();
         List<Category> list3 = categoryRepository.findByJdbcTemplate();
         //3 way to get application.properties value
 //        System.out.println(env.getProperty("app.url"));

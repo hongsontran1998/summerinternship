@@ -1,4 +1,4 @@
-package com.demo.controller;
+package com.demo.controller.web;
 
 import com.demo.email.EmailSendingSystem;
 import org.springframework.beans.factory.annotation.Autowired;

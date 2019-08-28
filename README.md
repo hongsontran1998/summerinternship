@@ -91,3 +91,20 @@ if after port changing, still given errors: open task manager and kill JavaTM pr
 
 <h6>#Tips for using Intellij Idea IDE</h6>
 <h6>#Tips for using Eclipse IDE</h6>
+
+<h6>#Pagination API Guide</h6>
+<p>
+<ul>
+    <li>query params: ?q=java&sort_by=id&direction=asc&offset=0&limit=4</li>
+    <li>data.content</li>
+    <li>data.pageable.offset</li>
+    <li>data.pageable.pageSize</li>
+    <li>data.pageable.pageNumber</li>
+    <li>data.last</li>
+    <li>data.totalElements</li>
+    <li>data.totalPages</li>
+    <li>data.size</li>
+    <li>data.numberOfElements</li>
+    <li>data.first</li>
+</ul>
+</p>

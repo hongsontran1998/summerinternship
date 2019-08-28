@@ -1,4 +1,4 @@
-package com.demo.controller;
+package com.demo.controller.web;
 
 import com.demo.security.UserDetailsUtil;
 import org.springframework.beans.factory.annotation.Autowired;

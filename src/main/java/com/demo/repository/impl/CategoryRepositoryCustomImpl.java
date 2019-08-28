@@ -3,6 +3,9 @@ package com.demo.repository.impl;
 import com.demo.entity.Category;
 import com.demo.repository.CategoryRepositoryCustom;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageImpl;
+import org.springframework.data.domain.Pageable;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
@@ -31,17 +34,31 @@ public class CategoryRepositoryCustomImpl implements CategoryRepositoryCustom {
     }
 
     @Override
-    public List<Category> findByCriteriaBuilder() {
+    public Page<Category> findAllOrFilterCriteria(String searchingText, Pageable pageable) {
         CriteriaBuilder builder = entityManager.getCriteriaBuilder();
-        CriteriaQuery<Category> query = builder.createQuery(Category.class);
 
-        Root<Category> category = query.from(Category.class);
-        Predicate categoryIdPredicate = builder.greaterThan(category.get("id"), 2);
-        Predicate categoryNamePredicate = builder.like(category.get("name"), "%java%");
-        query.where(categoryIdPredicate, categoryNamePredicate);
+        //Select paginated list
+        CriteriaQuery<Category> selectQuery = builder.createQuery(Category.class);
+        Root<Category> categoryRoot = selectQuery.from(Category.class);
+        Predicate categoryNamePredicate = builder.like(categoryRoot.get("name"), "%" + searchingText + "%");
+        selectQuery.where(categoryNamePredicate);
+        TypedQuery<Category> q = entityManager.createQuery(selectQuery);
+        List<Category> content = q
+                .setFirstResult((int) pageable.getOffset())
+                .setMaxResults(pageable.getPageSize())
+                .getResultList();
 
-        TypedQuery<Category> q = entityManager.createQuery(query);
-        return q.getResultList();
+        //Get total of result
+        CriteriaQuery<Long> countQuery = builder.createQuery(Long.class);
+        Root<Category> categoriesRootCount = countQuery.from(Category.class);
+        countQuery
+                .select(builder.count(categoriesRootCount))
+                .where(categoryNamePredicate);
+        // Fetches the count of all Books as per given criteria
+        Long count = entityManager.createQuery(countQuery).getSingleResult();
+
+        //return pageable: Page<Category>
+        return new PageImpl<>(content, pageable, count);
     }
 
     @Override

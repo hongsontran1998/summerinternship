@@ -4,8 +4,7 @@ import java.util.Date;
 
 public interface EmployeeRepositoryCustom {
  
-    long getMaxEmpId();
-     
-    long updateEmployee(String empNo, String fullName, Date hireDate);
+    Long getMaxEmpId();
+    Long updateEmployee(String empNo, String fullName, Date hireDate);
      
 }

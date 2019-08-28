@@ -1,6 +1,6 @@
-package com.demo.api.impl;
+package com.demo.controller.api.impl;
 
-import com.demo.api.EmployeeApi;
+import com.demo.controller.api.EmployeeApi;
 import com.demo.entity.Employee;
 import com.demo.repository.EmployeeRepository;
 import org.springframework.beans.factory.annotation.Autowired;

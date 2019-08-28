@@ -1,4 +1,4 @@
-package com.demo.controller;
+package com.demo.controller.web;
 
 import com.demo.email.EmailSendingSystem;
 import com.demo.entity.Employee;

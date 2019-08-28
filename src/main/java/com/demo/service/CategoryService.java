@@ -8,6 +8,7 @@ import java.util.List;
 public interface CategoryService {
     //findAllOrFilter
     Page<Category> findAllOrFilter(String searchingText, Integer offset, Integer limit, String sortBy, String direction);
+    Page<Category> findAllOrFilterCriteria(String searchingText, Integer offset, Integer limit, String sortBy, String direction);
     Category findOneById(Integer id);
     Category insertOne(Category category);
     Category updateOne(Category category);

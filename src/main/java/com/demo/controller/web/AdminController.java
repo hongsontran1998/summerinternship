@@ -1,4 +1,4 @@
-package com.demo.controller;
+package com.demo.controller.web;
 
 import com.demo.service.StorageService;
 import org.apache.commons.io.FileUtils;

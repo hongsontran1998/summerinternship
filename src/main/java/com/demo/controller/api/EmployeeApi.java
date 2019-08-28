@@ -1,4 +1,4 @@
-package com.demo.api;
+package com.demo.controller.api;
 
 import com.demo.entity.Employee;
 import org.springframework.http.ResponseEntity;

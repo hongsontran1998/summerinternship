@@ -24,6 +24,12 @@ public class CategoryServiceImpl implements CategoryService {
         return categoryRepository.findAllOrFilter(searchingText, pageable);
     }
 
+    @Override
+    public Page<Category> findAllOrFilterCriteria(String searchingText, Integer offset, Integer limit, String sortBy, String direction) {
+        Pageable pageable = getPageable(offset, limit, sortBy, direction);
+        return categoryRepository.findAllOrFilterCriteria(searchingText, pageable);
+    }
+
     private Pageable getPageable(Integer offset, Integer limit, String sortBy, String direction) {
         Sort sort = null;
         if (sortBy != null) {

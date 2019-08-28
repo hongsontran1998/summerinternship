@@ -1,4 +1,4 @@
-package com.demo.api;
+package com.demo.controller.api;
 
 import com.demo.entity.Category;
 import com.demo.service.Result;

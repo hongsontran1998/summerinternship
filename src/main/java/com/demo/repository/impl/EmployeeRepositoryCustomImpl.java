@@ -12,14 +12,14 @@ import org.springframework.data.mongodb.core.query.Update;
 import org.springframework.stereotype.Repository;
 
 import java.util.Date;
- 
+
 @Repository
 public class EmployeeRepositoryCustomImpl implements EmployeeRepositoryCustom {
- 
+
     @Autowired
     MongoTemplate mongoTemplate;
- 
-    public long getMaxEmpId() {
+
+    public Long getMaxEmpId() {
         Query query = new Query();
         query.with(new Sort(Sort.Direction.DESC, "id"));
         query.limit(1);
@@ -29,21 +29,18 @@ public class EmployeeRepositoryCustomImpl implements EmployeeRepositoryCustom {
         }
         return maxObject.getId();
     }
- 
+
     @Override
-    public long updateEmployee(String empNo, String fullName, Date hireDate) {
+    public Long updateEmployee(String empNo, String fullName, Date hireDate) {
         Query query = new Query(Criteria.where("empNo").is(empNo));
         Update update = new Update();
         update.set("fullName", fullName);
         update.set("hireDate", hireDate);
- 
         UpdateResult result = this.mongoTemplate.updateFirst(query, update, Employee.class);
- 
         if (result != null) {
             return result.getModifiedCount();
         }
- 
-        return 0;
+        return 0L;
     }
- 
+
 }
