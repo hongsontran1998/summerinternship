@@ -27,7 +27,7 @@ public class GlobalExceptionHandler {
 	/*@ExceptionHandler(value = NullPointerException.class)
 	@ResponseStatus(HttpStatus.BAD_REQUEST)
 	public String handleNullPointerException(Exception ex) {
-		System.out.println("A null pointer exception ocurred " + ex);
+		System.out.println("CategoriesTableSeeder null pointer exception ocurred " + ex);
 		return "nullpointerExceptionPage";
 	}*/
 

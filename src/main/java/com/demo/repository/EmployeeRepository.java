@@ -11,7 +11,7 @@ import org.springframework.data.mongodb.repository.Query;
 // This is an Interface.
 // No need Annotation here
 public interface EmployeeRepository extends MongoRepository<Employee, Long>,
-        EmployeeRepositoryCustom { // Long: Type of Employee ID.
+        EmployeeRepositoryCustom {
 
     Employee findByEmpNo(String empNo);
 

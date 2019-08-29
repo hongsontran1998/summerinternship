@@ -70,7 +70,7 @@ public class ExcelService {
             rowNum++;
             row = sheet.createRow(rowNum);
  
-            // Id (A)
+            // Id (CategoriesTableSeeder)
             cell = row.createCell(0, CellType.STRING);
             cell.setCellValue(category.getId());
             // Name (B)

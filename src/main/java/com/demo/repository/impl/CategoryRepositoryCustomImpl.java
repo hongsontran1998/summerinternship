@@ -13,10 +13,8 @@ import org.springframework.stereotype.Repository;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.TypedQuery;
-import javax.persistence.criteria.CriteriaBuilder;
-import javax.persistence.criteria.CriteriaQuery;
-import javax.persistence.criteria.Predicate;
-import javax.persistence.criteria.Root;
+import javax.persistence.criteria.*;
+import java.util.ArrayList;
 import java.util.List;
 
 @Repository
@@ -40,8 +38,26 @@ public class CategoryRepositoryCustomImpl implements CategoryRepositoryCustom {
         //Select paginated list
         CriteriaQuery<Category> selectQuery = builder.createQuery(Category.class);
         Root<Category> categoryRoot = selectQuery.from(Category.class);
+
         Predicate categoryNamePredicate = builder.like(categoryRoot.get("name"), "%" + searchingText + "%");
-        selectQuery.where(categoryNamePredicate);
+        if (searchingText != null)
+            selectQuery.where(categoryNamePredicate);
+
+        if (pageable != null) {
+            List<Order> orders = new ArrayList<>();
+            if (pageable != null && pageable.getSort() != null) {
+                pageable.getSort().forEach(order -> {
+                    if (order.getDirection().toString().equalsIgnoreCase("DESC")) {
+                        orders.add(builder.desc(categoryRoot.get(order.getProperty())));
+                    } else if (order.getDirection().toString().equalsIgnoreCase("ASC")) {
+                        orders.add(builder.asc(categoryRoot.get(order.getProperty())));
+                    }
+                });
+            }
+            if (orders.size() > 0)
+                selectQuery.orderBy(orders);
+        }
+
         TypedQuery<Category> q = entityManager.createQuery(selectQuery);
         List<Category> content = q
                 .setFirstResult((int) pageable.getOffset())
@@ -51,9 +67,9 @@ public class CategoryRepositoryCustomImpl implements CategoryRepositoryCustom {
         //Get total of result
         CriteriaQuery<Long> countQuery = builder.createQuery(Long.class);
         Root<Category> categoriesRootCount = countQuery.from(Category.class);
-        countQuery
-                .select(builder.count(categoriesRootCount))
-                .where(categoryNamePredicate);
+        countQuery.select(builder.count(categoriesRootCount));
+        if (searchingText != null)
+            countQuery.where(categoryNamePredicate);
         // Fetches the count of all Books as per given criteria
         Long count = entityManager.createQuery(countQuery).getSingleResult();
 
