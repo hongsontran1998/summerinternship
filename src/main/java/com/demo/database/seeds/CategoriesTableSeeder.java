@@ -16,12 +16,10 @@ public class CategoriesTableSeeder implements Seeder {
 
     @Override
     public void run() {
-        System.out.println("CategoriesTableSeeder.run");
         List<Category> categories = new ArrayList<>();
-        for (int i = 0; i < 100; i++) {
+        for (int i = 0; i < 2; i++) {
             categories.add(new Category(null, "category " + i));
         }
         categoryRepository.saveAll(categories);
-        System.out.println("==========================");
     }
 }

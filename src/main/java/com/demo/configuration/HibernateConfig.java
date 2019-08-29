@@ -1,5 +1,8 @@
 package com.demo.configuration;
 
+/*
+* dùng entity manager hỗ trợ bởi spring boot không dùng session factory như spring mvc nữa.
+* */
 //
 //@Configuration
 //@EnableTransactionManagement
