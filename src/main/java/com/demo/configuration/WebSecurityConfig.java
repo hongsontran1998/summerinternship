@@ -42,7 +42,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 //                    .roles("ADMIN")
 //                    .and()
 //                    .passwordEncoder(encoder);
-        //authenticate from database
+        //authenticate from db
         auth.inMemoryAuthentication();//phải có dòng này chứ không là nó lấy form login mặc định
         auth.userDetailsService(userDetailsService).passwordEncoder(encoder);
     }

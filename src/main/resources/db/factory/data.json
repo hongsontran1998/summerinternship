@@ -1,0 +1,10 @@
+{
+  "categories": [
+    "java", ".net", "spring boot", "spring mvc", "rest api", "react js", "angular",
+    "javascript", "es6", "jquery", "nodejs", "python", "mongodb", "mysql", "postgresql",
+    "java core", ".net core", "asp.net mvc", "ruby", "R", "dart", "kotlin", "android",
+    "IOS", "react native", "flutter", "reactive programming", "java lambda expression",
+    "java project lombok", "jsp and servlet", "thymeleaf", "fremarker", "velocity",
+    "spring data jpa", "hibernate framework", "jdbc core and jdbc template"
+  ]
+}

@@ -1,6 +1,5 @@
 package com.demo.database.seeds;
 
-import com.demo.controller.web.AuthController;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -37,7 +36,6 @@ public class SeedingRunner {
                     clazz.getDeclaredMethod(RUNNING_METHOD_NAME, new Class[]{}).invoke(obj, new Object[]{});
                     LOGGER.info("seeded " + clazz.getSimpleName());
                     LOGGER.info("===========================");
-
                 }
             }
         } catch (IllegalAccessException e) {

@@ -86,7 +86,7 @@ public class EmployeeDAO {
 	}
 	public static void main(String[] args) {
 //		MongoClient mongoClient = getMongoClient();
-//		// get list database names
+//		// get list db names
 //		for (String databaseName : mongoClient.listDatabaseNames()) {
 //			System.out.println(databaseName);
 //		}

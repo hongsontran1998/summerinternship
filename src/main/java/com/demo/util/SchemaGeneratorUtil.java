@@ -13,7 +13,7 @@ import org.hibernate.tool.schema.TargetType;
 // Hibernate 5.
 public class SchemaGeneratorUtil {
 
-   public static final String SCRIPT_FILE = "summerintership.sql";
+   public static final String SCRIPT_FILE = "V1__Initial.sql";
 
    private static SchemaExport getSchemaExport() {
 
