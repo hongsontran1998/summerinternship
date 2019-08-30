@@ -1,6 +1,7 @@
 package com.demo;
 
 import com.demo.service.StorageProperties;
+import com.github.javafaker.Faker;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.boot.SpringApplication;
@@ -23,6 +24,7 @@ public class Application implements ApplicationRunner {
 
     @Override
     public void run(ApplicationArguments args) throws Exception {
+        //code some thing when all beans has created
         System.out.println("Tomcat have started");
     }
 
@@ -31,6 +33,11 @@ public class Application implements ApplicationRunner {
         CommonsMultipartResolver resolver = new CommonsMultipartResolver();
         //resolver.setMaxUploadSize(5242880);
         return resolver;
+    }
+
+    @Bean
+    public Faker faker(){
+       return new Faker();
     }
 
 
