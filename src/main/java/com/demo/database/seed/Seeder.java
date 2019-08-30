@@ -1,4 +1,4 @@
-package com.demo.database.seeds;
+package com.demo.database.seed;
 
 public interface Seeder {
     void run();

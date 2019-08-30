@@ -1,7 +1,6 @@
 package com.demo.javacore;
 
-import com.demo.database.factories.JsonFactory;
-import com.demo.entity.Category;
+import com.demo.database.factory.JsonFactory;
 import com.fasterxml.jackson.databind.JsonNode;
 
 public class Backend {

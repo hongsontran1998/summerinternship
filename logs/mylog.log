@@ -741,7 +741,7 @@ Caused by: java.lang.ClassNotFoundException: com.demo.excel.ExcelService
 2019-08-29 11:45:15.334  WARN 10044 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2019-08-29 11:45:15.598  WARN 10044 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
 2019-08-29 11:45:16.015  INFO 10044 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2019-08-29 11:45:16.161  WARN 10044 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanInitializationException: Failed to process @EventListener annotation on bean with name 'databaseSeeder'; nested exception is java.lang.IllegalStateException: Event parameter is mandatory for event listener method: public void com.demo.database.seeds.DatabaseSeeder.run()
+2019-08-29 11:45:16.161  WARN 10044 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanInitializationException: Failed to process @EventListener annotation on bean with name 'databaseSeeder'; nested exception is java.lang.IllegalStateException: Event parameter is mandatory for event listener method: public void com.demo.database.seed.DatabaseSeeder.run()
 2019-08-29 11:45:16.162  INFO 10044 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
 2019-08-29 11:45:16.163  INFO 10044 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
 2019-08-29 11:45:16.166  INFO 10044 --- [restartedMain] org.mongodb.driver.connection            : Closed connection [connectionId{localValue:2, serverValue:145}] to localhost:27017 because the pool has been closed.
@@ -754,7 +754,7 @@ Caused by: java.lang.ClassNotFoundException: com.demo.excel.ExcelService
 Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
 2019-08-29 11:45:16.214 ERROR 10044 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
 
-org.springframework.beans.factory.BeanInitializationException: Failed to process @EventListener annotation on bean with name 'databaseSeeder'; nested exception is java.lang.IllegalStateException: Event parameter is mandatory for event listener method: public void com.demo.database.seeds.DatabaseSeeder.run()
+org.springframework.beans.factory.BeanInitializationException: Failed to process @EventListener annotation on bean with name 'databaseSeeder'; nested exception is java.lang.IllegalStateException: Event parameter is mandatory for event listener method: public void com.demo.database.seed.DatabaseSeeder.run()
 	at org.springframework.context.event.EventListenerMethodProcessor.afterSingletonsInstantiated(EventListenerMethodProcessor.java:136) ~[spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
 	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:860) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
 	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877) ~[spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
@@ -771,7 +771,7 @@ org.springframework.beans.factory.BeanInitializationException: Failed to process
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_201]
 	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_201]
 	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.1.5.RELEASE.jar:2.1.5.RELEASE]
-Caused by: java.lang.IllegalStateException: Event parameter is mandatory for event listener method: public void com.demo.database.seeds.DatabaseSeeder.run()
+Caused by: java.lang.IllegalStateException: Event parameter is mandatory for event listener method: public void com.demo.database.seed.DatabaseSeeder.run()
 	at org.springframework.context.event.ApplicationListenerMethodAdapter.resolveDeclaredEventTypes(ApplicationListenerMethodAdapter.java:119) ~[spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
 	at org.springframework.context.event.ApplicationListenerMethodAdapter.<init>(ApplicationListenerMethodAdapter.java:95) ~[spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
 	at org.springframework.context.event.DefaultEventListenerFactory.createApplicationListener(DefaultEventListenerFactory.java:54) ~[spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
@@ -833,7 +833,7 @@ Caused by: java.lang.IllegalStateException: Event parameter is mandatory for eve
 2019-08-29 11:46:45.280  WARN 9640 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2019-08-29 11:46:45.402  WARN 9640 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
 2019-08-29 11:46:45.695  INFO 9640 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2019-08-29 11:46:45.809  WARN 9640 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanInitializationException: Failed to process @EventListener annotation on bean with name 'databaseSeeder'; nested exception is java.lang.IllegalStateException: Event parameter is mandatory for event listener method: public void com.demo.database.seeds.DatabaseSeeder.run()
+2019-08-29 11:46:45.809  WARN 9640 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanInitializationException: Failed to process @EventListener annotation on bean with name 'databaseSeeder'; nested exception is java.lang.IllegalStateException: Event parameter is mandatory for event listener method: public void com.demo.database.seed.DatabaseSeeder.run()
 2019-08-29 11:46:45.810  INFO 9640 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
 2019-08-29 11:46:45.810  INFO 9640 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
 2019-08-29 11:46:45.813  INFO 9640 --- [restartedMain] org.mongodb.driver.connection            : Closed connection [connectionId{localValue:2, serverValue:147}] to localhost:27017 because the pool has been closed.
@@ -846,7 +846,7 @@ Caused by: java.lang.IllegalStateException: Event parameter is mandatory for eve
 Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
 2019-08-29 11:46:45.855 ERROR 9640 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
 
-org.springframework.beans.factory.BeanInitializationException: Failed to process @EventListener annotation on bean with name 'databaseSeeder'; nested exception is java.lang.IllegalStateException: Event parameter is mandatory for event listener method: public void com.demo.database.seeds.DatabaseSeeder.run()
+org.springframework.beans.factory.BeanInitializationException: Failed to process @EventListener annotation on bean with name 'databaseSeeder'; nested exception is java.lang.IllegalStateException: Event parameter is mandatory for event listener method: public void com.demo.database.seed.DatabaseSeeder.run()
 	at org.springframework.context.event.EventListenerMethodProcessor.afterSingletonsInstantiated(EventListenerMethodProcessor.java:136) ~[spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
 	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:860) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
 	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877) ~[spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
@@ -863,7 +863,7 @@ org.springframework.beans.factory.BeanInitializationException: Failed to process
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_201]
 	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_201]
 	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.1.5.RELEASE.jar:2.1.5.RELEASE]
-Caused by: java.lang.IllegalStateException: Event parameter is mandatory for event listener method: public void com.demo.database.seeds.DatabaseSeeder.run()
+Caused by: java.lang.IllegalStateException: Event parameter is mandatory for event listener method: public void com.demo.database.seed.DatabaseSeeder.run()
 	at org.springframework.context.event.ApplicationListenerMethodAdapter.resolveDeclaredEventTypes(ApplicationListenerMethodAdapter.java:119) ~[spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
 	at org.springframework.context.event.ApplicationListenerMethodAdapter.<init>(ApplicationListenerMethodAdapter.java:95) ~[spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
 	at org.springframework.context.event.DefaultEventListenerFactory.createApplicationListener(DefaultEventListenerFactory.java:54) ~[spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
@@ -1173,7 +1173,7 @@ Caused by: java.lang.IllegalStateException: Event parameter is mandatory for eve
 2019-08-29 11:54:24.512  WARN 6956 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2019-08-29 11:54:24.638  WARN 6956 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
 2019-08-29 11:54:24.933  INFO 6956 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2019-08-29 11:54:25.049  WARN 6956 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanInitializationException: Failed to process @EventListener annotation on bean with name 'databaseSeeder'; nested exception is java.lang.IllegalStateException: Event parameter is mandatory for event listener method: public void com.demo.database.seeds.DatabaseSeeder.run()
+2019-08-29 11:54:25.049  WARN 6956 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanInitializationException: Failed to process @EventListener annotation on bean with name 'databaseSeeder'; nested exception is java.lang.IllegalStateException: Event parameter is mandatory for event listener method: public void com.demo.database.seed.DatabaseSeeder.run()
 2019-08-29 11:54:25.050  INFO 6956 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
 2019-08-29 11:54:25.051  INFO 6956 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
 2019-08-29 11:54:25.054  INFO 6956 --- [restartedMain] org.mongodb.driver.connection            : Closed connection [connectionId{localValue:2, serverValue:157}] to localhost:27017 because the pool has been closed.
@@ -1186,7 +1186,7 @@ Caused by: java.lang.IllegalStateException: Event parameter is mandatory for eve
 Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
 2019-08-29 11:54:25.098 ERROR 6956 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
 
-org.springframework.beans.factory.BeanInitializationException: Failed to process @EventListener annotation on bean with name 'databaseSeeder'; nested exception is java.lang.IllegalStateException: Event parameter is mandatory for event listener method: public void com.demo.database.seeds.DatabaseSeeder.run()
+org.springframework.beans.factory.BeanInitializationException: Failed to process @EventListener annotation on bean with name 'databaseSeeder'; nested exception is java.lang.IllegalStateException: Event parameter is mandatory for event listener method: public void com.demo.database.seed.DatabaseSeeder.run()
 	at org.springframework.context.event.EventListenerMethodProcessor.afterSingletonsInstantiated(EventListenerMethodProcessor.java:136) ~[spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
 	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:860) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
 	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877) ~[spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
@@ -1203,7 +1203,7 @@ org.springframework.beans.factory.BeanInitializationException: Failed to process
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_201]
 	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_201]
 	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.1.5.RELEASE.jar:2.1.5.RELEASE]
-Caused by: java.lang.IllegalStateException: Event parameter is mandatory for event listener method: public void com.demo.database.seeds.DatabaseSeeder.run()
+Caused by: java.lang.IllegalStateException: Event parameter is mandatory for event listener method: public void com.demo.database.seed.DatabaseSeeder.run()
 	at org.springframework.context.event.ApplicationListenerMethodAdapter.resolveDeclaredEventTypes(ApplicationListenerMethodAdapter.java:119) ~[spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
 	at org.springframework.context.event.ApplicationListenerMethodAdapter.<init>(ApplicationListenerMethodAdapter.java:95) ~[spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
 	at org.springframework.context.event.DefaultEventListenerFactory.createApplicationListener(DefaultEventListenerFactory.java:54) ~[spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
@@ -1265,7 +1265,7 @@ Caused by: java.lang.IllegalStateException: Event parameter is mandatory for eve
 2019-08-29 11:55:45.943  WARN 1660 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2019-08-29 11:55:46.075  WARN 1660 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
 2019-08-29 11:55:46.374  INFO 1660 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2019-08-29 11:55:46.542  WARN 1660 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanInitializationException: Failed to process @EventListener annotation on bean with name 'databaseSeeder'; nested exception is java.lang.IllegalStateException: Event parameter is mandatory for event listener method: public void com.demo.database.seeds.DatabaseSeeder.run()
+2019-08-29 11:55:46.542  WARN 1660 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanInitializationException: Failed to process @EventListener annotation on bean with name 'databaseSeeder'; nested exception is java.lang.IllegalStateException: Event parameter is mandatory for event listener method: public void com.demo.database.seed.DatabaseSeeder.run()
 2019-08-29 11:55:46.543  INFO 1660 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
 2019-08-29 11:55:46.544  INFO 1660 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
 2019-08-29 11:55:46.547  INFO 1660 --- [restartedMain] org.mongodb.driver.connection            : Closed connection [connectionId{localValue:2, serverValue:159}] to localhost:27017 because the pool has been closed.
@@ -1278,7 +1278,7 @@ Caused by: java.lang.IllegalStateException: Event parameter is mandatory for eve
 Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
 2019-08-29 11:55:46.590 ERROR 1660 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
 
-org.springframework.beans.factory.BeanInitializationException: Failed to process @EventListener annotation on bean with name 'databaseSeeder'; nested exception is java.lang.IllegalStateException: Event parameter is mandatory for event listener method: public void com.demo.database.seeds.DatabaseSeeder.run()
+org.springframework.beans.factory.BeanInitializationException: Failed to process @EventListener annotation on bean with name 'databaseSeeder'; nested exception is java.lang.IllegalStateException: Event parameter is mandatory for event listener method: public void com.demo.database.seed.DatabaseSeeder.run()
 	at org.springframework.context.event.EventListenerMethodProcessor.afterSingletonsInstantiated(EventListenerMethodProcessor.java:136) ~[spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
 	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:860) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
 	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877) ~[spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
@@ -1295,7 +1295,7 @@ org.springframework.beans.factory.BeanInitializationException: Failed to process
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_201]
 	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_201]
 	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.1.5.RELEASE.jar:2.1.5.RELEASE]
-Caused by: java.lang.IllegalStateException: Event parameter is mandatory for event listener method: public void com.demo.database.seeds.DatabaseSeeder.run()
+Caused by: java.lang.IllegalStateException: Event parameter is mandatory for event listener method: public void com.demo.database.seed.DatabaseSeeder.run()
 	at org.springframework.context.event.ApplicationListenerMethodAdapter.resolveDeclaredEventTypes(ApplicationListenerMethodAdapter.java:119) ~[spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
 	at org.springframework.context.event.ApplicationListenerMethodAdapter.<init>(ApplicationListenerMethodAdapter.java:95) ~[spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
 	at org.springframework.context.event.DefaultEventListenerFactory.createApplicationListener(DefaultEventListenerFactory.java:54) ~[spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
@@ -1357,7 +1357,7 @@ Caused by: java.lang.IllegalStateException: Event parameter is mandatory for eve
 2019-08-29 11:57:04.473  WARN 13420 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2019-08-29 11:57:04.606  WARN 13420 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
 2019-08-29 11:57:04.919  INFO 13420 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2019-08-29 11:57:05.051  WARN 13420 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanInitializationException: Failed to process @EventListener annotation on bean with name 'databaseSeeder'; nested exception is java.lang.IllegalStateException: Event parameter is mandatory for event listener method: public void com.demo.database.seeds.DatabaseSeeder.run()
+2019-08-29 11:57:05.051  WARN 13420 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanInitializationException: Failed to process @EventListener annotation on bean with name 'databaseSeeder'; nested exception is java.lang.IllegalStateException: Event parameter is mandatory for event listener method: public void com.demo.database.seed.DatabaseSeeder.run()
 2019-08-29 11:57:05.052  INFO 13420 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
 2019-08-29 11:57:05.053  INFO 13420 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
 2019-08-29 11:57:05.057  INFO 13420 --- [restartedMain] org.mongodb.driver.connection            : Closed connection [connectionId{localValue:2, serverValue:161}] to localhost:27017 because the pool has been closed.
@@ -1370,7 +1370,7 @@ Caused by: java.lang.IllegalStateException: Event parameter is mandatory for eve
 Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
 2019-08-29 11:57:05.109 ERROR 13420 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
 
-org.springframework.beans.factory.BeanInitializationException: Failed to process @EventListener annotation on bean with name 'databaseSeeder'; nested exception is java.lang.IllegalStateException: Event parameter is mandatory for event listener method: public void com.demo.database.seeds.DatabaseSeeder.run()
+org.springframework.beans.factory.BeanInitializationException: Failed to process @EventListener annotation on bean with name 'databaseSeeder'; nested exception is java.lang.IllegalStateException: Event parameter is mandatory for event listener method: public void com.demo.database.seed.DatabaseSeeder.run()
 	at org.springframework.context.event.EventListenerMethodProcessor.afterSingletonsInstantiated(EventListenerMethodProcessor.java:136) ~[spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
 	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:860) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
 	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877) ~[spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
@@ -1387,7 +1387,7 @@ org.springframework.beans.factory.BeanInitializationException: Failed to process
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_201]
 	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_201]
 	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.1.5.RELEASE.jar:2.1.5.RELEASE]
-Caused by: java.lang.IllegalStateException: Event parameter is mandatory for event listener method: public void com.demo.database.seeds.DatabaseSeeder.run()
+Caused by: java.lang.IllegalStateException: Event parameter is mandatory for event listener method: public void com.demo.database.seed.DatabaseSeeder.run()
 	at org.springframework.context.event.ApplicationListenerMethodAdapter.resolveDeclaredEventTypes(ApplicationListenerMethodAdapter.java:119) ~[spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
 	at org.springframework.context.event.ApplicationListenerMethodAdapter.<init>(ApplicationListenerMethodAdapter.java:95) ~[spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
 	at org.springframework.context.event.DefaultEventListenerFactory.createApplicationListener(DefaultEventListenerFactory.java:54) ~[spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
@@ -2986,10 +2986,10 @@ Consider defining a bean named 'categoriesTableSeeder' in your configuration.
 2019-08-29 18:59:18.498  WARN 11252 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2019-08-29 18:59:18.750  WARN 11252 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
 2019-08-29 18:59:19.157  INFO 11252 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2019-08-29 18:59:19.485  INFO 11252 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeding CategoriesTableSeeder
-2019-08-29 18:59:19.728  INFO 11252 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeded CategoriesTableSeeder
-2019-08-29 18:59:19.728  INFO 11252 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeding RolesTableSeeder
-2019-08-29 18:59:19.729  INFO 11252 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeded RolesTableSeeder
+2019-08-29 18:59:19.485  INFO 11252 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeding CategoriesTableSeeder
+2019-08-29 18:59:19.728  INFO 11252 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeded CategoriesTableSeeder
+2019-08-29 18:59:19.728  INFO 11252 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeding RolesTableSeeder
+2019-08-29 18:59:19.729  INFO 11252 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeded RolesTableSeeder
 2019-08-29 18:59:19.820  INFO 11252 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
 2019-08-29 18:59:19.828  INFO 11252 --- [restartedMain] com.demo.Application                     : Started Application in 11.046 seconds (JVM running for 13.08)
 2019-08-29 19:01:26.810  INFO 11252 --- [Thread-30] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
@@ -3052,12 +3052,12 @@ Consider defining a bean named 'categoriesTableSeeder' in your configuration.
 2019-08-29 19:01:52.174  WARN 9516 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2019-08-29 19:01:52.334  WARN 9516 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
 2019-08-29 19:01:52.781  INFO 9516 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2019-08-29 19:01:52.969  INFO 9516 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeding CategoriesTableSeeder
-2019-08-29 19:01:53.209  INFO 9516 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeded CategoriesTableSeeder
-2019-08-29 19:01:53.210  INFO 9516 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : ===========================
-2019-08-29 19:01:53.210  INFO 9516 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeding RolesTableSeeder
-2019-08-29 19:01:53.210  INFO 9516 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeded RolesTableSeeder
-2019-08-29 19:01:53.210  INFO 9516 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : ===========================
+2019-08-29 19:01:52.969  INFO 9516 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeding CategoriesTableSeeder
+2019-08-29 19:01:53.209  INFO 9516 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeded CategoriesTableSeeder
+2019-08-29 19:01:53.210  INFO 9516 --- [restartedMain] com.demo.database.seed.SeedingRunner    : ===========================
+2019-08-29 19:01:53.210  INFO 9516 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeding RolesTableSeeder
+2019-08-29 19:01:53.210  INFO 9516 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeded RolesTableSeeder
+2019-08-29 19:01:53.210  INFO 9516 --- [restartedMain] com.demo.database.seed.SeedingRunner    : ===========================
 2019-08-29 19:01:53.261  INFO 9516 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
 2019-08-29 19:01:53.265  INFO 9516 --- [restartedMain] com.demo.Application                     : Started Application in 14.919 seconds (JVM running for 17.227)
 2019-08-29 19:05:59.565  INFO 9516 --- [Thread-28] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
@@ -3115,12 +3115,12 @@ Consider defining a bean named 'categoriesTableSeeder' in your configuration.
 2019-08-29 19:06:07.097  WARN 9516 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2019-08-29 19:06:07.184  WARN 9516 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
 2019-08-29 19:06:07.208  INFO 9516 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2019-08-29 19:06:07.329  INFO 9516 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeding CategoriesTableSeeder
-2019-08-29 19:06:07.388  INFO 9516 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeded CategoriesTableSeeder
-2019-08-29 19:06:07.388  INFO 9516 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : ===========================
-2019-08-29 19:06:07.388  INFO 9516 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeding RolesTableSeeder
-2019-08-29 19:06:07.388  INFO 9516 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeded RolesTableSeeder
-2019-08-29 19:06:07.388  INFO 9516 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : ===========================
+2019-08-29 19:06:07.329  INFO 9516 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeding CategoriesTableSeeder
+2019-08-29 19:06:07.388  INFO 9516 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeded CategoriesTableSeeder
+2019-08-29 19:06:07.388  INFO 9516 --- [restartedMain] com.demo.database.seed.SeedingRunner    : ===========================
+2019-08-29 19:06:07.388  INFO 9516 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeding RolesTableSeeder
+2019-08-29 19:06:07.388  INFO 9516 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeded RolesTableSeeder
+2019-08-29 19:06:07.388  INFO 9516 --- [restartedMain] com.demo.database.seed.SeedingRunner    : ===========================
 2019-08-29 19:06:07.405  INFO 9516 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
 2019-08-29 19:06:07.406  INFO 9516 --- [restartedMain] com.demo.Application                     : Started Application in 6.358 seconds (JVM running for 271.368)
 2019-08-29 19:06:07.411  INFO 9516 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
@@ -3180,12 +3180,12 @@ Consider defining a bean named 'categoriesTableSeeder' in your configuration.
 2019-08-29 19:46:40.168  WARN 9516 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2019-08-29 19:46:40.237  WARN 9516 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
 2019-08-29 19:46:40.272  INFO 9516 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2019-08-29 19:46:40.408  INFO 9516 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeding CategoriesTableSeeder
-2019-08-29 19:46:40.472  INFO 9516 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeded CategoriesTableSeeder
-2019-08-29 19:46:40.472  INFO 9516 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : ===========================
-2019-08-29 19:46:40.472  INFO 9516 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeding RolesTableSeeder
-2019-08-29 19:46:40.473  INFO 9516 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeded RolesTableSeeder
-2019-08-29 19:46:40.473  INFO 9516 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : ===========================
+2019-08-29 19:46:40.408  INFO 9516 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeding CategoriesTableSeeder
+2019-08-29 19:46:40.472  INFO 9516 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeded CategoriesTableSeeder
+2019-08-29 19:46:40.472  INFO 9516 --- [restartedMain] com.demo.database.seed.SeedingRunner    : ===========================
+2019-08-29 19:46:40.472  INFO 9516 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeding RolesTableSeeder
+2019-08-29 19:46:40.473  INFO 9516 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeded RolesTableSeeder
+2019-08-29 19:46:40.473  INFO 9516 --- [restartedMain] com.demo.database.seed.SeedingRunner    : ===========================
 2019-08-29 19:46:40.487  INFO 9516 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
 2019-08-29 19:46:40.488  INFO 9516 --- [restartedMain] com.demo.Application                     : Started Application in 2.794 seconds (JVM running for 2704.456)
 2019-08-29 19:46:40.493  INFO 9516 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
@@ -3244,12 +3244,12 @@ Consider defining a bean named 'categoriesTableSeeder' in your configuration.
 2019-08-29 19:46:46.033  WARN 9516 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2019-08-29 19:46:46.126  WARN 9516 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
 2019-08-29 19:46:46.154  INFO 9516 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2019-08-29 19:46:46.251  INFO 9516 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeding CategoriesTableSeeder
-2019-08-29 19:46:46.347  INFO 9516 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeded CategoriesTableSeeder
-2019-08-29 19:46:46.347  INFO 9516 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : ===========================
-2019-08-29 19:46:46.347  INFO 9516 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeding RolesTableSeeder
-2019-08-29 19:46:46.347  INFO 9516 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeded RolesTableSeeder
-2019-08-29 19:46:46.347  INFO 9516 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : ===========================
+2019-08-29 19:46:46.251  INFO 9516 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeding CategoriesTableSeeder
+2019-08-29 19:46:46.347  INFO 9516 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeded CategoriesTableSeeder
+2019-08-29 19:46:46.347  INFO 9516 --- [restartedMain] com.demo.database.seed.SeedingRunner    : ===========================
+2019-08-29 19:46:46.347  INFO 9516 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeding RolesTableSeeder
+2019-08-29 19:46:46.347  INFO 9516 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeded RolesTableSeeder
+2019-08-29 19:46:46.347  INFO 9516 --- [restartedMain] com.demo.database.seed.SeedingRunner    : ===========================
 2019-08-29 19:46:46.356  INFO 9516 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
 2019-08-29 19:46:46.357  INFO 9516 --- [restartedMain] com.demo.Application                     : Started Application in 2.057 seconds (JVM running for 2710.325)
 2019-08-29 19:46:46.361  INFO 9516 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
@@ -3308,12 +3308,12 @@ Consider defining a bean named 'categoriesTableSeeder' in your configuration.
 2019-08-29 19:47:07.855  WARN 9516 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2019-08-29 19:47:08.017  WARN 9516 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
 2019-08-29 19:47:08.052  INFO 9516 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2019-08-29 19:47:08.197  INFO 9516 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeding CategoriesTableSeeder
-2019-08-29 19:47:08.329  INFO 9516 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeded CategoriesTableSeeder
-2019-08-29 19:47:08.330  INFO 9516 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : ===========================
-2019-08-29 19:47:08.330  INFO 9516 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeding RolesTableSeeder
-2019-08-29 19:47:08.330  INFO 9516 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeded RolesTableSeeder
-2019-08-29 19:47:08.330  INFO 9516 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : ===========================
+2019-08-29 19:47:08.197  INFO 9516 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeding CategoriesTableSeeder
+2019-08-29 19:47:08.329  INFO 9516 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeded CategoriesTableSeeder
+2019-08-29 19:47:08.330  INFO 9516 --- [restartedMain] com.demo.database.seed.SeedingRunner    : ===========================
+2019-08-29 19:47:08.330  INFO 9516 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeding RolesTableSeeder
+2019-08-29 19:47:08.330  INFO 9516 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeded RolesTableSeeder
+2019-08-29 19:47:08.330  INFO 9516 --- [restartedMain] com.demo.database.seed.SeedingRunner    : ===========================
 2019-08-29 19:47:08.343  INFO 9516 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
 2019-08-29 19:47:08.344  INFO 9516 --- [restartedMain] com.demo.Application                     : Started Application in 4.12 seconds (JVM running for 2732.312)
 2019-08-29 19:47:08.348  INFO 9516 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
@@ -3372,12 +3372,12 @@ Consider defining a bean named 'categoriesTableSeeder' in your configuration.
 2019-08-29 19:50:11.093  WARN 9516 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2019-08-29 19:50:11.185  WARN 9516 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
 2019-08-29 19:50:11.215  INFO 9516 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2019-08-29 19:50:11.349  INFO 9516 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeding CategoriesTableSeeder
-2019-08-29 19:50:11.433  INFO 9516 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeded CategoriesTableSeeder
-2019-08-29 19:50:11.433  INFO 9516 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : ===========================
-2019-08-29 19:50:11.433  INFO 9516 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeding RolesTableSeeder
-2019-08-29 19:50:11.433  INFO 9516 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeded RolesTableSeeder
-2019-08-29 19:50:11.433  INFO 9516 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : ===========================
+2019-08-29 19:50:11.349  INFO 9516 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeding CategoriesTableSeeder
+2019-08-29 19:50:11.433  INFO 9516 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeded CategoriesTableSeeder
+2019-08-29 19:50:11.433  INFO 9516 --- [restartedMain] com.demo.database.seed.SeedingRunner    : ===========================
+2019-08-29 19:50:11.433  INFO 9516 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeding RolesTableSeeder
+2019-08-29 19:50:11.433  INFO 9516 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeded RolesTableSeeder
+2019-08-29 19:50:11.433  INFO 9516 --- [restartedMain] com.demo.database.seed.SeedingRunner    : ===========================
 2019-08-29 19:50:11.443  INFO 9516 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
 2019-08-29 19:50:11.444  INFO 9516 --- [restartedMain] com.demo.Application                     : Started Application in 3.438 seconds (JVM running for 2915.412)
 2019-08-29 19:50:11.447  INFO 9516 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
@@ -3436,12 +3436,12 @@ Consider defining a bean named 'categoriesTableSeeder' in your configuration.
 2019-08-29 19:52:33.968  WARN 9516 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2019-08-29 19:52:34.085  WARN 9516 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
 2019-08-29 19:52:34.117  INFO 9516 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2019-08-29 19:52:34.307  INFO 9516 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeding CategoriesTableSeeder
-2019-08-29 19:52:34.374  INFO 9516 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeded CategoriesTableSeeder
-2019-08-29 19:52:34.374  INFO 9516 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : ===========================
-2019-08-29 19:52:34.374  INFO 9516 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeding RolesTableSeeder
-2019-08-29 19:52:34.374  INFO 9516 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeded RolesTableSeeder
-2019-08-29 19:52:34.374  INFO 9516 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : ===========================
+2019-08-29 19:52:34.307  INFO 9516 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeding CategoriesTableSeeder
+2019-08-29 19:52:34.374  INFO 9516 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeded CategoriesTableSeeder
+2019-08-29 19:52:34.374  INFO 9516 --- [restartedMain] com.demo.database.seed.SeedingRunner    : ===========================
+2019-08-29 19:52:34.374  INFO 9516 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeding RolesTableSeeder
+2019-08-29 19:52:34.374  INFO 9516 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeded RolesTableSeeder
+2019-08-29 19:52:34.374  INFO 9516 --- [restartedMain] com.demo.database.seed.SeedingRunner    : ===========================
 2019-08-29 19:52:34.386  INFO 9516 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
 2019-08-29 19:52:34.387  INFO 9516 --- [restartedMain] com.demo.Application                     : Started Application in 3.283 seconds (JVM running for 3058.355)
 2019-08-29 19:52:34.391  INFO 9516 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
@@ -3505,12 +3505,12 @@ Consider defining a bean named 'categoriesTableSeeder' in your configuration.
 2019-08-29 19:54:45.057  WARN 412 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2019-08-29 19:54:45.186  WARN 412 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
 2019-08-29 19:54:45.479  INFO 412 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2019-08-29 19:54:45.629  INFO 412 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeding CategoriesTableSeeder
-2019-08-29 19:54:45.862  INFO 412 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeded CategoriesTableSeeder
-2019-08-29 19:54:45.863  INFO 412 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : ===========================
-2019-08-29 19:54:45.863  INFO 412 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeding RolesTableSeeder
-2019-08-29 19:54:45.863  INFO 412 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeded RolesTableSeeder
-2019-08-29 19:54:45.863  INFO 412 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : ===========================
+2019-08-29 19:54:45.629  INFO 412 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeding CategoriesTableSeeder
+2019-08-29 19:54:45.862  INFO 412 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeded CategoriesTableSeeder
+2019-08-29 19:54:45.863  INFO 412 --- [restartedMain] com.demo.database.seed.SeedingRunner    : ===========================
+2019-08-29 19:54:45.863  INFO 412 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeding RolesTableSeeder
+2019-08-29 19:54:45.863  INFO 412 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeded RolesTableSeeder
+2019-08-29 19:54:45.863  INFO 412 --- [restartedMain] com.demo.database.seed.SeedingRunner    : ===========================
 2019-08-29 19:54:45.906  INFO 412 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
 2019-08-29 19:54:45.909  INFO 412 --- [restartedMain] com.demo.Application                     : Started Application in 9.525 seconds (JVM running for 11.645)
 2019-08-29 19:59:11.293  INFO 412 --- [Thread-20] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
@@ -3568,12 +3568,12 @@ Consider defining a bean named 'categoriesTableSeeder' in your configuration.
 2019-08-29 19:59:14.583  WARN 412 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2019-08-29 19:59:14.730  WARN 412 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
 2019-08-29 19:59:14.764  INFO 412 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2019-08-29 19:59:14.867  INFO 412 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeding CategoriesTableSeeder
-2019-08-29 19:59:14.937  INFO 412 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeded CategoriesTableSeeder
-2019-08-29 19:59:14.937  INFO 412 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : ===========================
-2019-08-29 19:59:14.937  INFO 412 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeding RolesTableSeeder
-2019-08-29 19:59:14.938  INFO 412 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeded RolesTableSeeder
-2019-08-29 19:59:14.938  INFO 412 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : ===========================
+2019-08-29 19:59:14.867  INFO 412 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeding CategoriesTableSeeder
+2019-08-29 19:59:14.937  INFO 412 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeded CategoriesTableSeeder
+2019-08-29 19:59:14.937  INFO 412 --- [restartedMain] com.demo.database.seed.SeedingRunner    : ===========================
+2019-08-29 19:59:14.937  INFO 412 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeding RolesTableSeeder
+2019-08-29 19:59:14.938  INFO 412 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeded RolesTableSeeder
+2019-08-29 19:59:14.938  INFO 412 --- [restartedMain] com.demo.database.seed.SeedingRunner    : ===========================
 2019-08-29 19:59:14.951  INFO 412 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
 2019-08-29 19:59:14.952  INFO 412 --- [restartedMain] com.demo.Application                     : Started Application in 3.088 seconds (JVM running for 280.688)
 2019-08-29 19:59:14.957  INFO 412 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
@@ -3632,12 +3632,12 @@ Consider defining a bean named 'categoriesTableSeeder' in your configuration.
 2019-08-29 19:59:57.719  WARN 412 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2019-08-29 19:59:57.839  WARN 412 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
 2019-08-29 19:59:57.872  INFO 412 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2019-08-29 19:59:58.023  INFO 412 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeding CategoriesTableSeeder
-2019-08-29 19:59:58.147  INFO 412 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeded CategoriesTableSeeder
-2019-08-29 19:59:58.147  INFO 412 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : ===========================
-2019-08-29 19:59:58.147  INFO 412 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeding RolesTableSeeder
-2019-08-29 19:59:58.147  INFO 412 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeded RolesTableSeeder
-2019-08-29 19:59:58.147  INFO 412 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : ===========================
+2019-08-29 19:59:58.023  INFO 412 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeding CategoriesTableSeeder
+2019-08-29 19:59:58.147  INFO 412 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeded CategoriesTableSeeder
+2019-08-29 19:59:58.147  INFO 412 --- [restartedMain] com.demo.database.seed.SeedingRunner    : ===========================
+2019-08-29 19:59:58.147  INFO 412 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeding RolesTableSeeder
+2019-08-29 19:59:58.147  INFO 412 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeded RolesTableSeeder
+2019-08-29 19:59:58.147  INFO 412 --- [restartedMain] com.demo.database.seed.SeedingRunner    : ===========================
 2019-08-29 19:59:58.160  INFO 412 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
 2019-08-29 19:59:58.160  INFO 412 --- [restartedMain] com.demo.Application                     : Started Application in 2.908 seconds (JVM running for 323.896)
 2019-08-29 19:59:58.165  INFO 412 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
@@ -3696,12 +3696,12 @@ Consider defining a bean named 'categoriesTableSeeder' in your configuration.
 2019-08-29 20:03:23.691  WARN 412 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2019-08-29 20:03:23.774  WARN 412 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
 2019-08-29 20:03:23.806  INFO 412 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2019-08-29 20:03:23.933  INFO 412 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeding CategoriesTableSeeder
-2019-08-29 20:03:23.994  INFO 412 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeded CategoriesTableSeeder
-2019-08-29 20:03:23.994  INFO 412 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : ===========================
-2019-08-29 20:03:23.994  INFO 412 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeding RolesTableSeeder
-2019-08-29 20:03:23.994  INFO 412 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeded RolesTableSeeder
-2019-08-29 20:03:23.994  INFO 412 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : ===========================
+2019-08-29 20:03:23.933  INFO 412 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeding CategoriesTableSeeder
+2019-08-29 20:03:23.994  INFO 412 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeded CategoriesTableSeeder
+2019-08-29 20:03:23.994  INFO 412 --- [restartedMain] com.demo.database.seed.SeedingRunner    : ===========================
+2019-08-29 20:03:23.994  INFO 412 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeding RolesTableSeeder
+2019-08-29 20:03:23.994  INFO 412 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeded RolesTableSeeder
+2019-08-29 20:03:23.994  INFO 412 --- [restartedMain] com.demo.database.seed.SeedingRunner    : ===========================
 2019-08-29 20:03:24.008  INFO 412 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
 2019-08-29 20:03:24.009  INFO 412 --- [restartedMain] com.demo.Application                     : Started Application in 3.111 seconds (JVM running for 529.745)
 2019-08-29 20:03:24.015  INFO 412 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
@@ -3760,12 +3760,12 @@ Consider defining a bean named 'categoriesTableSeeder' in your configuration.
 2019-08-29 20:03:52.860  WARN 412 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2019-08-29 20:03:52.982  WARN 412 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
 2019-08-29 20:03:53.022  INFO 412 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2019-08-29 20:03:53.187  INFO 412 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeding CategoriesTableSeeder
-2019-08-29 20:03:53.295  INFO 412 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeded CategoriesTableSeeder
-2019-08-29 20:03:53.296  INFO 412 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : ===========================
-2019-08-29 20:03:53.296  INFO 412 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeding RolesTableSeeder
-2019-08-29 20:03:53.296  INFO 412 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeded RolesTableSeeder
-2019-08-29 20:03:53.296  INFO 412 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : ===========================
+2019-08-29 20:03:53.187  INFO 412 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeding CategoriesTableSeeder
+2019-08-29 20:03:53.295  INFO 412 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeded CategoriesTableSeeder
+2019-08-29 20:03:53.296  INFO 412 --- [restartedMain] com.demo.database.seed.SeedingRunner    : ===========================
+2019-08-29 20:03:53.296  INFO 412 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeding RolesTableSeeder
+2019-08-29 20:03:53.296  INFO 412 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeded RolesTableSeeder
+2019-08-29 20:03:53.296  INFO 412 --- [restartedMain] com.demo.database.seed.SeedingRunner    : ===========================
 2019-08-29 20:03:53.309  INFO 412 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
 2019-08-29 20:03:53.309  INFO 412 --- [restartedMain] com.demo.Application                     : Started Application in 3.677 seconds (JVM running for 559.045)
 2019-08-29 20:03:53.314  INFO 412 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
@@ -3824,12 +3824,12 @@ Consider defining a bean named 'categoriesTableSeeder' in your configuration.
 2019-08-29 20:04:40.560  WARN 412 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2019-08-29 20:04:40.879  WARN 412 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
 2019-08-29 20:04:40.997  INFO 412 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2019-08-29 20:04:41.303  INFO 412 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeding CategoriesTableSeeder
-2019-08-29 20:04:41.420  INFO 412 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeded CategoriesTableSeeder
-2019-08-29 20:04:41.420  INFO 412 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : ===========================
-2019-08-29 20:04:41.420  INFO 412 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeding RolesTableSeeder
-2019-08-29 20:04:41.420  INFO 412 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeded RolesTableSeeder
-2019-08-29 20:04:41.420  INFO 412 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : ===========================
+2019-08-29 20:04:41.303  INFO 412 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeding CategoriesTableSeeder
+2019-08-29 20:04:41.420  INFO 412 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeded CategoriesTableSeeder
+2019-08-29 20:04:41.420  INFO 412 --- [restartedMain] com.demo.database.seed.SeedingRunner    : ===========================
+2019-08-29 20:04:41.420  INFO 412 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeding RolesTableSeeder
+2019-08-29 20:04:41.420  INFO 412 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeded RolesTableSeeder
+2019-08-29 20:04:41.420  INFO 412 --- [restartedMain] com.demo.database.seed.SeedingRunner    : ===========================
 2019-08-29 20:04:41.434  INFO 412 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
 2019-08-29 20:04:41.435  INFO 412 --- [restartedMain] com.demo.Application                     : Started Application in 6.15 seconds (JVM running for 607.17)
 2019-08-29 20:04:41.440  INFO 412 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
@@ -3888,12 +3888,12 @@ Consider defining a bean named 'categoriesTableSeeder' in your configuration.
 2019-08-29 20:06:00.590  WARN 412 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2019-08-29 20:06:00.767  WARN 412 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
 2019-08-29 20:06:00.839  INFO 412 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2019-08-29 20:06:01.078  INFO 412 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeding CategoriesTableSeeder
-2019-08-29 20:06:01.257  INFO 412 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeded CategoriesTableSeeder
-2019-08-29 20:06:01.257  INFO 412 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : ===========================
-2019-08-29 20:06:01.257  INFO 412 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeding RolesTableSeeder
-2019-08-29 20:06:01.257  INFO 412 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeded RolesTableSeeder
-2019-08-29 20:06:01.257  INFO 412 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : ===========================
+2019-08-29 20:06:01.078  INFO 412 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeding CategoriesTableSeeder
+2019-08-29 20:06:01.257  INFO 412 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeded CategoriesTableSeeder
+2019-08-29 20:06:01.257  INFO 412 --- [restartedMain] com.demo.database.seed.SeedingRunner    : ===========================
+2019-08-29 20:06:01.257  INFO 412 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeding RolesTableSeeder
+2019-08-29 20:06:01.257  INFO 412 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeded RolesTableSeeder
+2019-08-29 20:06:01.257  INFO 412 --- [restartedMain] com.demo.database.seed.SeedingRunner    : ===========================
 2019-08-29 20:06:01.270  INFO 412 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
 2019-08-29 20:06:01.271  INFO 412 --- [restartedMain] com.demo.Application                     : Started Application in 3.167 seconds (JVM running for 687.007)
 2019-08-29 20:06:01.276  INFO 412 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
@@ -3952,12 +3952,12 @@ Consider defining a bean named 'categoriesTableSeeder' in your configuration.
 2019-08-29 20:06:44.177  WARN 412 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2019-08-29 20:06:44.286  WARN 412 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
 2019-08-29 20:06:44.316  INFO 412 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2019-08-29 20:06:44.477  INFO 412 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeding CategoriesTableSeeder
-2019-08-29 20:06:44.537  INFO 412 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeded CategoriesTableSeeder
-2019-08-29 20:06:44.537  INFO 412 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : ===========================
-2019-08-29 20:06:44.537  INFO 412 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeding RolesTableSeeder
-2019-08-29 20:06:44.537  INFO 412 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeded RolesTableSeeder
-2019-08-29 20:06:44.537  INFO 412 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : ===========================
+2019-08-29 20:06:44.477  INFO 412 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeding CategoriesTableSeeder
+2019-08-29 20:06:44.537  INFO 412 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeded CategoriesTableSeeder
+2019-08-29 20:06:44.537  INFO 412 --- [restartedMain] com.demo.database.seed.SeedingRunner    : ===========================
+2019-08-29 20:06:44.537  INFO 412 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeding RolesTableSeeder
+2019-08-29 20:06:44.537  INFO 412 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeded RolesTableSeeder
+2019-08-29 20:06:44.537  INFO 412 --- [restartedMain] com.demo.database.seed.SeedingRunner    : ===========================
 2019-08-29 20:06:44.550  INFO 412 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
 2019-08-29 20:06:44.551  INFO 412 --- [restartedMain] com.demo.Application                     : Started Application in 2.806 seconds (JVM running for 730.286)
 2019-08-29 20:06:44.555  INFO 412 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
@@ -4016,12 +4016,12 @@ Consider defining a bean named 'categoriesTableSeeder' in your configuration.
 2019-08-29 20:08:24.676  WARN 412 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2019-08-29 20:08:24.800  WARN 412 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
 2019-08-29 20:08:24.896  INFO 412 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2019-08-29 20:08:25.156  INFO 412 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeding CategoriesTableSeeder
-2019-08-29 20:08:25.277  INFO 412 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeded CategoriesTableSeeder
-2019-08-29 20:08:25.277  INFO 412 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : ===========================
-2019-08-29 20:08:25.277  INFO 412 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeding RolesTableSeeder
-2019-08-29 20:08:25.277  INFO 412 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeded RolesTableSeeder
-2019-08-29 20:08:25.277  INFO 412 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : ===========================
+2019-08-29 20:08:25.156  INFO 412 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeding CategoriesTableSeeder
+2019-08-29 20:08:25.277  INFO 412 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeded CategoriesTableSeeder
+2019-08-29 20:08:25.277  INFO 412 --- [restartedMain] com.demo.database.seed.SeedingRunner    : ===========================
+2019-08-29 20:08:25.277  INFO 412 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeding RolesTableSeeder
+2019-08-29 20:08:25.277  INFO 412 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeded RolesTableSeeder
+2019-08-29 20:08:25.277  INFO 412 --- [restartedMain] com.demo.database.seed.SeedingRunner    : ===========================
 2019-08-29 20:08:25.290  INFO 412 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
 2019-08-29 20:08:25.291  INFO 412 --- [restartedMain] com.demo.Application                     : Started Application in 4.255 seconds (JVM running for 831.027)
 2019-08-29 20:08:25.295  INFO 412 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
@@ -4080,12 +4080,12 @@ Consider defining a bean named 'categoriesTableSeeder' in your configuration.
 2019-08-29 20:08:50.638  WARN 412 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2019-08-29 20:08:50.741  WARN 412 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
 2019-08-29 20:08:50.779  INFO 412 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2019-08-29 20:08:50.942  INFO 412 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeding CategoriesTableSeeder
-2019-08-29 20:08:51.010  INFO 412 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeded CategoriesTableSeeder
-2019-08-29 20:08:51.010  INFO 412 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : ===========================
-2019-08-29 20:08:51.010  INFO 412 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeding RolesTableSeeder
-2019-08-29 20:08:51.010  INFO 412 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeded RolesTableSeeder
-2019-08-29 20:08:51.010  INFO 412 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : ===========================
+2019-08-29 20:08:50.942  INFO 412 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeding CategoriesTableSeeder
+2019-08-29 20:08:51.010  INFO 412 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeded CategoriesTableSeeder
+2019-08-29 20:08:51.010  INFO 412 --- [restartedMain] com.demo.database.seed.SeedingRunner    : ===========================
+2019-08-29 20:08:51.010  INFO 412 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeding RolesTableSeeder
+2019-08-29 20:08:51.010  INFO 412 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeded RolesTableSeeder
+2019-08-29 20:08:51.010  INFO 412 --- [restartedMain] com.demo.database.seed.SeedingRunner    : ===========================
 2019-08-29 20:08:51.020  INFO 412 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
 2019-08-29 20:08:51.021  INFO 412 --- [restartedMain] com.demo.Application                     : Started Application in 2.811 seconds (JVM running for 856.756)
 2019-08-29 20:08:51.024  INFO 412 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
@@ -4144,12 +4144,12 @@ Consider defining a bean named 'categoriesTableSeeder' in your configuration.
 2019-08-29 20:09:32.738  WARN 412 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2019-08-29 20:09:33.003  WARN 412 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
 2019-08-29 20:09:33.091  INFO 412 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2019-08-29 20:09:33.314  INFO 412 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeding CategoriesTableSeeder
-2019-08-29 20:09:33.439  INFO 412 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeded CategoriesTableSeeder
-2019-08-29 20:09:33.439  INFO 412 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : ===========================
-2019-08-29 20:09:33.439  INFO 412 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeding RolesTableSeeder
-2019-08-29 20:09:33.439  INFO 412 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeded RolesTableSeeder
-2019-08-29 20:09:33.440  INFO 412 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : ===========================
+2019-08-29 20:09:33.314  INFO 412 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeding CategoriesTableSeeder
+2019-08-29 20:09:33.439  INFO 412 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeded CategoriesTableSeeder
+2019-08-29 20:09:33.439  INFO 412 --- [restartedMain] com.demo.database.seed.SeedingRunner    : ===========================
+2019-08-29 20:09:33.439  INFO 412 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeding RolesTableSeeder
+2019-08-29 20:09:33.439  INFO 412 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeded RolesTableSeeder
+2019-08-29 20:09:33.440  INFO 412 --- [restartedMain] com.demo.database.seed.SeedingRunner    : ===========================
 2019-08-29 20:09:33.453  INFO 412 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
 2019-08-29 20:09:33.454  INFO 412 --- [restartedMain] com.demo.Application                     : Started Application in 6.022 seconds (JVM running for 899.189)
 2019-08-29 20:09:33.458  INFO 412 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
@@ -4208,12 +4208,12 @@ Consider defining a bean named 'categoriesTableSeeder' in your configuration.
 2019-08-29 20:10:24.383  WARN 412 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2019-08-29 20:10:24.471  WARN 412 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
 2019-08-29 20:10:24.500  INFO 412 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2019-08-29 20:10:24.615  INFO 412 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeding CategoriesTableSeeder
-2019-08-29 20:10:24.713  INFO 412 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeded CategoriesTableSeeder
-2019-08-29 20:10:24.713  INFO 412 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : ===========================
-2019-08-29 20:10:24.713  INFO 412 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeding RolesTableSeeder
-2019-08-29 20:10:24.714  INFO 412 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeded RolesTableSeeder
-2019-08-29 20:10:24.714  INFO 412 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : ===========================
+2019-08-29 20:10:24.615  INFO 412 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeding CategoriesTableSeeder
+2019-08-29 20:10:24.713  INFO 412 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeded CategoriesTableSeeder
+2019-08-29 20:10:24.713  INFO 412 --- [restartedMain] com.demo.database.seed.SeedingRunner    : ===========================
+2019-08-29 20:10:24.713  INFO 412 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeding RolesTableSeeder
+2019-08-29 20:10:24.714  INFO 412 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeded RolesTableSeeder
+2019-08-29 20:10:24.714  INFO 412 --- [restartedMain] com.demo.database.seed.SeedingRunner    : ===========================
 2019-08-29 20:10:24.724  INFO 412 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
 2019-08-29 20:10:24.725  INFO 412 --- [restartedMain] com.demo.Application                     : Started Application in 2.974 seconds (JVM running for 950.461)
 2019-08-29 20:10:24.729  INFO 412 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
@@ -4272,12 +4272,12 @@ Consider defining a bean named 'categoriesTableSeeder' in your configuration.
 2019-08-29 20:12:18.699  WARN 412 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2019-08-29 20:12:18.923  WARN 412 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
 2019-08-29 20:12:19.011  INFO 412 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2019-08-29 20:12:19.245  INFO 412 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeding CategoriesTableSeeder
-2019-08-29 20:12:19.330  INFO 412 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeded CategoriesTableSeeder
-2019-08-29 20:12:19.330  INFO 412 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : ===========================
-2019-08-29 20:12:19.331  INFO 412 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeding RolesTableSeeder
-2019-08-29 20:12:19.331  INFO 412 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeded RolesTableSeeder
-2019-08-29 20:12:19.331  INFO 412 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : ===========================
+2019-08-29 20:12:19.245  INFO 412 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeding CategoriesTableSeeder
+2019-08-29 20:12:19.330  INFO 412 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeded CategoriesTableSeeder
+2019-08-29 20:12:19.330  INFO 412 --- [restartedMain] com.demo.database.seed.SeedingRunner    : ===========================
+2019-08-29 20:12:19.331  INFO 412 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeding RolesTableSeeder
+2019-08-29 20:12:19.331  INFO 412 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeded RolesTableSeeder
+2019-08-29 20:12:19.331  INFO 412 --- [restartedMain] com.demo.database.seed.SeedingRunner    : ===========================
 2019-08-29 20:12:19.344  INFO 412 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
 2019-08-29 20:12:19.344  INFO 412 --- [restartedMain] com.demo.Application                     : Started Application in 3.406 seconds (JVM running for 1065.08)
 2019-08-29 20:12:19.349  INFO 412 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
@@ -4336,12 +4336,12 @@ Consider defining a bean named 'categoriesTableSeeder' in your configuration.
 2019-08-29 20:13:58.625  WARN 412 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2019-08-29 20:13:58.859  WARN 412 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
 2019-08-29 20:13:58.888  INFO 412 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2019-08-29 20:13:59.042  INFO 412 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeding CategoriesTableSeeder
-2019-08-29 20:13:59.162  INFO 412 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeded CategoriesTableSeeder
-2019-08-29 20:13:59.162  INFO 412 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : ===========================
-2019-08-29 20:13:59.162  INFO 412 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeding RolesTableSeeder
-2019-08-29 20:13:59.162  INFO 412 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeded RolesTableSeeder
-2019-08-29 20:13:59.162  INFO 412 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : ===========================
+2019-08-29 20:13:59.042  INFO 412 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeding CategoriesTableSeeder
+2019-08-29 20:13:59.162  INFO 412 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeded CategoriesTableSeeder
+2019-08-29 20:13:59.162  INFO 412 --- [restartedMain] com.demo.database.seed.SeedingRunner    : ===========================
+2019-08-29 20:13:59.162  INFO 412 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeding RolesTableSeeder
+2019-08-29 20:13:59.162  INFO 412 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeded RolesTableSeeder
+2019-08-29 20:13:59.162  INFO 412 --- [restartedMain] com.demo.database.seed.SeedingRunner    : ===========================
 2019-08-29 20:13:59.174  INFO 412 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
 2019-08-29 20:13:59.175  INFO 412 --- [restartedMain] com.demo.Application                     : Started Application in 4.755 seconds (JVM running for 1164.911)
 2019-08-29 20:13:59.181  INFO 412 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
@@ -4400,12 +4400,12 @@ Consider defining a bean named 'categoriesTableSeeder' in your configuration.
 2019-08-29 20:15:52.999  WARN 412 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2019-08-29 20:15:53.123  WARN 412 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
 2019-08-29 20:15:53.158  INFO 412 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2019-08-29 20:15:53.321  INFO 412 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeding CategoriesTableSeeder
-2019-08-29 20:15:53.624  INFO 412 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeded CategoriesTableSeeder
-2019-08-29 20:15:53.624  INFO 412 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : ===========================
-2019-08-29 20:15:53.624  INFO 412 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeding RolesTableSeeder
-2019-08-29 20:15:53.624  INFO 412 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeded RolesTableSeeder
-2019-08-29 20:15:53.624  INFO 412 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : ===========================
+2019-08-29 20:15:53.321  INFO 412 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeding CategoriesTableSeeder
+2019-08-29 20:15:53.624  INFO 412 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeded CategoriesTableSeeder
+2019-08-29 20:15:53.624  INFO 412 --- [restartedMain] com.demo.database.seed.SeedingRunner    : ===========================
+2019-08-29 20:15:53.624  INFO 412 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeding RolesTableSeeder
+2019-08-29 20:15:53.624  INFO 412 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeded RolesTableSeeder
+2019-08-29 20:15:53.624  INFO 412 --- [restartedMain] com.demo.database.seed.SeedingRunner    : ===========================
 2019-08-29 20:15:53.636  INFO 412 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
 2019-08-29 20:15:53.636  INFO 412 --- [restartedMain] com.demo.Application                     : Started Application in 2.743 seconds (JVM running for 1279.372)
 2019-08-29 20:15:53.641  INFO 412 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
@@ -4469,12 +4469,12 @@ Consider defining a bean named 'categoriesTableSeeder' in your configuration.
 2019-08-29 20:18:40.154  WARN 12152 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2019-08-29 20:18:40.271  WARN 12152 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
 2019-08-29 20:18:40.571  INFO 12152 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2019-08-29 20:18:40.714  INFO 12152 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeding CategoriesTableSeeder
-2019-08-29 20:18:40.931  INFO 12152 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeded CategoriesTableSeeder
-2019-08-29 20:18:40.931  INFO 12152 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : ===========================
-2019-08-29 20:18:40.931  INFO 12152 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeding RolesTableSeeder
-2019-08-29 20:18:40.932  INFO 12152 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeded RolesTableSeeder
-2019-08-29 20:18:40.932  INFO 12152 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : ===========================
+2019-08-29 20:18:40.714  INFO 12152 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeding CategoriesTableSeeder
+2019-08-29 20:18:40.931  INFO 12152 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeded CategoriesTableSeeder
+2019-08-29 20:18:40.931  INFO 12152 --- [restartedMain] com.demo.database.seed.SeedingRunner    : ===========================
+2019-08-29 20:18:40.931  INFO 12152 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeding RolesTableSeeder
+2019-08-29 20:18:40.932  INFO 12152 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeded RolesTableSeeder
+2019-08-29 20:18:40.932  INFO 12152 --- [restartedMain] com.demo.database.seed.SeedingRunner    : ===========================
 2019-08-29 20:18:40.972  INFO 12152 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
 2019-08-29 20:18:40.975  INFO 12152 --- [restartedMain] com.demo.Application                     : Started Application in 9.717 seconds (JVM running for 11.781)
 2019-08-29 20:19:43.019  INFO 12152 --- [Thread-29] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
@@ -4537,12 +4537,12 @@ Consider defining a bean named 'categoriesTableSeeder' in your configuration.
 2019-08-29 20:19:55.454  WARN 1504 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2019-08-29 20:19:55.577  WARN 1504 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
 2019-08-29 20:19:55.860  INFO 1504 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2019-08-29 20:19:56.002  INFO 1504 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeding CategoriesTableSeeder
-2019-08-29 20:19:56.291  INFO 1504 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeded CategoriesTableSeeder
-2019-08-29 20:19:56.291  INFO 1504 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : ===========================
-2019-08-29 20:19:56.291  INFO 1504 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeding RolesTableSeeder
-2019-08-29 20:19:56.291  INFO 1504 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeded RolesTableSeeder
-2019-08-29 20:19:56.291  INFO 1504 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : ===========================
+2019-08-29 20:19:56.002  INFO 1504 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeding CategoriesTableSeeder
+2019-08-29 20:19:56.291  INFO 1504 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeded CategoriesTableSeeder
+2019-08-29 20:19:56.291  INFO 1504 --- [restartedMain] com.demo.database.seed.SeedingRunner    : ===========================
+2019-08-29 20:19:56.291  INFO 1504 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeding RolesTableSeeder
+2019-08-29 20:19:56.291  INFO 1504 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeded RolesTableSeeder
+2019-08-29 20:19:56.291  INFO 1504 --- [restartedMain] com.demo.database.seed.SeedingRunner    : ===========================
 2019-08-29 20:19:56.334  INFO 1504 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
 2019-08-29 20:19:56.337  INFO 1504 --- [restartedMain] com.demo.Application                     : Started Application in 8.778 seconds (JVM running for 11.232)
 2019-08-29 20:20:27.417  INFO 1504 --- [Thread-27] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
@@ -4605,12 +4605,12 @@ Consider defining a bean named 'categoriesTableSeeder' in your configuration.
 2019-08-29 20:22:48.627  WARN 6708 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2019-08-29 20:22:48.775  WARN 6708 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
 2019-08-29 20:22:49.121  INFO 6708 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2019-08-29 20:22:49.262  INFO 6708 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeding CategoriesTableSeeder
-2019-08-29 20:22:49.516  INFO 6708 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeded CategoriesTableSeeder
-2019-08-29 20:22:49.517  INFO 6708 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : ===========================
-2019-08-29 20:22:49.517  INFO 6708 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeding RolesTableSeeder
-2019-08-29 20:22:49.517  INFO 6708 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeded RolesTableSeeder
-2019-08-29 20:22:49.517  INFO 6708 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : ===========================
+2019-08-29 20:22:49.262  INFO 6708 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeding CategoriesTableSeeder
+2019-08-29 20:22:49.516  INFO 6708 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeded CategoriesTableSeeder
+2019-08-29 20:22:49.517  INFO 6708 --- [restartedMain] com.demo.database.seed.SeedingRunner    : ===========================
+2019-08-29 20:22:49.517  INFO 6708 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeding RolesTableSeeder
+2019-08-29 20:22:49.517  INFO 6708 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeded RolesTableSeeder
+2019-08-29 20:22:49.517  INFO 6708 --- [restartedMain] com.demo.database.seed.SeedingRunner    : ===========================
 2019-08-29 20:22:49.563  INFO 6708 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
 2019-08-29 20:22:49.566  INFO 6708 --- [restartedMain] com.demo.Application                     : Started Application in 11.495 seconds (JVM running for 13.268)
 2019-08-29 20:23:33.119  INFO 6708 --- [Thread-24] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
@@ -4668,12 +4668,12 @@ Consider defining a bean named 'categoriesTableSeeder' in your configuration.
 2019-08-29 20:23:36.005  WARN 6708 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2019-08-29 20:23:36.074  WARN 6708 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
 2019-08-29 20:23:36.094  INFO 6708 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2019-08-29 20:23:36.177  INFO 6708 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeding CategoriesTableSeeder
-2019-08-29 20:23:36.181  INFO 6708 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeded CategoriesTableSeeder
-2019-08-29 20:23:36.181  INFO 6708 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : ===========================
-2019-08-29 20:23:36.181  INFO 6708 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeding RolesTableSeeder
-2019-08-29 20:23:36.181  INFO 6708 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeded RolesTableSeeder
-2019-08-29 20:23:36.181  INFO 6708 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : ===========================
+2019-08-29 20:23:36.177  INFO 6708 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeding CategoriesTableSeeder
+2019-08-29 20:23:36.181  INFO 6708 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeded CategoriesTableSeeder
+2019-08-29 20:23:36.181  INFO 6708 --- [restartedMain] com.demo.database.seed.SeedingRunner    : ===========================
+2019-08-29 20:23:36.181  INFO 6708 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeding RolesTableSeeder
+2019-08-29 20:23:36.181  INFO 6708 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeded RolesTableSeeder
+2019-08-29 20:23:36.181  INFO 6708 --- [restartedMain] com.demo.database.seed.SeedingRunner    : ===========================
 2019-08-29 20:23:36.192  INFO 6708 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
 2019-08-29 20:23:36.193  INFO 6708 --- [restartedMain] com.demo.Application                     : Started Application in 2.534 seconds (JVM running for 59.894)
 2019-08-29 20:23:36.197  INFO 6708 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
@@ -4732,12 +4732,12 @@ Consider defining a bean named 'categoriesTableSeeder' in your configuration.
 2019-08-29 20:24:45.377  WARN 6708 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2019-08-29 20:24:45.462  WARN 6708 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
 2019-08-29 20:24:45.482  INFO 6708 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2019-08-29 20:24:45.568  INFO 6708 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeding CategoriesTableSeeder
-2019-08-29 20:24:45.572  INFO 6708 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeded CategoriesTableSeeder
-2019-08-29 20:24:45.572  INFO 6708 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : ===========================
-2019-08-29 20:24:45.572  INFO 6708 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeding RolesTableSeeder
-2019-08-29 20:24:45.572  INFO 6708 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeded RolesTableSeeder
-2019-08-29 20:24:45.572  INFO 6708 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : ===========================
+2019-08-29 20:24:45.568  INFO 6708 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeding CategoriesTableSeeder
+2019-08-29 20:24:45.572  INFO 6708 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeded CategoriesTableSeeder
+2019-08-29 20:24:45.572  INFO 6708 --- [restartedMain] com.demo.database.seed.SeedingRunner    : ===========================
+2019-08-29 20:24:45.572  INFO 6708 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeding RolesTableSeeder
+2019-08-29 20:24:45.572  INFO 6708 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeded RolesTableSeeder
+2019-08-29 20:24:45.572  INFO 6708 --- [restartedMain] com.demo.database.seed.SeedingRunner    : ===========================
 2019-08-29 20:24:45.581  INFO 6708 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
 2019-08-29 20:24:45.581  INFO 6708 --- [restartedMain] com.demo.Application                     : Started Application in 2.666 seconds (JVM running for 129.283)
 2019-08-29 20:24:45.584  INFO 6708 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
@@ -4801,12 +4801,12 @@ Consider defining a bean named 'categoriesTableSeeder' in your configuration.
 2019-08-29 20:26:43.925  WARN 13792 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2019-08-29 20:26:44.057  WARN 13792 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
 2019-08-29 20:26:44.614  INFO 13792 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2019-08-29 20:26:44.807  INFO 13792 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeding CategoriesTableSeeder
-2019-08-29 20:26:45.142  INFO 13792 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeded CategoriesTableSeeder
-2019-08-29 20:26:45.142  INFO 13792 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : ===========================
-2019-08-29 20:26:45.142  INFO 13792 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeding RolesTableSeeder
-2019-08-29 20:26:45.142  INFO 13792 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeded RolesTableSeeder
-2019-08-29 20:26:45.142  INFO 13792 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : ===========================
+2019-08-29 20:26:44.807  INFO 13792 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeding CategoriesTableSeeder
+2019-08-29 20:26:45.142  INFO 13792 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeded CategoriesTableSeeder
+2019-08-29 20:26:45.142  INFO 13792 --- [restartedMain] com.demo.database.seed.SeedingRunner    : ===========================
+2019-08-29 20:26:45.142  INFO 13792 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeding RolesTableSeeder
+2019-08-29 20:26:45.142  INFO 13792 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeded RolesTableSeeder
+2019-08-29 20:26:45.142  INFO 13792 --- [restartedMain] com.demo.database.seed.SeedingRunner    : ===========================
 2019-08-29 20:26:45.195  INFO 13792 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
 2019-08-29 20:26:45.199  INFO 13792 --- [restartedMain] com.demo.Application                     : Started Application in 8.958 seconds (JVM running for 10.857)
 2019-08-29 20:34:52.928  INFO 13792 --- [Thread-19] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
@@ -4872,8 +4872,8 @@ Error starting ApplicationContext. To display the conditions report re-run your 
 
 java.lang.reflect.UndeclaredThrowableException: Failed to invoke event listener method
 HandlerMethod details: 
-Bean [com.demo.database.seeds.DatabaseSeeder]
-Method [public void com.demo.database.seeds.DatabaseSeeder.run(org.springframework.context.event.ContextRefreshedEvent)]
+Bean [com.demo.database.seed.DatabaseSeeder]
+Method [public void com.demo.database.seed.DatabaseSeeder.run(org.springframework.context.event.ContextRefreshedEvent)]
 Resolved arguments: 
 [0] [type=org.springframework.context.event.ContextRefreshedEvent] [value=org.springframework.context.event.ContextRefreshedEvent[source=org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1cd9f5d, started on Thu Aug 29 20:34:53 ICT 2019]]
 
@@ -4901,14 +4901,14 @@ Resolved arguments:
 	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_201]
 	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.1.5.RELEASE.jar:2.1.5.RELEASE]
 Caused by: java.lang.NoClassDefFoundError: com/demo/database/seeds/CategoriesTableSeeder
-	at com.demo.database.seeds.DatabaseSeeder.run(DatabaseSeeder.java:15) ~[classes/:na]
+	at com.demo.database.seed.DatabaseSeeder.run(DatabaseSeeder.java:15) ~[classes/:na]
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_201]
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_201]
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_201]
 	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_201]
 	at org.springframework.context.event.ApplicationListenerMethodAdapter.doInvoke(ApplicationListenerMethodAdapter.java:261) ~[spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
 	... 22 common frames omitted
-Caused by: java.lang.ClassNotFoundException: com.demo.database.seeds.CategoriesTableSeeder
+Caused by: java.lang.ClassNotFoundException: com.demo.database.seed.CategoriesTableSeeder
 	at java.net.URLClassLoader.findClass(URLClassLoader.java:382) ~[na:1.8.0_201]
 	at java.lang.ClassLoader.loadClass(ClassLoader.java:424) ~[na:1.8.0_201]
 	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349) ~[na:1.8.0_201]
@@ -4972,12 +4972,12 @@ Caused by: java.lang.ClassNotFoundException: com.demo.database.seeds.CategoriesT
 2019-08-29 20:35:01.119  WARN 13792 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2019-08-29 20:35:01.196  WARN 13792 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
 2019-08-29 20:35:01.212  INFO 13792 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2019-08-29 20:35:01.289  INFO 13792 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeding CategoriesTableSeeder
-2019-08-29 20:35:01.429  INFO 13792 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeded CategoriesTableSeeder
-2019-08-29 20:35:01.429  INFO 13792 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : ===========================
-2019-08-29 20:35:01.429  INFO 13792 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeding RolesTableSeeder
-2019-08-29 20:35:01.430  INFO 13792 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeded RolesTableSeeder
-2019-08-29 20:35:01.430  INFO 13792 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : ===========================
+2019-08-29 20:35:01.289  INFO 13792 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeding CategoriesTableSeeder
+2019-08-29 20:35:01.429  INFO 13792 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeded CategoriesTableSeeder
+2019-08-29 20:35:01.429  INFO 13792 --- [restartedMain] com.demo.database.seed.SeedingRunner    : ===========================
+2019-08-29 20:35:01.429  INFO 13792 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeding RolesTableSeeder
+2019-08-29 20:35:01.430  INFO 13792 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeded RolesTableSeeder
+2019-08-29 20:35:01.430  INFO 13792 --- [restartedMain] com.demo.database.seed.SeedingRunner    : ===========================
 2019-08-29 20:35:01.440  INFO 13792 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
 2019-08-29 20:35:01.441  INFO 13792 --- [restartedMain] com.demo.Application                     : Started Application in 3.435 seconds (JVM running for 507.099)
 2019-08-29 20:35:01.445  INFO 13792 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
@@ -5079,12 +5079,12 @@ Caused by: java.io.FileNotFoundException: class path resource [com/demo/database
 2019-08-29 20:38:48.551  WARN 13792 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2019-08-29 20:38:48.606  WARN 13792 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
 2019-08-29 20:38:48.624  INFO 13792 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2019-08-29 20:38:48.708  INFO 13792 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeding CategoriesTableSeeder
-2019-08-29 20:38:49.945  INFO 13792 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeded CategoriesTableSeeder
-2019-08-29 20:38:49.945  INFO 13792 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : ===========================
-2019-08-29 20:38:49.945  INFO 13792 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeding RolesTableSeeder
-2019-08-29 20:38:49.945  INFO 13792 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeded RolesTableSeeder
-2019-08-29 20:38:49.945  INFO 13792 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : ===========================
+2019-08-29 20:38:48.708  INFO 13792 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeding CategoriesTableSeeder
+2019-08-29 20:38:49.945  INFO 13792 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeded CategoriesTableSeeder
+2019-08-29 20:38:49.945  INFO 13792 --- [restartedMain] com.demo.database.seed.SeedingRunner    : ===========================
+2019-08-29 20:38:49.945  INFO 13792 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeding RolesTableSeeder
+2019-08-29 20:38:49.945  INFO 13792 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeded RolesTableSeeder
+2019-08-29 20:38:49.945  INFO 13792 --- [restartedMain] com.demo.database.seed.SeedingRunner    : ===========================
 2019-08-29 20:38:49.956  INFO 13792 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
 2019-08-29 20:38:49.956  INFO 13792 --- [restartedMain] com.demo.Application                     : Started Application in 3.895 seconds (JVM running for 735.614)
 2019-08-29 20:38:49.960  INFO 13792 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
@@ -5148,12 +5148,12 @@ Caused by: java.io.FileNotFoundException: class path resource [com/demo/database
 2019-08-29 20:41:06.110  WARN 13804 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2019-08-29 20:41:06.239  WARN 13804 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
 2019-08-29 20:41:06.582  INFO 13804 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2019-08-29 20:41:06.725  INFO 13804 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeding CategoriesTableSeeder
-2019-08-29 20:41:07.013  INFO 13804 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeded CategoriesTableSeeder
-2019-08-29 20:41:07.013  INFO 13804 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : ===========================
-2019-08-29 20:41:07.014  INFO 13804 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeding RolesTableSeeder
-2019-08-29 20:41:07.014  INFO 13804 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeded RolesTableSeeder
-2019-08-29 20:41:07.014  INFO 13804 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : ===========================
+2019-08-29 20:41:06.725  INFO 13804 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeding CategoriesTableSeeder
+2019-08-29 20:41:07.013  INFO 13804 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeded CategoriesTableSeeder
+2019-08-29 20:41:07.013  INFO 13804 --- [restartedMain] com.demo.database.seed.SeedingRunner    : ===========================
+2019-08-29 20:41:07.014  INFO 13804 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeding RolesTableSeeder
+2019-08-29 20:41:07.014  INFO 13804 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeded RolesTableSeeder
+2019-08-29 20:41:07.014  INFO 13804 --- [restartedMain] com.demo.database.seed.SeedingRunner    : ===========================
 2019-08-29 20:41:07.052  INFO 13804 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
 2019-08-29 20:41:07.056  INFO 13804 --- [restartedMain] com.demo.Application                     : Started Application in 8.743 seconds (JVM running for 10.727)
 2019-08-29 20:43:54.158  INFO 13804 --- [Thread-19] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
@@ -5211,12 +5211,12 @@ Caused by: java.io.FileNotFoundException: class path resource [com/demo/database
 2019-08-29 20:43:57.953  WARN 13804 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2019-08-29 20:43:58.124  WARN 13804 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
 2019-08-29 20:43:58.156  INFO 13804 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2019-08-29 20:43:58.282  INFO 13804 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeding CategoriesTableSeeder
-2019-08-29 20:43:58.994  INFO 13804 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeded CategoriesTableSeeder
-2019-08-29 20:43:58.994  INFO 13804 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : ===========================
-2019-08-29 20:43:58.994  INFO 13804 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeding RolesTableSeeder
-2019-08-29 20:43:58.994  INFO 13804 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeded RolesTableSeeder
-2019-08-29 20:43:58.994  INFO 13804 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : ===========================
+2019-08-29 20:43:58.282  INFO 13804 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeding CategoriesTableSeeder
+2019-08-29 20:43:58.994  INFO 13804 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeded CategoriesTableSeeder
+2019-08-29 20:43:58.994  INFO 13804 --- [restartedMain] com.demo.database.seed.SeedingRunner    : ===========================
+2019-08-29 20:43:58.994  INFO 13804 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeding RolesTableSeeder
+2019-08-29 20:43:58.994  INFO 13804 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeded RolesTableSeeder
+2019-08-29 20:43:58.994  INFO 13804 --- [restartedMain] com.demo.database.seed.SeedingRunner    : ===========================
 2019-08-29 20:43:59.199  INFO 13804 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
 2019-08-29 20:43:59.283  INFO 13804 --- [restartedMain] com.demo.Application                     : Started Application in 4.544 seconds (JVM running for 182.954)
 2019-08-29 20:43:59.289  INFO 13804 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
@@ -5355,12 +5355,12 @@ Consider defining a bean named 'categoriesTableSeeder' in your configuration.
 2019-08-29 20:45:07.851  WARN 14236 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2019-08-29 20:45:07.968  WARN 14236 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
 2019-08-29 20:45:08.256  INFO 14236 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2019-08-29 20:45:08.401  INFO 14236 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeding CategoriesTableSeeder
-2019-08-29 20:45:08.725  INFO 14236 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeded CategoriesTableSeeder
-2019-08-29 20:45:08.725  INFO 14236 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : ===========================
-2019-08-29 20:45:08.725  INFO 14236 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeding RolesTableSeeder
-2019-08-29 20:45:08.725  INFO 14236 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeded RolesTableSeeder
-2019-08-29 20:45:08.726  INFO 14236 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : ===========================
+2019-08-29 20:45:08.401  INFO 14236 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeding CategoriesTableSeeder
+2019-08-29 20:45:08.725  INFO 14236 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeded CategoriesTableSeeder
+2019-08-29 20:45:08.725  INFO 14236 --- [restartedMain] com.demo.database.seed.SeedingRunner    : ===========================
+2019-08-29 20:45:08.725  INFO 14236 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeding RolesTableSeeder
+2019-08-29 20:45:08.725  INFO 14236 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeded RolesTableSeeder
+2019-08-29 20:45:08.726  INFO 14236 --- [restartedMain] com.demo.database.seed.SeedingRunner    : ===========================
 2019-08-29 20:45:08.769  INFO 14236 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
 2019-08-29 20:45:08.773  INFO 14236 --- [restartedMain] com.demo.Application                     : Started Application in 9.202 seconds (JVM running for 10.893)
 2019-08-29 21:03:30.877  INFO 14236 --- [Thread-20] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
@@ -5418,12 +5418,12 @@ Consider defining a bean named 'categoriesTableSeeder' in your configuration.
 2019-08-29 21:03:33.926  WARN 14236 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2019-08-29 21:03:34.014  WARN 14236 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
 2019-08-29 21:03:34.041  INFO 14236 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2019-08-29 21:03:34.138  INFO 14236 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeding CategoriesTableSeeder
-2019-08-29 21:03:34.333  INFO 14236 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeded CategoriesTableSeeder
-2019-08-29 21:03:34.333  INFO 14236 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : ===========================
-2019-08-29 21:03:34.333  INFO 14236 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeding RolesTableSeeder
-2019-08-29 21:03:34.333  INFO 14236 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeded RolesTableSeeder
-2019-08-29 21:03:34.333  INFO 14236 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : ===========================
+2019-08-29 21:03:34.138  INFO 14236 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeding CategoriesTableSeeder
+2019-08-29 21:03:34.333  INFO 14236 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeded CategoriesTableSeeder
+2019-08-29 21:03:34.333  INFO 14236 --- [restartedMain] com.demo.database.seed.SeedingRunner    : ===========================
+2019-08-29 21:03:34.333  INFO 14236 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeding RolesTableSeeder
+2019-08-29 21:03:34.333  INFO 14236 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeded RolesTableSeeder
+2019-08-29 21:03:34.333  INFO 14236 --- [restartedMain] com.demo.database.seed.SeedingRunner    : ===========================
 2019-08-29 21:03:34.349  INFO 14236 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
 2019-08-29 21:03:34.350  INFO 14236 --- [restartedMain] com.demo.Application                     : Started Application in 2.96 seconds (JVM running for 1116.47)
 2019-08-29 21:03:34.355  INFO 14236 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
@@ -5482,12 +5482,12 @@ Consider defining a bean named 'categoriesTableSeeder' in your configuration.
 2019-08-29 21:04:23.367  WARN 14236 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2019-08-29 21:04:23.442  WARN 14236 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
 2019-08-29 21:04:23.460  INFO 14236 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2019-08-29 21:04:23.540  INFO 14236 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeding CategoriesTableSeeder
-2019-08-29 21:04:23.736  INFO 14236 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeded CategoriesTableSeeder
-2019-08-29 21:04:23.736  INFO 14236 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : ===========================
-2019-08-29 21:04:23.736  INFO 14236 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeding RolesTableSeeder
-2019-08-29 21:04:23.736  INFO 14236 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeded RolesTableSeeder
-2019-08-29 21:04:23.736  INFO 14236 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : ===========================
+2019-08-29 21:04:23.540  INFO 14236 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeding CategoriesTableSeeder
+2019-08-29 21:04:23.736  INFO 14236 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeded CategoriesTableSeeder
+2019-08-29 21:04:23.736  INFO 14236 --- [restartedMain] com.demo.database.seed.SeedingRunner    : ===========================
+2019-08-29 21:04:23.736  INFO 14236 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeding RolesTableSeeder
+2019-08-29 21:04:23.736  INFO 14236 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeded RolesTableSeeder
+2019-08-29 21:04:23.736  INFO 14236 --- [restartedMain] com.demo.database.seed.SeedingRunner    : ===========================
 2019-08-29 21:04:23.745  INFO 14236 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
 2019-08-29 21:04:23.746  INFO 14236 --- [restartedMain] com.demo.Application                     : Started Application in 2.799 seconds (JVM running for 1165.866)
 2019-08-29 21:04:23.749  INFO 14236 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
@@ -5546,7 +5546,7 @@ Consider defining a bean named 'categoriesTableSeeder' in your configuration.
 2019-08-29 21:05:13.425  WARN 14236 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2019-08-29 21:05:13.538  WARN 14236 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
 2019-08-29 21:05:13.611  INFO 14236 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2019-08-29 21:05:13.842  INFO 14236 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeding CategoriesTableSeeder
+2019-08-29 21:05:13.842  INFO 14236 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeding CategoriesTableSeeder
 2019-08-29 21:05:13.858  INFO 14236 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
 2019-08-29 21:05:13.858  INFO 14236 --- [restartedMain] com.demo.Application                     : Started Application in 3.322 seconds (JVM running for 1215.979)
 2019-08-29 21:05:13.862  INFO 14236 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
@@ -5605,12 +5605,12 @@ Consider defining a bean named 'categoriesTableSeeder' in your configuration.
 2019-08-29 21:05:19.519  WARN 14236 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2019-08-29 21:05:19.588  WARN 14236 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
 2019-08-29 21:05:19.619  INFO 14236 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2019-08-29 21:05:19.707  INFO 14236 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeding CategoriesTableSeeder
-2019-08-29 21:05:20.117  INFO 14236 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeded CategoriesTableSeeder
-2019-08-29 21:05:20.117  INFO 14236 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : ===========================
-2019-08-29 21:05:20.117  INFO 14236 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeding RolesTableSeeder
-2019-08-29 21:05:20.117  INFO 14236 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeded RolesTableSeeder
-2019-08-29 21:05:20.117  INFO 14236 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : ===========================
+2019-08-29 21:05:19.707  INFO 14236 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeding CategoriesTableSeeder
+2019-08-29 21:05:20.117  INFO 14236 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeded CategoriesTableSeeder
+2019-08-29 21:05:20.117  INFO 14236 --- [restartedMain] com.demo.database.seed.SeedingRunner    : ===========================
+2019-08-29 21:05:20.117  INFO 14236 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeding RolesTableSeeder
+2019-08-29 21:05:20.117  INFO 14236 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeded RolesTableSeeder
+2019-08-29 21:05:20.117  INFO 14236 --- [restartedMain] com.demo.database.seed.SeedingRunner    : ===========================
 2019-08-29 21:05:20.128  INFO 14236 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
 2019-08-29 21:05:20.128  INFO 14236 --- [restartedMain] com.demo.Application                     : Started Application in 3.281 seconds (JVM running for 1222.248)
 2019-08-29 21:05:20.131  INFO 14236 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
@@ -5669,7 +5669,7 @@ Consider defining a bean named 'categoriesTableSeeder' in your configuration.
 2019-08-29 21:05:53.099  WARN 14236 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2019-08-29 21:05:53.219  WARN 14236 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
 2019-08-29 21:05:53.317  INFO 14236 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2019-08-29 21:05:53.533  INFO 14236 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeding CategoriesTableSeeder
+2019-08-29 21:05:53.533  INFO 14236 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeding CategoriesTableSeeder
 2019-08-29 21:05:53.556  INFO 14236 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
 2019-08-29 21:05:53.557  INFO 14236 --- [restartedMain] com.demo.Application                     : Started Application in 3.114 seconds (JVM running for 1255.677)
 2019-08-29 21:05:53.561  INFO 14236 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
@@ -5728,12 +5728,12 @@ Consider defining a bean named 'categoriesTableSeeder' in your configuration.
 2019-08-29 21:05:59.682  WARN 14236 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2019-08-29 21:05:59.818  WARN 14236 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
 2019-08-29 21:05:59.844  INFO 14236 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2019-08-29 21:06:00.062  INFO 14236 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeding CategoriesTableSeeder
-2019-08-29 21:06:00.419  INFO 14236 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeded CategoriesTableSeeder
-2019-08-29 21:06:00.419  INFO 14236 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : ===========================
-2019-08-29 21:06:00.419  INFO 14236 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeding RolesTableSeeder
-2019-08-29 21:06:00.419  INFO 14236 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeded RolesTableSeeder
-2019-08-29 21:06:00.419  INFO 14236 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : ===========================
+2019-08-29 21:06:00.062  INFO 14236 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeding CategoriesTableSeeder
+2019-08-29 21:06:00.419  INFO 14236 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeded CategoriesTableSeeder
+2019-08-29 21:06:00.419  INFO 14236 --- [restartedMain] com.demo.database.seed.SeedingRunner    : ===========================
+2019-08-29 21:06:00.419  INFO 14236 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeding RolesTableSeeder
+2019-08-29 21:06:00.419  INFO 14236 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeded RolesTableSeeder
+2019-08-29 21:06:00.419  INFO 14236 --- [restartedMain] com.demo.database.seed.SeedingRunner    : ===========================
 2019-08-29 21:06:00.435  INFO 14236 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
 2019-08-29 21:06:00.436  INFO 14236 --- [restartedMain] com.demo.Application                     : Started Application in 4.025 seconds (JVM running for 1262.557)
 2019-08-29 21:06:00.443  INFO 14236 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
@@ -5792,12 +5792,12 @@ Consider defining a bean named 'categoriesTableSeeder' in your configuration.
 2019-08-29 21:06:12.111  WARN 14236 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2019-08-29 21:06:12.350  WARN 14236 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
 2019-08-29 21:06:12.477  INFO 14236 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2019-08-29 21:06:12.623  INFO 14236 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeding CategoriesTableSeeder
-2019-08-29 21:06:12.851  INFO 14236 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeded CategoriesTableSeeder
-2019-08-29 21:06:12.851  INFO 14236 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : ===========================
-2019-08-29 21:06:12.851  INFO 14236 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeding RolesTableSeeder
-2019-08-29 21:06:12.851  INFO 14236 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeded RolesTableSeeder
-2019-08-29 21:06:12.851  INFO 14236 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : ===========================
+2019-08-29 21:06:12.623  INFO 14236 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeding CategoriesTableSeeder
+2019-08-29 21:06:12.851  INFO 14236 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeded CategoriesTableSeeder
+2019-08-29 21:06:12.851  INFO 14236 --- [restartedMain] com.demo.database.seed.SeedingRunner    : ===========================
+2019-08-29 21:06:12.851  INFO 14236 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeding RolesTableSeeder
+2019-08-29 21:06:12.851  INFO 14236 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeded RolesTableSeeder
+2019-08-29 21:06:12.851  INFO 14236 --- [restartedMain] com.demo.database.seed.SeedingRunner    : ===========================
 2019-08-29 21:06:12.863  INFO 14236 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
 2019-08-29 21:06:12.864  INFO 14236 --- [restartedMain] com.demo.Application                     : Started Application in 4.587 seconds (JVM running for 1274.985)
 2019-08-29 21:06:12.868  INFO 14236 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
@@ -5861,12 +5861,12 @@ Consider defining a bean named 'categoriesTableSeeder' in your configuration.
 2019-08-29 21:06:37.086  WARN 964 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2019-08-29 21:06:37.614  WARN 964 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
 2019-08-29 21:06:38.289  INFO 964 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2019-08-29 21:06:38.515  INFO 964 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeding CategoriesTableSeeder
-2019-08-29 21:06:38.965  INFO 964 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeded CategoriesTableSeeder
-2019-08-29 21:06:38.965  INFO 964 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : ===========================
-2019-08-29 21:06:38.965  INFO 964 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeding RolesTableSeeder
-2019-08-29 21:06:38.965  INFO 964 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeded RolesTableSeeder
-2019-08-29 21:06:38.966  INFO 964 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : ===========================
+2019-08-29 21:06:38.515  INFO 964 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeding CategoriesTableSeeder
+2019-08-29 21:06:38.965  INFO 964 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeded CategoriesTableSeeder
+2019-08-29 21:06:38.965  INFO 964 --- [restartedMain] com.demo.database.seed.SeedingRunner    : ===========================
+2019-08-29 21:06:38.965  INFO 964 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeding RolesTableSeeder
+2019-08-29 21:06:38.965  INFO 964 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeded RolesTableSeeder
+2019-08-29 21:06:38.966  INFO 964 --- [restartedMain] com.demo.database.seed.SeedingRunner    : ===========================
 2019-08-29 21:06:39.014  INFO 964 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
 2019-08-29 21:06:39.018  INFO 964 --- [restartedMain] com.demo.Application                     : Started Application in 13.162 seconds (JVM running for 14.405)
 2019-08-29 21:09:07.723  INFO 964 --- [Thread-24] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
@@ -5959,12 +5959,12 @@ java.lang.ArrayStoreException: sun.reflect.annotation.TypeNotPresentExceptionPro
 2019-08-29 21:09:24.827  WARN 964 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2019-08-29 21:09:24.989  WARN 964 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
 2019-08-29 21:09:25.020  INFO 964 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2019-08-29 21:09:25.267  INFO 964 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeding CategoriesTableSeeder
-2019-08-29 21:09:25.972  INFO 964 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeded CategoriesTableSeeder
-2019-08-29 21:09:25.973  INFO 964 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : ===========================
-2019-08-29 21:09:25.973  INFO 964 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeding RolesTableSeeder
-2019-08-29 21:09:25.973  INFO 964 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeded RolesTableSeeder
-2019-08-29 21:09:25.973  INFO 964 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : ===========================
+2019-08-29 21:09:25.267  INFO 964 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeding CategoriesTableSeeder
+2019-08-29 21:09:25.972  INFO 964 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeded CategoriesTableSeeder
+2019-08-29 21:09:25.973  INFO 964 --- [restartedMain] com.demo.database.seed.SeedingRunner    : ===========================
+2019-08-29 21:09:25.973  INFO 964 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeding RolesTableSeeder
+2019-08-29 21:09:25.973  INFO 964 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeded RolesTableSeeder
+2019-08-29 21:09:25.973  INFO 964 --- [restartedMain] com.demo.database.seed.SeedingRunner    : ===========================
 2019-08-29 21:09:25.991  INFO 964 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
 2019-08-29 21:09:25.993  INFO 964 --- [restartedMain] com.demo.Application                     : Started Application in 5.319 seconds (JVM running for 181.38)
 2019-08-29 21:09:25.999  INFO 964 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
@@ -6023,12 +6023,12 @@ java.lang.ArrayStoreException: sun.reflect.annotation.TypeNotPresentExceptionPro
 2019-08-29 21:13:13.559  WARN 964 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2019-08-29 21:13:13.635  WARN 964 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
 2019-08-29 21:13:13.657  INFO 964 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2019-08-29 21:13:13.774  INFO 964 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeding CategoriesTableSeeder
-2019-08-29 21:13:14.005  INFO 964 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeded CategoriesTableSeeder
-2019-08-29 21:13:14.005  INFO 964 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : ===========================
-2019-08-29 21:13:14.005  INFO 964 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeding RolesTableSeeder
-2019-08-29 21:13:14.005  INFO 964 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeded RolesTableSeeder
-2019-08-29 21:13:14.005  INFO 964 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : ===========================
+2019-08-29 21:13:13.774  INFO 964 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeding CategoriesTableSeeder
+2019-08-29 21:13:14.005  INFO 964 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeded CategoriesTableSeeder
+2019-08-29 21:13:14.005  INFO 964 --- [restartedMain] com.demo.database.seed.SeedingRunner    : ===========================
+2019-08-29 21:13:14.005  INFO 964 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeding RolesTableSeeder
+2019-08-29 21:13:14.005  INFO 964 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeded RolesTableSeeder
+2019-08-29 21:13:14.005  INFO 964 --- [restartedMain] com.demo.database.seed.SeedingRunner    : ===========================
 2019-08-29 21:13:14.017  INFO 964 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
 2019-08-29 21:13:14.018  INFO 964 --- [restartedMain] com.demo.Application                     : Started Application in 3.716 seconds (JVM running for 409.405)
 2019-08-29 21:13:14.021  INFO 964 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
@@ -6633,12 +6633,12 @@ Caused by: java.lang.IllegalArgumentException: Not a managed type: class com.dem
 2019-08-29 21:23:57.614  WARN 4108 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2019-08-29 21:23:57.742  WARN 4108 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
 2019-08-29 21:23:58.041  INFO 4108 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2019-08-29 21:23:58.193  INFO 4108 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeding CategoriesTableSeeder
-2019-08-29 21:23:58.504  INFO 4108 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeded CategoriesTableSeeder
-2019-08-29 21:23:58.504  INFO 4108 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : ===========================
-2019-08-29 21:23:58.504  INFO 4108 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeding RolesTableSeeder
-2019-08-29 21:23:58.504  INFO 4108 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : seeded RolesTableSeeder
-2019-08-29 21:23:58.504  INFO 4108 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : ===========================
+2019-08-29 21:23:58.193  INFO 4108 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeding CategoriesTableSeeder
+2019-08-29 21:23:58.504  INFO 4108 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeded CategoriesTableSeeder
+2019-08-29 21:23:58.504  INFO 4108 --- [restartedMain] com.demo.database.seed.SeedingRunner    : ===========================
+2019-08-29 21:23:58.504  INFO 4108 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeding RolesTableSeeder
+2019-08-29 21:23:58.504  INFO 4108 --- [restartedMain] com.demo.database.seed.SeedingRunner    : seeded RolesTableSeeder
+2019-08-29 21:23:58.504  INFO 4108 --- [restartedMain] com.demo.database.seed.SeedingRunner    : ===========================
 2019-08-29 21:23:58.547  INFO 4108 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
 2019-08-29 21:23:58.550  INFO 4108 --- [restartedMain] com.demo.Application                     : Started Application in 10.149 seconds (JVM running for 12.627)
 2019-08-29 21:35:33.756  INFO 4108 --- [Thread-30] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'

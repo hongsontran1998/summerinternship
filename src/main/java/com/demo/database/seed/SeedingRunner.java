@@ -1,4 +1,4 @@
-package com.demo.database.seeds;
+package com.demo.database.seed;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

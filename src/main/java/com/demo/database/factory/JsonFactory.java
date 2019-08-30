@@ -1,4 +1,4 @@
-package com.demo.database.factories;
+package com.demo.database.factory;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;

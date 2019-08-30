@@ -1,6 +1,6 @@
-package com.demo.database.seeds;
+package com.demo.database.seed;
 
-import com.demo.database.factories.JsonFactory;
+import com.demo.database.factory.JsonFactory;
 import com.demo.entity.Category;
 import com.demo.repository.CategoryRepository;
 import com.fasterxml.jackson.databind.JsonNode;
