@@ -48,8 +48,7 @@ public class CategoryServiceImpl implements CategoryService {
         if (limit == null) {
             limit = Integer.MAX_VALUE;
         }
-        Pageable pageable = new OffsetBasedPageRequest(offset, limit, sort);
-        return pageable;
+        return new OffsetBasedPageRequest(offset, limit, sort);
     }
 
     @Override

@@ -20,7 +20,7 @@ public class SeedingRunner {
     private static final Logger LOGGER = LoggerFactory.getLogger(SeedingRunner.class);
 
     /*
-        1. Iterate array seeder class
+        1. Iterate array of seeder class
         2. Call run method of the class implemented Seeder interface
      */
     void call(Class<?>[] seederClasses) {
