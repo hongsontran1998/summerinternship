@@ -10,7 +10,6 @@ import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Locale;
 
 @Component
 public class CategoriesTableSeeder implements Seeder {
@@ -18,17 +17,21 @@ public class CategoriesTableSeeder implements Seeder {
     @Autowired
     CategoryRepository categoryRepository;
 
+    @Autowired
+    Faker faker;
+
     @Override
     public void run() {
         List<Category> categories = new ArrayList<>();
+        //get category names from data.json
         JsonNode nodeCategories = JsonFactory.getJsonNode("categories");
         nodeCategories.forEach(item ->
                 categories.add(new Category(null, item.asText()))
         );
-//        Faker faker = new Faker(new Locale("vi"));
-//        for (int i = 0; i < 10; i++) {
-//            categories.add(new Category(null, faker.animal().name()));
-//        }
+        //fake category name by faker
+        for (int i = 0; i < 10; i++) {
+            categories.add(new Category(null, faker.cat().name()));
+        }
         categoryRepository.saveAll(categories);
     }
 }
