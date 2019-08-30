@@ -13,7 +13,7 @@ public class DatabaseSeeder extends SeedingRunner {
     @EventListener
     public void run(ContextRefreshedEvent event) {
         this.call(new Class[]{
-                //CategoriesTableSeeder.class,
+                CategoriesTableSeeder.class,
                 //RolesTableSeeder.class
                 //some seeder class
         });

@@ -1,7 +1,9 @@
 package com.demo.database.seed;
 
+import com.demo.util.BeanUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.stereotype.Component;
@@ -27,11 +29,21 @@ public class SeedingRunner {
         try {
             if (seederClasses != null && seederClasses.length > 0) {
                 for (Class<?> clazz : seederClasses) {
-                    String beanName = clazz.getSimpleName();
-                    beanName = beanName.substring(0, 1).toLowerCase() + beanName.substring(1);
+                    //way 1 ok
+                    //String beanName = clazz.getSimpleName();
+                    //beanName = beanName.substring(0, 1).toLowerCase() + beanName.substring(1);
                     //CategoriesTableSeeder => bean name: categoriesTableSeeder
-                    Object obj = applicationContext.getBean(beanName);
+                    //Object obj = applicationContext.getBean(beanName);
+
+                    //way 2 ok
+                    //Object obj = applicationContext.getBean(clazz);
+
+                    //way 3 ok: don't need to use @component or @Autowired ApplicationContext
+                    Object obj = BeanUtil.getBean(clazz);
+
+                    //way 4 exception
                     //Object obj = clazz.newInstance(); //can not auto wired => Null Pointer Exception
+
                     LOGGER.info("seeding " + clazz.getSimpleName());
                     clazz.getDeclaredMethod(RUNNING_METHOD_NAME, new Class[]{}).invoke(obj, new Object[]{});
                     LOGGER.info("seeded " + clazz.getSimpleName());
