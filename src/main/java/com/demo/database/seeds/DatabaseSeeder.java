@@ -8,13 +8,14 @@ import org.springframework.stereotype.Component;
 @Component
 public class DatabaseSeeder extends SeedingRunner {
 
-    //@Autowired something
+    //@Autowired some beans
 
     @EventListener
     public void run(ContextRefreshedEvent event) {
         this.call(new Class[]{
                 CategoriesTableSeeder.class,
                 RolesTableSeeder.class
+                //some seeder class
         });
     }
 

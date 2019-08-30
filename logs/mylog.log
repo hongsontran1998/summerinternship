@@ -6641,3 +6641,9 @@ Caused by: java.lang.IllegalArgumentException: Not a managed type: class com.dem
 2019-08-29 21:23:58.504  INFO 4108 --- [restartedMain] com.demo.database.seeds.SeedingRunner    : ===========================
 2019-08-29 21:23:58.547  INFO 4108 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
 2019-08-29 21:23:58.550  INFO 4108 --- [restartedMain] com.demo.Application                     : Started Application in 10.149 seconds (JVM running for 12.627)
+2019-08-29 21:35:33.756  INFO 4108 --- [Thread-30] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-08-29 21:35:33.757  INFO 4108 --- [Thread-30] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2019-08-29 21:35:33.764  INFO 4108 --- [Thread-30] org.mongodb.driver.connection            : Closed connection [connectionId{localValue:2, serverValue:299}] to localhost:27017 because the pool has been closed.
+2019-08-29 21:35:33.770  INFO 4108 --- [Thread-30] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-08-29 21:35:33.775  INFO 4108 --- [Thread-30] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-08-29 21:35:33.789  INFO 4108 --- [Thread-30] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
