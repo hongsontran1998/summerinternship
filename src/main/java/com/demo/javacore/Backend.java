@@ -56,7 +56,7 @@ public class Backend {
         System.out.println(StringUtils.join(names, ";"));
 
 
-        String sentence = "The cat leapt over the big brown dog.";
+        String sentence = "The cat leapt over the big brown dog. hello";
         // The cat leapt...
         String abbreviated = StringUtils.abbreviate(sentence, 20);
         System.out.println(abbreviated);
