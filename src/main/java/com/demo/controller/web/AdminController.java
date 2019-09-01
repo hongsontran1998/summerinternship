@@ -54,6 +54,13 @@ public class AdminController {
         return "redirect:/admin/upload?upload=ok";
     }
 
+    @PostMapping("upload-ajax")
+    @ResponseBody
+    public String uploadAjax(@RequestParam("files") CommonsMultipartFile[] commonsMultipartFiles) {
+        storageService.storeWithThread(commonsMultipartFiles);
+        return "OK";
+    }
+
     @RequestMapping(value = "/download1", method = RequestMethod.GET)
     public void download1(HttpServletResponse response) {
         try {

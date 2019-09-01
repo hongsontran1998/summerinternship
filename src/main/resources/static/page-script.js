@@ -10,16 +10,16 @@ $(function () {
         xhr.setRequestHeader(header, token);
     });
 
-    $.ajax({
-        url: '/api/category',
-        type: 'GET',
-        cache: false,
-        data: {},
-        success: function(response){
-            console.log(response);
-        },
-        error: function (){
-            console.log("ajax error");
-        }
-    });
+    // $.ajax({
+    //     url: '/api/category',
+    //     type: 'GET',
+    //     cache: false,
+    //     data: {},
+    //     success: function(response){
+    //         console.log(response);
+    //     },
+    //     error: function (){
+    //         console.log("ajax error");
+    //     }
+    // });
 });
