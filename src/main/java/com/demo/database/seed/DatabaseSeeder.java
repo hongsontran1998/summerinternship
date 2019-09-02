@@ -6,7 +6,7 @@ import org.springframework.context.event.EventListener;
 import org.springframework.stereotype.Component;
 
 @Component
-public class DatabaseSeeder extends SeedingRunner {
+public class DatabaseSeeder extends SeedingCaller {
 
     //@Autowired some beans
 

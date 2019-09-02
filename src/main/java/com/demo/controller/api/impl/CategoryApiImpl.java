@@ -107,4 +107,13 @@ public class CategoryApiImpl implements CategoryApi {
         }
     }
 
+    @Override
+    public ResponseEntity<Result> findOneBySlug(String slug) {
+        Category category = categoryService.findBySlug(slug);
+        Result result = new Result();
+        result.setData(category);
+        result.setStatus(Result.Status.SUCCESS);
+        return new ResponseEntity<>(result, HttpStatus.OK);
+    }
+
 }

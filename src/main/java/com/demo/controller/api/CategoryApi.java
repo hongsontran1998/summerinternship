@@ -33,4 +33,7 @@ public interface CategoryApi {
     @DeleteMapping("{id}")
     ResponseEntity<Result> deleteOneById(@PathVariable Integer id);
 
+    @GetMapping("slug/{slug}")
+    ResponseEntity<Result> findOneBySlug(@PathVariable String slug);
+
 }

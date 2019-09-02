@@ -22,4 +22,8 @@ public class Category {
     @NotBlank
     @NotNull
     private String name;
+
+    //@NotBlank
+    //@NotNull
+    private String slug;
 }

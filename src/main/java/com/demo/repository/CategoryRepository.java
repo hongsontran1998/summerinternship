@@ -33,5 +33,5 @@ public interface CategoryRepository
     )
     Page<Category> findAllOrFilter(@Param("q") String searchingText, Pageable pageable);
 
-
+    Category findBySlug(String slug);
 }

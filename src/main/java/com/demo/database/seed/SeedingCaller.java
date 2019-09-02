@@ -3,7 +3,6 @@ package com.demo.database.seed;
 import com.demo.util.BeanUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.stereotype.Component;
@@ -12,14 +11,14 @@ import java.lang.reflect.InvocationTargetException;
 
 
 @Component
-public class SeedingRunner {
+public class SeedingCaller {
 
     @Autowired
     ApplicationContext applicationContext;
 
     private static final String RUNNING_METHOD_NAME = "run";
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(SeedingRunner.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(SeedingCaller.class);
 
     /*
         1. Iterate array of seeder class

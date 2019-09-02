@@ -13,4 +13,5 @@ public interface CategoryService {
     Category insertOne(Category category);
     Category updateOne(Category category);
     Integer deleteOneById(Integer id);
+    Category findBySlug(String slug);
 }

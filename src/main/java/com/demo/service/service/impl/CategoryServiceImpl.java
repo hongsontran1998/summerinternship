@@ -4,6 +4,7 @@ import com.demo.entity.Category;
 import com.demo.repository.CategoryRepository;
 import com.demo.service.CategoryService;
 import com.demo.util.OffsetBasedPageRequest;
+import com.demo.util.SlugUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -53,12 +54,14 @@ public class CategoryServiceImpl implements CategoryService {
 
     @Override
     public Category insertOne(Category category) {
+        category.setSlug(SlugUtil.makeSlug(category.getName()));
         return categoryRepository.save(category);
     }
 
     @Override
     public Category updateOne(Category category) {
         if (findOneById(category.getId()) != null) {
+            category.setSlug(SlugUtil.makeSlug(category.getName()));
             return categoryRepository.save(category);
         }
         return null;
@@ -72,6 +75,11 @@ public class CategoryServiceImpl implements CategoryService {
             return 1;
         }
         return 0;
+    }
+
+    @Override
+    public Category findBySlug(String slug) {
+        return categoryRepository.findBySlug(slug);
     }
 
     @Override
