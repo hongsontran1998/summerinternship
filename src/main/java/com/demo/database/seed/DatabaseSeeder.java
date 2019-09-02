@@ -13,8 +13,9 @@ public class DatabaseSeeder extends SeedingCaller {
     @EventListener
     public void run(ContextRefreshedEvent event) {
         this.call(new Class[]{
-                //CategoriesTableSeeder.class,
-                //RolesTableSeeder.class
+                CategoriesTableSeeder.class,
+                RolesTableSeeder.class,
+                UsersTableSeeder.class
                 //some seeder class
         });
     }
