@@ -26,13 +26,13 @@ public class Role implements Serializable {
     @JoinTable(
             name = "user_role",
             joinColumns = {
-                    @JoinColumn(name = "roleId")
+                    @JoinColumn(name = "role_id")
             },
             inverseJoinColumns = {
-                    @JoinColumn(name = "userId")
+                    @JoinColumn(name = "user_id")
             },
             uniqueConstraints = {
-                    @UniqueConstraint(columnNames = {"userId","roleId"})
+                    @UniqueConstraint(columnNames = {"user_id","role_id"})
             }
     )
     private List<User> users;

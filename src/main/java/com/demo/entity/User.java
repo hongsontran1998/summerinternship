@@ -24,19 +24,21 @@ public class User implements Serializable {
     private String password;
 
     private Integer active;
+
+    @Column(name = "full_name")
     private String fullName;
 
     @ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.MERGE)
     @JoinTable(
             name = "user_role",
             joinColumns = {
-                    @JoinColumn(name = "userId")
+                    @JoinColumn(name = "user_id")
             },
             inverseJoinColumns = {
-                    @JoinColumn(name = "roleId")
+                    @JoinColumn(name = "role_id")
             },
             uniqueConstraints = {
-                    @UniqueConstraint(columnNames = {"userId","roleId"})
+                    @UniqueConstraint(columnNames = {"user_id", "role_id"})
             }
     )
     private List<Role> roles;

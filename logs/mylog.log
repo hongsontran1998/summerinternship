@@ -6083,3 +6083,1100 @@ Consider defining a bean of type 'com.demo.database.seed.UsersTableSeeder' in yo
 2019-09-02 19:44:21.504  INFO 14972 --- [restartedMain] com.demo.database.seed.SeedingCaller     : ===========================
 2019-09-02 19:44:21.556  INFO 14972 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
 2019-09-02 19:44:21.562  INFO 14972 --- [restartedMain] com.demo.Application                     : Started Application in 22.429 seconds (JVM running for 25.489)
+2019-09-02 19:55:06.673  INFO 14972 --- [Thread-54] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-09-02 19:55:06.674  INFO 14972 --- [Thread-54] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2019-09-02 19:55:06.680  INFO 14972 --- [Thread-54] org.mongodb.driver.connection            : Closed connection [connectionId{localValue:2, serverValue:473}] to localhost:27017 because the pool has been closed.
+2019-09-02 19:55:06.690  INFO 14972 --- [Thread-54] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-09-02 19:55:06.701  INFO 14972 --- [Thread-54] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-09-02 19:55:06.713  INFO 14972 --- [Thread-54] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-09-02 19:55:19.072  INFO 11564 --- [restartedMain] com.demo.Application                     : Starting Application on DESKTOP-RRC9P7A with PID 11564 (E:\Study\Springboot\summerinternship\target\classes started by Admin in E:\Study\Springboot\summerinternship)
+2019-09-02 19:55:19.078  INFO 11564 --- [restartedMain] com.demo.Application                     : No active profile set, falling back to default profiles: default
+2019-09-02 19:55:19.637  INFO 11564 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-09-02 19:55:19.637  INFO 11564 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-09-02 19:55:21.079  INFO 11564 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-09-02 19:55:21.079  INFO 11564 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-02 19:55:21.174  INFO 11564 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.demo.repository.EmployeeRepository.
+2019-09-02 19:55:21.211  INFO 11564 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 123ms. Found 3 repository interfaces.
+2019-09-02 19:55:21.239  INFO 11564 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-09-02 19:55:21.239  INFO 11564 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-02 19:55:21.246  INFO 11564 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.demo.repository.CategoryRepository.
+2019-09-02 19:55:21.249  INFO 11564 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.demo.repository.RoleRepository.
+2019-09-02 19:55:21.250  INFO 11564 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.demo.repository.UserRepository.
+2019-09-02 19:55:21.256  INFO 11564 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17ms. Found 1 repository interfaces.
+2019-09-02 19:55:21.849  INFO 11564 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b89e4ee6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-02 19:55:21.890  INFO 11564 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$514c1720] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-02 19:55:21.898  INFO 11564 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-02 19:55:21.904  INFO 11564 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@15e11d4d' of type [org.springframework.security.oauth2.provider.expression.OAuth2MethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-02 19:55:21.905  INFO 11564 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$7620b9d2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-02 19:55:21.909  INFO 11564 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-02 19:55:22.475  INFO 11564 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2019-09-02 19:55:22.508  INFO 11564 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-09-02 19:55:22.509  INFO 11564 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2019-09-02 19:55:22.648  INFO 11564 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-09-02 19:55:22.648  INFO 11564 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3011 ms
+2019-09-02 19:55:22.866  INFO 11564 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-09-02 19:55:22.867  WARN 11564 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-09-02 19:55:23.005  INFO 11564 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-09-02 19:55:23.061  INFO 11564 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-09-02 19:55:23.151  INFO 11564 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2019-09-02 19:55:23.153  INFO 11564 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-09-02 19:55:23.327  INFO 11564 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-09-02 19:55:23.526  INFO 11564 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2019-09-02 19:55:24.521  WARN 11564 --- [restartedMain] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "alter table user_role drop foreign key FKt7e7djp752sqn6w22i6ocqy6q" via JDBC Statement
+
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table user_role drop foreign key FKt7e7djp752sqn6w22i6ocqy6q" via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlString(SchemaDropperImpl.java:375) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlStrings(SchemaDropperImpl.java:359) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applyConstraintDropping(SchemaDropperImpl.java:331) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:230) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:154) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:126) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:112) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:144) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:72) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:310) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:467) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:939) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:57) [spring-orm-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) [spring-orm-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:390) [spring-orm-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:377) [spring-orm-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) [spring-orm-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1105) ~[spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867) ~[spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549) ~[spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142) ~[spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775) ~[spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) ~[spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) ~[spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260) ~[spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248) ~[spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at com.demo.Application.main(Application.java:24) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_201]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_201]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_201]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_201]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+Caused by: java.sql.SQLSyntaxErrorException: Can't DROP FOREIGN KEY `FKt7e7djp752sqn6w22i6ocqy6q`; check that it exists
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:782) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:666) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:95) ~[HikariCP-3.2.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-3.2.0.jar:na]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	... 40 common frames omitted
+
+2019-09-02 19:55:24.608  WARN 11564 --- [restartedMain] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "alter table user_role drop foreign key FKj345gk1bovqvfame88rcx7yyx" via JDBC Statement
+
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table user_role drop foreign key FKj345gk1bovqvfame88rcx7yyx" via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlString(SchemaDropperImpl.java:375) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlStrings(SchemaDropperImpl.java:359) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applyConstraintDropping(SchemaDropperImpl.java:331) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:230) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:154) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:126) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:112) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:144) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:72) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:310) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:467) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:939) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:57) [spring-orm-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) [spring-orm-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:390) [spring-orm-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:377) [spring-orm-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) [spring-orm-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1105) ~[spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867) ~[spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549) ~[spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142) ~[spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775) ~[spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) ~[spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) ~[spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260) ~[spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248) ~[spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at com.demo.Application.main(Application.java:24) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_201]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_201]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_201]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_201]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+Caused by: java.sql.SQLSyntaxErrorException: Can't DROP FOREIGN KEY `FKj345gk1bovqvfame88rcx7yyx`; check that it exists
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:782) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:666) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:95) ~[HikariCP-3.2.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-3.2.0.jar:na]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	... 40 common frames omitted
+
+2019-09-02 19:55:24.955  WARN 11564 --- [restartedMain] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "drop table if exists roles" via JDBC Statement
+
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "drop table if exists roles" via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlString(SchemaDropperImpl.java:375) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlStrings(SchemaDropperImpl.java:359) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:241) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:154) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:126) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:112) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:144) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:72) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:310) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:467) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:939) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:57) [spring-orm-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) [spring-orm-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:390) [spring-orm-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:377) [spring-orm-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) [spring-orm-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1105) ~[spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867) ~[spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549) ~[spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142) ~[spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775) ~[spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) ~[spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) ~[spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260) ~[spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248) ~[spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at com.demo.Application.main(Application.java:24) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_201]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_201]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_201]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_201]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+Caused by: java.sql.SQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:117) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:782) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:666) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:95) ~[HikariCP-3.2.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-3.2.0.jar:na]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	... 39 common frames omitted
+
+2019-09-02 19:55:25.895  WARN 11564 --- [restartedMain] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "create table roles (id integer not null auto_increment, name varchar(255), primary key (id)) engine=InnoDB" via JDBC Statement
+
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "create table roles (id integer not null auto_increment, name varchar(255), primary key (id)) engine=InnoDB" via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.applySqlString(SchemaCreatorImpl.java:440) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.applySqlStrings(SchemaCreatorImpl.java:424) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.createFromMetadata(SchemaCreatorImpl.java:315) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.performCreation(SchemaCreatorImpl.java:166) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:135) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:121) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:155) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:72) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:310) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:467) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:939) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:57) [spring-orm-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) [spring-orm-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:390) [spring-orm-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:377) [spring-orm-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) [spring-orm-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1105) ~[spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867) ~[spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549) ~[spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142) ~[spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775) ~[spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) ~[spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) ~[spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260) ~[spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248) ~[spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at com.demo.Application.main(Application.java:24) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_201]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_201]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_201]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_201]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+Caused by: java.sql.SQLSyntaxErrorException: Table 'roles' already exists
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:782) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:666) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:95) ~[HikariCP-3.2.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-3.2.0.jar:na]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	... 39 common frames omitted
+
+2019-09-02 19:55:29.577  INFO 11564 --- [restartedMain] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@7788169f'
+2019-09-02 19:55:29.581  INFO 11564 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-09-02 19:55:29.652  INFO 11564 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-09-02 19:55:29.976  INFO 11564 --- [restartedMain] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-09-02 19:55:31.022  INFO 11564 --- [restartedMain] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2019-09-02 19:55:31.022  INFO 11564 --- [restartedMain] org.mongodb.driver.cluster               : Adding discovered server localhost:27017 to client view of cluster
+2019-09-02 19:55:31.100  INFO 11564 --- [cluster-ClusterId{value='5d6d11438a04382d2cd54ad6', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:474}] to localhost:27017
+2019-09-02 19:55:31.106  INFO 11564 --- [cluster-ClusterId{value='5d6d11438a04382d2cd54ad6', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 0, 9]}, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=3479407}
+2019-09-02 19:55:31.108  INFO 11564 --- [cluster-ClusterId{value='5d6d11438a04382d2cd54ad6', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Discovered cluster type of STANDALONE
+2019-09-02 19:55:31.292  INFO 11564 --- [restartedMain] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:475}] to localhost:27017
+2019-09-02 19:55:31.446  WARN 11564 --- [restartedMain] org.apache.velocity.deprecation          : configuration key 'class.resource.loader.class' has been deprecated in favor of 'resource.loader.class.class'
+2019-09-02 19:55:31.446  WARN 11564 --- [restartedMain] org.apache.velocity.deprecation          : configuration key 'resource.loader' has been deprecated in favor of 'resource.loaders'
+2019-09-02 19:55:31.632  INFO 11564 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2019-09-02 19:55:31.780  INFO 11564 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/css/**'], []
+2019-09-02 19:55:31.781  INFO 11564 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/js/**'], []
+2019-09-02 19:55:31.781  INFO 11564 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/images/**'], []
+2019-09-02 19:55:31.837  INFO 11564 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@145608b1, org.springframework.security.web.context.SecurityContextPersistenceFilter@1b795498, org.springframework.security.web.header.HeaderWriterFilter@184dbe4e, org.springframework.web.filter.CorsFilter@26a9a294, org.springframework.security.web.csrf.CsrfFilter@1554baa3, org.springframework.security.web.authentication.logout.LogoutFilter@7134ea80, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4cc6a632, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4d31b2b5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5334b29d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6202cd67, org.springframework.security.web.session.SessionManagementFilter@7ce323d4, org.springframework.security.web.access.ExceptionTranslationFilter@14c7f868, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@62668b4c]
+2019-09-02 19:55:32.086  INFO 11564 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-02 19:55:32.144  WARN 11564 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-09-02 19:55:32.267  WARN 11564 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2019-09-02 19:55:32.565  INFO 11564 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-09-02 19:55:32.716  INFO 11564 --- [restartedMain] com.demo.database.seed.SeedingCaller     : seeding CategoriesTableSeeder
+2019-09-02 19:55:33.000  INFO 11564 --- [restartedMain] com.demo.database.seed.SeedingCaller     : seeded CategoriesTableSeeder
+2019-09-02 19:55:33.000  INFO 11564 --- [restartedMain] com.demo.database.seed.SeedingCaller     : ===========================
+2019-09-02 19:55:33.001  INFO 11564 --- [restartedMain] com.demo.database.seed.SeedingCaller     : seeding RolesTableSeeder
+2019-09-02 19:55:33.199  INFO 11564 --- [restartedMain] com.demo.database.seed.SeedingCaller     : seeded RolesTableSeeder
+2019-09-02 19:55:33.199  INFO 11564 --- [restartedMain] com.demo.database.seed.SeedingCaller     : ===========================
+2019-09-02 19:55:33.200  INFO 11564 --- [restartedMain] com.demo.database.seed.SeedingCaller     : seeding UsersTableSeeder
+2019-09-02 19:55:33.316  INFO 11564 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2019-09-02 19:55:33.320  INFO 11564 --- [restartedMain] com.demo.Application                     : Started Application in 15.244 seconds (JVM running for 17.222)
+2019-09-02 19:58:21.008  INFO 11564 --- [Thread-39] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-09-02 19:58:21.011  INFO 11564 --- [Thread-39] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2019-09-02 19:58:21.020  INFO 11564 --- [Thread-39] org.mongodb.driver.connection            : Closed connection [connectionId{localValue:2, serverValue:475}] to localhost:27017 because the pool has been closed.
+2019-09-02 19:58:21.027  INFO 11564 --- [Thread-39] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-09-02 19:58:21.037  INFO 11564 --- [Thread-39] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-09-02 19:58:21.051  INFO 11564 --- [Thread-39] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-09-02 19:58:32.278  INFO 6324 --- [restartedMain] com.demo.Application                     : Starting Application on DESKTOP-RRC9P7A with PID 6324 (E:\Study\Springboot\summerinternship\target\classes started by Admin in E:\Study\Springboot\summerinternship)
+2019-09-02 19:58:32.281  INFO 6324 --- [restartedMain] com.demo.Application                     : No active profile set, falling back to default profiles: default
+2019-09-02 19:58:32.701  INFO 6324 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-09-02 19:58:32.701  INFO 6324 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-09-02 19:58:33.949  INFO 6324 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-09-02 19:58:33.950  INFO 6324 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-02 19:58:34.045  INFO 6324 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.demo.repository.EmployeeRepository.
+2019-09-02 19:58:34.083  INFO 6324 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 124ms. Found 3 repository interfaces.
+2019-09-02 19:58:34.111  INFO 6324 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-09-02 19:58:34.111  INFO 6324 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-02 19:58:34.119  INFO 6324 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.demo.repository.CategoryRepository.
+2019-09-02 19:58:34.122  INFO 6324 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.demo.repository.RoleRepository.
+2019-09-02 19:58:34.123  INFO 6324 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.demo.repository.UserRepository.
+2019-09-02 19:58:34.131  INFO 6324 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19ms. Found 1 repository interfaces.
+2019-09-02 19:58:34.738  INFO 6324 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e696af27] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-02 19:58:34.779  INFO 6324 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$7f447761] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-02 19:58:34.786  INFO 6324 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-02 19:58:34.791  INFO 6324 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@43b662e4' of type [org.springframework.security.oauth2.provider.expression.OAuth2MethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-02 19:58:34.794  INFO 6324 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$a4191a13] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-02 19:58:34.799  INFO 6324 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-02 19:58:35.342  INFO 6324 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2019-09-02 19:58:35.380  INFO 6324 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-09-02 19:58:35.380  INFO 6324 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2019-09-02 19:58:35.532  INFO 6324 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-09-02 19:58:35.532  INFO 6324 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2830 ms
+2019-09-02 19:58:35.764  INFO 6324 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-09-02 19:58:35.767  WARN 6324 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-09-02 19:58:35.920  INFO 6324 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-09-02 19:58:35.970  INFO 6324 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-09-02 19:58:36.057  INFO 6324 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2019-09-02 19:58:36.059  INFO 6324 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-09-02 19:58:36.278  INFO 6324 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-09-02 19:58:36.497  INFO 6324 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2019-09-02 19:58:37.720  WARN 6324 --- [restartedMain] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "alter table user_role drop foreign key FKgjtm8gpb7flxkryafvaanmykq" via JDBC Statement
+
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table user_role drop foreign key FKgjtm8gpb7flxkryafvaanmykq" via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlString(SchemaDropperImpl.java:375) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlStrings(SchemaDropperImpl.java:359) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applyConstraintDropping(SchemaDropperImpl.java:331) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:230) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:154) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:126) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:112) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:144) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:72) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:310) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:467) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:939) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:57) [spring-orm-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) [spring-orm-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:390) [spring-orm-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:377) [spring-orm-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) [spring-orm-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1105) ~[spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867) ~[spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549) ~[spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142) ~[spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775) ~[spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) ~[spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) ~[spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260) ~[spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248) ~[spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at com.demo.Application.main(Application.java:24) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_201]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_201]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_201]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_201]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+Caused by: java.sql.SQLSyntaxErrorException: Table 'summerinternship.user_role' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:782) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:666) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:95) ~[HikariCP-3.2.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-3.2.0.jar:na]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	... 40 common frames omitted
+
+2019-09-02 19:58:37.722  WARN 6324 --- [restartedMain] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "alter table user_role drop foreign key FK4ch3b3m0g8nsix3bl1334x7uj" via JDBC Statement
+
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table user_role drop foreign key FK4ch3b3m0g8nsix3bl1334x7uj" via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlString(SchemaDropperImpl.java:375) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlStrings(SchemaDropperImpl.java:359) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applyConstraintDropping(SchemaDropperImpl.java:331) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:230) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:154) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:126) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:112) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:144) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:72) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:310) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:467) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:939) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:57) [spring-orm-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) [spring-orm-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:390) [spring-orm-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:377) [spring-orm-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) [spring-orm-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1105) ~[spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867) ~[spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549) ~[spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142) ~[spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775) ~[spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) ~[spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) ~[spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260) ~[spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248) ~[spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at com.demo.Application.main(Application.java:24) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_201]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_201]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_201]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_201]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+Caused by: java.sql.SQLSyntaxErrorException: Table 'summerinternship.user_role' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:782) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:666) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:95) ~[HikariCP-3.2.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-3.2.0.jar:na]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	... 40 common frames omitted
+
+2019-09-02 19:58:43.605  INFO 6324 --- [restartedMain] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@3f52fa14'
+2019-09-02 19:58:43.609  INFO 6324 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-09-02 19:58:43.677  INFO 6324 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-09-02 19:58:44.043  INFO 6324 --- [restartedMain] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-09-02 19:58:45.154  INFO 6324 --- [restartedMain] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2019-09-02 19:58:45.155  INFO 6324 --- [restartedMain] org.mongodb.driver.cluster               : Adding discovered server localhost:27017 to client view of cluster
+2019-09-02 19:58:45.231  INFO 6324 --- [cluster-ClusterId{value='5d6d12058a043818b40b2b13', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:476}] to localhost:27017
+2019-09-02 19:58:45.237  INFO 6324 --- [cluster-ClusterId{value='5d6d12058a043818b40b2b13', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 0, 9]}, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=3393318}
+2019-09-02 19:58:45.239  INFO 6324 --- [cluster-ClusterId{value='5d6d12058a043818b40b2b13', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Discovered cluster type of STANDALONE
+2019-09-02 19:58:45.443  INFO 6324 --- [restartedMain] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:477}] to localhost:27017
+2019-09-02 19:58:45.610  WARN 6324 --- [restartedMain] org.apache.velocity.deprecation          : configuration key 'class.resource.loader.class' has been deprecated in favor of 'resource.loader.class.class'
+2019-09-02 19:58:45.610  WARN 6324 --- [restartedMain] org.apache.velocity.deprecation          : configuration key 'resource.loader' has been deprecated in favor of 'resource.loaders'
+2019-09-02 19:58:45.829  INFO 6324 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2019-09-02 19:58:45.970  INFO 6324 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/css/**'], []
+2019-09-02 19:58:45.971  INFO 6324 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/js/**'], []
+2019-09-02 19:58:45.971  INFO 6324 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/images/**'], []
+2019-09-02 19:58:46.035  INFO 6324 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@570f7a25, org.springframework.security.web.context.SecurityContextPersistenceFilter@7e2747a5, org.springframework.security.web.header.HeaderWriterFilter@713ebb94, org.springframework.web.filter.CorsFilter@5c0921d5, org.springframework.security.web.csrf.CsrfFilter@5d5b81d4, org.springframework.security.web.authentication.logout.LogoutFilter@4e11a43d, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6c2dbc1a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@ae323fa, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@31781d66, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1c10be99, org.springframework.security.web.session.SessionManagementFilter@444fc082, org.springframework.security.web.access.ExceptionTranslationFilter@411ccc3a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5d0e7ae0]
+2019-09-02 19:58:46.312  INFO 6324 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-02 19:58:46.370  WARN 6324 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-09-02 19:58:46.504  WARN 6324 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2019-09-02 19:58:46.836  INFO 6324 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-09-02 19:58:46.993  INFO 6324 --- [restartedMain] com.demo.database.seed.SeedingCaller     : seeding CategoriesTableSeeder
+2019-09-02 19:58:47.349  INFO 6324 --- [restartedMain] com.demo.database.seed.SeedingCaller     : seeded CategoriesTableSeeder
+2019-09-02 19:58:47.349  INFO 6324 --- [restartedMain] com.demo.database.seed.SeedingCaller     : ===========================
+2019-09-02 19:58:47.350  INFO 6324 --- [restartedMain] com.demo.database.seed.SeedingCaller     : seeding RolesTableSeeder
+2019-09-02 19:58:47.427  INFO 6324 --- [restartedMain] com.demo.database.seed.SeedingCaller     : seeded RolesTableSeeder
+2019-09-02 19:58:47.427  INFO 6324 --- [restartedMain] com.demo.database.seed.SeedingCaller     : ===========================
+2019-09-02 19:58:47.428  INFO 6324 --- [restartedMain] com.demo.database.seed.SeedingCaller     : seeding UsersTableSeeder
+2019-09-02 19:58:47.938  INFO 6324 --- [restartedMain] com.demo.database.seed.SeedingCaller     : seeded UsersTableSeeder
+2019-09-02 19:58:47.938  INFO 6324 --- [restartedMain] com.demo.database.seed.SeedingCaller     : ===========================
+2019-09-02 19:58:47.988  INFO 6324 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2019-09-02 19:58:47.992  INFO 6324 --- [restartedMain] com.demo.Application                     : Started Application in 16.238 seconds (JVM running for 18.429)
+2019-09-02 20:00:16.586  INFO 6324 --- [Thread-42] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-09-02 20:00:16.587  INFO 6324 --- [Thread-42] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2019-09-02 20:00:16.593  INFO 6324 --- [Thread-42] org.mongodb.driver.connection            : Closed connection [connectionId{localValue:2, serverValue:477}] to localhost:27017 because the pool has been closed.
+2019-09-02 20:00:16.599  INFO 6324 --- [Thread-42] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-09-02 20:00:16.608  INFO 6324 --- [Thread-42] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-09-02 20:00:16.633  INFO 6324 --- [Thread-42] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-09-02 20:00:26.733  INFO 14452 --- [restartedMain] com.demo.Application                     : Starting Application on DESKTOP-RRC9P7A with PID 14452 (E:\Study\Springboot\summerinternship\target\classes started by Admin in E:\Study\Springboot\summerinternship)
+2019-09-02 20:00:26.741  INFO 14452 --- [restartedMain] com.demo.Application                     : No active profile set, falling back to default profiles: default
+2019-09-02 20:00:27.675  INFO 14452 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-09-02 20:00:27.677  INFO 14452 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-09-02 20:00:29.211  INFO 14452 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-09-02 20:00:29.212  INFO 14452 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-02 20:00:29.326  INFO 14452 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.demo.repository.EmployeeRepository.
+2019-09-02 20:00:29.369  INFO 14452 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 144ms. Found 3 repository interfaces.
+2019-09-02 20:00:29.399  INFO 14452 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-09-02 20:00:29.400  INFO 14452 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-02 20:00:29.410  INFO 14452 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.demo.repository.CategoryRepository.
+2019-09-02 20:00:29.413  INFO 14452 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.demo.repository.RoleRepository.
+2019-09-02 20:00:29.414  INFO 14452 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.demo.repository.UserRepository.
+2019-09-02 20:00:29.422  INFO 14452 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22ms. Found 1 repository interfaces.
+2019-09-02 20:00:29.980  INFO 14452 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6245641b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-02 20:00:30.029  INFO 14452 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$faf32c55] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-02 20:00:30.035  INFO 14452 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-02 20:00:30.041  INFO 14452 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@4529acdf' of type [org.springframework.security.oauth2.provider.expression.OAuth2MethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-02 20:00:30.043  INFO 14452 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$1fc7cf07] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-02 20:00:30.048  INFO 14452 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-02 20:00:30.772  INFO 14452 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2019-09-02 20:00:30.810  INFO 14452 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-09-02 20:00:30.811  INFO 14452 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2019-09-02 20:00:30.970  INFO 14452 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-09-02 20:00:30.971  INFO 14452 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3294 ms
+2019-09-02 20:00:31.210  INFO 14452 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-09-02 20:00:31.211  WARN 14452 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-09-02 20:00:31.373  INFO 14452 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-09-02 20:00:31.442  INFO 14452 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-09-02 20:00:31.538  INFO 14452 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2019-09-02 20:00:31.541  INFO 14452 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-09-02 20:00:31.776  INFO 14452 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-09-02 20:00:31.989  INFO 14452 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2019-09-02 20:00:33.311  WARN 14452 --- [restartedMain] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "alter table user_role drop foreign key FKt7e7djp752sqn6w22i6ocqy6q" via JDBC Statement
+
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table user_role drop foreign key FKt7e7djp752sqn6w22i6ocqy6q" via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlString(SchemaDropperImpl.java:375) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlStrings(SchemaDropperImpl.java:359) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applyConstraintDropping(SchemaDropperImpl.java:331) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:230) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:154) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:126) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:112) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:144) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:72) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:310) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:467) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:939) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:57) [spring-orm-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) [spring-orm-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:390) [spring-orm-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:377) [spring-orm-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) [spring-orm-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1105) ~[spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867) ~[spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549) ~[spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142) ~[spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775) ~[spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) ~[spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) ~[spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260) ~[spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248) ~[spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at com.demo.Application.main(Application.java:24) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_201]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_201]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_201]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_201]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+Caused by: java.sql.SQLSyntaxErrorException: Can't DROP FOREIGN KEY `FKt7e7djp752sqn6w22i6ocqy6q`; check that it exists
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:782) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:666) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:95) ~[HikariCP-3.2.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-3.2.0.jar:na]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	... 40 common frames omitted
+
+2019-09-02 20:00:33.396  WARN 14452 --- [restartedMain] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "alter table user_role drop foreign key FKj345gk1bovqvfame88rcx7yyx" via JDBC Statement
+
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table user_role drop foreign key FKj345gk1bovqvfame88rcx7yyx" via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlString(SchemaDropperImpl.java:375) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlStrings(SchemaDropperImpl.java:359) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applyConstraintDropping(SchemaDropperImpl.java:331) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:230) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:154) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:126) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:112) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:144) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:72) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:310) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:467) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:939) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:57) [spring-orm-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) [spring-orm-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:390) [spring-orm-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:377) [spring-orm-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) [spring-orm-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1105) ~[spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867) ~[spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549) ~[spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142) ~[spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775) ~[spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) ~[spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) ~[spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260) ~[spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248) ~[spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at com.demo.Application.main(Application.java:24) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_201]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_201]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_201]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_201]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+Caused by: java.sql.SQLSyntaxErrorException: Can't DROP FOREIGN KEY `FKj345gk1bovqvfame88rcx7yyx`; check that it exists
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:782) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:666) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:95) ~[HikariCP-3.2.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-3.2.0.jar:na]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	... 40 common frames omitted
+
+2019-09-02 20:00:33.754  WARN 14452 --- [restartedMain] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "drop table if exists roles" via JDBC Statement
+
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "drop table if exists roles" via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlString(SchemaDropperImpl.java:375) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlStrings(SchemaDropperImpl.java:359) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:241) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:154) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:126) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:112) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:144) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:72) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:310) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:467) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:939) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:57) [spring-orm-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) [spring-orm-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:390) [spring-orm-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:377) [spring-orm-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) [spring-orm-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1105) ~[spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867) ~[spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549) ~[spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142) ~[spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775) ~[spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) ~[spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) ~[spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260) ~[spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248) ~[spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at com.demo.Application.main(Application.java:24) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_201]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_201]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_201]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_201]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+Caused by: java.sql.SQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:117) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:782) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:666) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:95) ~[HikariCP-3.2.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-3.2.0.jar:na]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	... 39 common frames omitted
+
+2019-09-02 20:00:34.625  WARN 14452 --- [restartedMain] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "create table roles (id integer not null auto_increment, name varchar(255), primary key (id)) engine=InnoDB" via JDBC Statement
+
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "create table roles (id integer not null auto_increment, name varchar(255), primary key (id)) engine=InnoDB" via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.applySqlString(SchemaCreatorImpl.java:440) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.applySqlStrings(SchemaCreatorImpl.java:424) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.createFromMetadata(SchemaCreatorImpl.java:315) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.performCreation(SchemaCreatorImpl.java:166) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:135) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:121) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:155) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:72) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:310) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:467) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:939) [hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:57) [spring-orm-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) [spring-orm-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:390) [spring-orm-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:377) [spring-orm-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) [spring-orm-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) [spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1105) ~[spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867) ~[spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549) ~[spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142) ~[spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775) ~[spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) ~[spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) ~[spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260) ~[spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248) ~[spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at com.demo.Application.main(Application.java:24) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_201]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_201]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_201]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_201]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+Caused by: java.sql.SQLSyntaxErrorException: Table 'roles' already exists
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:782) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:666) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:95) ~[HikariCP-3.2.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-3.2.0.jar:na]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	... 39 common frames omitted
+
+2019-09-02 20:00:38.833  INFO 14452 --- [restartedMain] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@711d6fa6'
+2019-09-02 20:00:38.837  INFO 14452 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-09-02 20:00:38.905  INFO 14452 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-09-02 20:00:39.308  INFO 14452 --- [restartedMain] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-09-02 20:00:40.442  INFO 14452 --- [restartedMain] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2019-09-02 20:00:40.443  INFO 14452 --- [restartedMain] org.mongodb.driver.cluster               : Adding discovered server localhost:27017 to client view of cluster
+2019-09-02 20:00:40.530  INFO 14452 --- [cluster-ClusterId{value='5d6d12788a04383874ee3120', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:478}] to localhost:27017
+2019-09-02 20:00:40.536  INFO 14452 --- [cluster-ClusterId{value='5d6d12788a04383874ee3120', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 0, 9]}, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=3389165}
+2019-09-02 20:00:40.538  INFO 14452 --- [cluster-ClusterId{value='5d6d12788a04383874ee3120', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Discovered cluster type of STANDALONE
+2019-09-02 20:00:40.747  INFO 14452 --- [restartedMain] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:479}] to localhost:27017
+2019-09-02 20:00:40.902  WARN 14452 --- [restartedMain] org.apache.velocity.deprecation          : configuration key 'class.resource.loader.class' has been deprecated in favor of 'resource.loader.class.class'
+2019-09-02 20:00:40.902  WARN 14452 --- [restartedMain] org.apache.velocity.deprecation          : configuration key 'resource.loader' has been deprecated in favor of 'resource.loaders'
+2019-09-02 20:00:41.114  INFO 14452 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2019-09-02 20:00:41.266  INFO 14452 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/css/**'], []
+2019-09-02 20:00:41.266  INFO 14452 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/js/**'], []
+2019-09-02 20:00:41.266  INFO 14452 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/images/**'], []
+2019-09-02 20:00:41.343  INFO 14452 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@56b89b70, org.springframework.security.web.context.SecurityContextPersistenceFilter@51da4f50, org.springframework.security.web.header.HeaderWriterFilter@58bb1db6, org.springframework.web.filter.CorsFilter@4fc1b3cc, org.springframework.security.web.csrf.CsrfFilter@70fddb2c, org.springframework.security.web.authentication.logout.LogoutFilter@3c37da14, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3196ca04, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@52005da4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@430a99fa, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@57cc170, org.springframework.security.web.session.SessionManagementFilter@aee1c4f, org.springframework.security.web.access.ExceptionTranslationFilter@253692cd, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@45027bf9]
+2019-09-02 20:00:41.612  INFO 14452 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-02 20:00:41.670  WARN 14452 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-09-02 20:00:41.814  WARN 14452 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2019-09-02 20:00:42.133  INFO 14452 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-09-02 20:00:42.292  INFO 14452 --- [restartedMain] com.demo.database.seed.SeedingCaller     : seeding CategoriesTableSeeder
+2019-09-02 20:00:42.878  INFO 14452 --- [restartedMain] com.demo.database.seed.SeedingCaller     : seeded CategoriesTableSeeder
+2019-09-02 20:00:42.878  INFO 14452 --- [restartedMain] com.demo.database.seed.SeedingCaller     : ===========================
+2019-09-02 20:00:42.879  INFO 14452 --- [restartedMain] com.demo.database.seed.SeedingCaller     : seeding RolesTableSeeder
+2019-09-02 20:00:43.165  INFO 14452 --- [restartedMain] com.demo.database.seed.SeedingCaller     : seeded RolesTableSeeder
+2019-09-02 20:00:43.165  INFO 14452 --- [restartedMain] com.demo.database.seed.SeedingCaller     : ===========================
+2019-09-02 20:00:43.166  INFO 14452 --- [restartedMain] com.demo.database.seed.SeedingCaller     : seeding UsersTableSeeder
+2019-09-02 20:00:43.277  INFO 14452 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2019-09-02 20:00:43.281  INFO 14452 --- [restartedMain] com.demo.Application                     : Started Application in 17.515 seconds (JVM running for 19.226)
+2019-09-02 20:04:12.739  INFO 14452 --- [Thread-44] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-09-02 20:04:12.742  INFO 14452 --- [Thread-44] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2019-09-02 20:04:12.753  INFO 14452 --- [Thread-44] org.mongodb.driver.connection            : Closed connection [connectionId{localValue:2, serverValue:479}] to localhost:27017 because the pool has been closed.
+2019-09-02 20:04:12.763  INFO 14452 --- [Thread-44] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-09-02 20:04:12.770  INFO 14452 --- [Thread-44] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-09-02 20:04:12.782  INFO 14452 --- [Thread-44] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-09-02 20:04:23.606  INFO 13056 --- [restartedMain] com.demo.Application                     : Starting Application on DESKTOP-RRC9P7A with PID 13056 (E:\Study\Springboot\summerinternship\target\classes started by Admin in E:\Study\Springboot\summerinternship)
+2019-09-02 20:04:23.613  INFO 13056 --- [restartedMain] com.demo.Application                     : No active profile set, falling back to default profiles: default
+2019-09-02 20:04:24.074  INFO 13056 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-09-02 20:04:24.074  INFO 13056 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-09-02 20:04:26.210  INFO 13056 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-09-02 20:04:26.210  INFO 13056 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-02 20:04:26.325  INFO 13056 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.demo.repository.EmployeeRepository.
+2019-09-02 20:04:26.371  INFO 13056 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 146ms. Found 3 repository interfaces.
+2019-09-02 20:04:26.411  INFO 13056 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-09-02 20:04:26.411  INFO 13056 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-02 20:04:26.424  INFO 13056 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.demo.repository.CategoryRepository.
+2019-09-02 20:04:26.428  INFO 13056 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.demo.repository.RoleRepository.
+2019-09-02 20:04:26.429  INFO 13056 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.demo.repository.UserRepository.
+2019-09-02 20:04:26.435  INFO 13056 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 24ms. Found 1 repository interfaces.
+2019-09-02 20:04:26.988  INFO 13056 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$60f7e506] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-02 20:04:27.032  INFO 13056 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$f9a5ad40] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-02 20:04:27.038  INFO 13056 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-02 20:04:27.043  INFO 13056 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@d1e40c8' of type [org.springframework.security.oauth2.provider.expression.OAuth2MethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-02 20:04:27.045  INFO 13056 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$1e7a4ff2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-02 20:04:27.050  INFO 13056 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-02 20:04:27.678  INFO 13056 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2019-09-02 20:04:27.717  INFO 13056 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-09-02 20:04:27.718  INFO 13056 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2019-09-02 20:04:27.860  INFO 13056 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-09-02 20:04:27.860  INFO 13056 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3785 ms
+2019-09-02 20:04:28.086  INFO 13056 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-09-02 20:04:28.088  WARN 13056 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-09-02 20:04:28.249  INFO 13056 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-09-02 20:04:28.337  INFO 13056 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-09-02 20:04:28.437  INFO 13056 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2019-09-02 20:04:28.439  INFO 13056 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-09-02 20:04:28.608  INFO 13056 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-09-02 20:04:28.815  INFO 13056 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2019-09-02 20:04:29.012  WARN 13056 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: Unable to map collection com.demo.entity.User.roles
+2019-09-02 20:04:29.013  INFO 13056 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-09-02 20:04:29.024  INFO 13056 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-09-02 20:04:29.028  INFO 13056 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2019-09-02 20:04:29.043  INFO 13056 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-09-02 20:04:29.056 ERROR 13056 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: Unable to map collection com.demo.entity.User.roles
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1778) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1105) ~[spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867) ~[spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549) ~[spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142) ~[spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775) [spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) [spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) [spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260) [spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248) [spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at com.demo.Application.main(Application.java:24) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_201]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_201]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_201]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_201]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+Caused by: org.hibernate.AnnotationException: Unable to map collection com.demo.entity.User.roles
+	at org.hibernate.cfg.annotations.CollectionBinder.bindCollectionSecondPass(CollectionBinder.java:1644) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.cfg.annotations.CollectionBinder.bindManyToManySecondPass(CollectionBinder.java:1371) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.cfg.annotations.CollectionBinder.bindStarToManySecondPass(CollectionBinder.java:811) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.cfg.annotations.CollectionBinder$1.secondPass(CollectionBinder.java:736) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.cfg.CollectionSecondPass.doSecondPass(CollectionSecondPass.java:54) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processSecondPasses(InFlightMetadataCollectorImpl.java:1696) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processSecondPasses(InFlightMetadataCollectorImpl.java:1664) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:287) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:904) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:935) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:57) ~[spring-orm-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:390) ~[spring-orm-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:377) ~[spring-orm-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	... 21 common frames omitted
+Caused by: org.hibernate.cfg.RecoverableException: Unable to find column with logical name: user_id in org.hibernate.mapping.Table(users) and its related supertables and secondary tables
+	at org.hibernate.cfg.Ejb3JoinColumn.checkReferencedColumnsType(Ejb3JoinColumn.java:837) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.cfg.BinderHelper.createSyntheticPropertyReference(BinderHelper.java:256) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.cfg.annotations.CollectionBinder.bindCollectionSecondPass(CollectionBinder.java:1634) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	... 37 common frames omitted
+Caused by: org.hibernate.MappingException: Unable to find column with logical name: user_id in org.hibernate.mapping.Table(users) and its related supertables and secondary tables
+	at org.hibernate.cfg.Ejb3JoinColumn.checkReferencedColumnsType(Ejb3JoinColumn.java:832) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	... 39 common frames omitted
+
+2019-09-02 20:05:09.912  INFO 5632 --- [restartedMain] com.demo.Application                     : Starting Application on DESKTOP-RRC9P7A with PID 5632 (E:\Study\Springboot\summerinternship\target\classes started by Admin in E:\Study\Springboot\summerinternship)
+2019-09-02 20:05:09.916  INFO 5632 --- [restartedMain] com.demo.Application                     : No active profile set, falling back to default profiles: default
+2019-09-02 20:05:10.290  INFO 5632 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-09-02 20:05:10.291  INFO 5632 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-09-02 20:05:11.689  INFO 5632 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-09-02 20:05:11.690  INFO 5632 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-02 20:05:11.818  INFO 5632 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.demo.repository.EmployeeRepository.
+2019-09-02 20:05:11.862  INFO 5632 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 161ms. Found 3 repository interfaces.
+2019-09-02 20:05:11.888  INFO 5632 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-09-02 20:05:11.889  INFO 5632 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-02 20:05:11.898  INFO 5632 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.demo.repository.CategoryRepository.
+2019-09-02 20:05:11.901  INFO 5632 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.demo.repository.RoleRepository.
+2019-09-02 20:05:11.902  INFO 5632 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.demo.repository.UserRepository.
+2019-09-02 20:05:11.910  INFO 5632 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 21ms. Found 1 repository interfaces.
+2019-09-02 20:05:12.535  INFO 5632 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a30134c1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-02 20:05:12.576  INFO 5632 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$3baefcfb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-02 20:05:12.582  INFO 5632 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-02 20:05:12.587  INFO 5632 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@1307b036' of type [org.springframework.security.oauth2.provider.expression.OAuth2MethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-02 20:05:12.591  INFO 5632 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$60839fad] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-02 20:05:12.595  INFO 5632 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-02 20:05:13.249  INFO 5632 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2019-09-02 20:05:13.280  INFO 5632 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-09-02 20:05:13.280  INFO 5632 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2019-09-02 20:05:13.442  INFO 5632 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-09-02 20:05:13.443  INFO 5632 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3150 ms
+2019-09-02 20:05:13.668  INFO 5632 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-09-02 20:05:13.669  WARN 5632 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-09-02 20:05:13.820  INFO 5632 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-09-02 20:05:13.882  INFO 5632 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-09-02 20:05:13.976  INFO 5632 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2019-09-02 20:05:13.978  INFO 5632 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-09-02 20:05:14.166  INFO 5632 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-09-02 20:05:14.384  INFO 5632 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2019-09-02 20:05:14.578  WARN 5632 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: Unable to map collection com.demo.entity.User.roles
+2019-09-02 20:05:14.579  INFO 5632 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-09-02 20:05:14.588  INFO 5632 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-09-02 20:05:14.593  INFO 5632 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2019-09-02 20:05:14.607  INFO 5632 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-09-02 20:05:14.623 ERROR 5632 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: Unable to map collection com.demo.entity.User.roles
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1778) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1105) ~[spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867) ~[spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549) ~[spring-context-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142) ~[spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775) [spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) [spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) [spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260) [spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248) [spring-boot-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+	at com.demo.Application.main(Application.java:24) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_201]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_201]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_201]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_201]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.1.5.RELEASE.jar:2.1.5.RELEASE]
+Caused by: org.hibernate.AnnotationException: Unable to map collection com.demo.entity.User.roles
+	at org.hibernate.cfg.annotations.CollectionBinder.bindCollectionSecondPass(CollectionBinder.java:1644) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.cfg.annotations.CollectionBinder.bindManyToManySecondPass(CollectionBinder.java:1371) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.cfg.annotations.CollectionBinder.bindStarToManySecondPass(CollectionBinder.java:811) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.cfg.annotations.CollectionBinder$1.secondPass(CollectionBinder.java:736) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.cfg.CollectionSecondPass.doSecondPass(CollectionSecondPass.java:54) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processSecondPasses(InFlightMetadataCollectorImpl.java:1696) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processSecondPasses(InFlightMetadataCollectorImpl.java:1664) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:287) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:904) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:935) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:57) ~[spring-orm-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:390) ~[spring-orm-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:377) ~[spring-orm-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774) ~[spring-beans-5.1.7.RELEASE.jar:5.1.7.RELEASE]
+	... 21 common frames omitted
+Caused by: org.hibernate.cfg.RecoverableException: Unable to find column with logical name: user_id in org.hibernate.mapping.Table(users) and its related supertables and secondary tables
+	at org.hibernate.cfg.Ejb3JoinColumn.checkReferencedColumnsType(Ejb3JoinColumn.java:837) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.cfg.BinderHelper.createSyntheticPropertyReference(BinderHelper.java:256) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	at org.hibernate.cfg.annotations.CollectionBinder.bindCollectionSecondPass(CollectionBinder.java:1634) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	... 37 common frames omitted
+Caused by: org.hibernate.MappingException: Unable to find column with logical name: user_id in org.hibernate.mapping.Table(users) and its related supertables and secondary tables
+	at org.hibernate.cfg.Ejb3JoinColumn.checkReferencedColumnsType(Ejb3JoinColumn.java:832) ~[hibernate-core-5.3.10.Final.jar:5.3.10.Final]
+	... 39 common frames omitted
+
+2019-09-02 20:06:47.761  INFO 6176 --- [restartedMain] com.demo.Application                     : Starting Application on DESKTOP-RRC9P7A with PID 6176 (E:\Study\Springboot\summerinternship\target\classes started by Admin in E:\Study\Springboot\summerinternship)
+2019-09-02 20:06:47.767  INFO 6176 --- [restartedMain] com.demo.Application                     : No active profile set, falling back to default profiles: default
+2019-09-02 20:06:48.273  INFO 6176 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-09-02 20:06:48.273  INFO 6176 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-09-02 20:06:50.289  INFO 6176 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-09-02 20:06:50.290  INFO 6176 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-02 20:06:50.427  INFO 6176 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.demo.repository.EmployeeRepository.
+2019-09-02 20:06:50.479  INFO 6176 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 177ms. Found 3 repository interfaces.
+2019-09-02 20:06:50.531  INFO 6176 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-09-02 20:06:50.532  INFO 6176 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-02 20:06:50.546  INFO 6176 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.demo.repository.CategoryRepository.
+2019-09-02 20:06:50.557  INFO 6176 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.demo.repository.RoleRepository.
+2019-09-02 20:06:50.559  INFO 6176 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.demo.repository.UserRepository.
+2019-09-02 20:06:50.573  INFO 6176 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 40ms. Found 1 repository interfaces.
+2019-09-02 20:06:51.253  INFO 6176 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$14e48edb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-02 20:06:51.298  INFO 6176 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$ad925715] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-02 20:06:51.306  INFO 6176 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-02 20:06:51.311  INFO 6176 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@dc169d3' of type [org.springframework.security.oauth2.provider.expression.OAuth2MethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-02 20:06:51.313  INFO 6176 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$d266f9c7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-02 20:06:51.317  INFO 6176 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-02 20:06:51.931  INFO 6176 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2019-09-02 20:06:51.964  INFO 6176 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-09-02 20:06:51.964  INFO 6176 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2019-09-02 20:06:52.108  INFO 6176 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-09-02 20:06:52.108  INFO 6176 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3835 ms
+2019-09-02 20:06:52.334  INFO 6176 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-09-02 20:06:52.335  WARN 6176 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-09-02 20:06:52.494  INFO 6176 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-09-02 20:06:52.548  INFO 6176 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-09-02 20:06:52.634  INFO 6176 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2019-09-02 20:06:52.636  INFO 6176 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-09-02 20:06:52.821  INFO 6176 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-09-02 20:06:53.037  INFO 6176 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2019-09-02 20:06:59.419  INFO 6176 --- [restartedMain] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@1f3b55d0'
+2019-09-02 20:06:59.423  INFO 6176 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-09-02 20:06:59.499  INFO 6176 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-09-02 20:06:59.866  INFO 6176 --- [restartedMain] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-09-02 20:07:01.021  INFO 6176 --- [restartedMain] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2019-09-02 20:07:01.022  INFO 6176 --- [restartedMain] org.mongodb.driver.cluster               : Adding discovered server localhost:27017 to client view of cluster
+2019-09-02 20:07:01.098  INFO 6176 --- [cluster-ClusterId{value='5d6d13f58a043818206da11a', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:480}] to localhost:27017
+2019-09-02 20:07:01.104  INFO 6176 --- [cluster-ClusterId{value='5d6d13f58a043818206da11a', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 0, 9]}, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=3600610}
+2019-09-02 20:07:01.107  INFO 6176 --- [cluster-ClusterId{value='5d6d13f58a043818206da11a', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Discovered cluster type of STANDALONE
+2019-09-02 20:07:01.330  INFO 6176 --- [restartedMain] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:481}] to localhost:27017
+2019-09-02 20:07:01.497  WARN 6176 --- [restartedMain] org.apache.velocity.deprecation          : configuration key 'class.resource.loader.class' has been deprecated in favor of 'resource.loader.class.class'
+2019-09-02 20:07:01.498  WARN 6176 --- [restartedMain] org.apache.velocity.deprecation          : configuration key 'resource.loader' has been deprecated in favor of 'resource.loaders'
+2019-09-02 20:07:01.685  INFO 6176 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2019-09-02 20:07:01.836  INFO 6176 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/css/**'], []
+2019-09-02 20:07:01.837  INFO 6176 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/js/**'], []
+2019-09-02 20:07:01.837  INFO 6176 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/images/**'], []
+2019-09-02 20:07:01.891  INFO 6176 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@b369a42, org.springframework.security.web.context.SecurityContextPersistenceFilter@2ed711e9, org.springframework.security.web.header.HeaderWriterFilter@47b22e2, org.springframework.web.filter.CorsFilter@72c200ac, org.springframework.security.web.csrf.CsrfFilter@445c72f2, org.springframework.security.web.authentication.logout.LogoutFilter@ec01035, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@8fe2900, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2f81af2a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3e775d83, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2c9c4a59, org.springframework.security.web.session.SessionManagementFilter@41a07d1c, org.springframework.security.web.access.ExceptionTranslationFilter@237df513, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@44a556dc]
+2019-09-02 20:07:02.164  INFO 6176 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-02 20:07:02.230  WARN 6176 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-09-02 20:07:02.357  WARN 6176 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2019-09-02 20:07:02.667  INFO 6176 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-09-02 20:07:02.837  INFO 6176 --- [restartedMain] com.demo.database.seed.SeedingCaller     : seeding CategoriesTableSeeder
+2019-09-02 20:07:03.486  INFO 6176 --- [restartedMain] com.demo.database.seed.SeedingCaller     : seeded CategoriesTableSeeder
+2019-09-02 20:07:03.487  INFO 6176 --- [restartedMain] com.demo.database.seed.SeedingCaller     : ===========================
+2019-09-02 20:07:03.488  INFO 6176 --- [restartedMain] com.demo.database.seed.SeedingCaller     : seeding RolesTableSeeder
+2019-09-02 20:07:03.541  INFO 6176 --- [restartedMain] com.demo.database.seed.SeedingCaller     : seeded RolesTableSeeder
+2019-09-02 20:07:03.541  INFO 6176 --- [restartedMain] com.demo.database.seed.SeedingCaller     : ===========================
+2019-09-02 20:07:03.542  INFO 6176 --- [restartedMain] com.demo.database.seed.SeedingCaller     : seeding UsersTableSeeder
+2019-09-02 20:07:04.074  INFO 6176 --- [restartedMain] com.demo.database.seed.SeedingCaller     : seeded UsersTableSeeder
+2019-09-02 20:07:04.075  INFO 6176 --- [restartedMain] com.demo.database.seed.SeedingCaller     : ===========================
+2019-09-02 20:07:04.122  INFO 6176 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2019-09-02 20:07:04.127  INFO 6176 --- [restartedMain] com.demo.Application                     : Started Application in 17.063 seconds (JVM running for 18.976)
+2019-09-02 20:08:17.336  INFO 6176 --- [Thread-43] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-09-02 20:08:17.337  INFO 6176 --- [Thread-43] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2019-09-02 20:08:17.346  INFO 6176 --- [Thread-43] org.mongodb.driver.connection            : Closed connection [connectionId{localValue:2, serverValue:481}] to localhost:27017 because the pool has been closed.
+2019-09-02 20:08:17.355  INFO 6176 --- [Thread-43] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-09-02 20:08:17.364  INFO 6176 --- [Thread-43] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-09-02 20:08:17.372  INFO 6176 --- [Thread-43] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-09-02 20:08:28.712  INFO 8764 --- [restartedMain] com.demo.Application                     : Starting Application on DESKTOP-RRC9P7A with PID 8764 (E:\Study\Springboot\summerinternship\target\classes started by Admin in E:\Study\Springboot\summerinternship)
+2019-09-02 20:08:28.717  INFO 8764 --- [restartedMain] com.demo.Application                     : No active profile set, falling back to default profiles: default
+2019-09-02 20:08:29.157  INFO 8764 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-09-02 20:08:29.157  INFO 8764 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-09-02 20:08:30.384  INFO 8764 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-09-02 20:08:30.385  INFO 8764 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-02 20:08:30.498  INFO 8764 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JPA - Could not safely identify store assignment for repository candidate interface com.demo.repository.EmployeeRepository.
+2019-09-02 20:08:30.540  INFO 8764 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 145ms. Found 3 repository interfaces.
+2019-09-02 20:08:30.571  INFO 8764 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-09-02 20:08:30.572  INFO 8764 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-09-02 20:08:30.580  INFO 8764 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.demo.repository.CategoryRepository.
+2019-09-02 20:08:30.585  INFO 8764 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.demo.repository.RoleRepository.
+2019-09-02 20:08:30.585  INFO 8764 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data MongoDB - Could not safely identify store assignment for repository candidate interface com.demo.repository.UserRepository.
+2019-09-02 20:08:30.596  INFO 8764 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 24ms. Found 1 repository interfaces.
+2019-09-02 20:08:31.347  INFO 8764 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$15d437c4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-02 20:08:31.394  INFO 8764 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$ae81fffe] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-02 20:08:31.401  INFO 8764 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-02 20:08:31.407  INFO 8764 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@3b2a9e66' of type [org.springframework.security.oauth2.provider.expression.OAuth2MethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-02 20:08:31.412  INFO 8764 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$d356a2b0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-02 20:08:31.417  INFO 8764 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-02 20:08:32.222  INFO 8764 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2019-09-02 20:08:32.300  INFO 8764 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-09-02 20:08:32.301  INFO 8764 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2019-09-02 20:08:32.685  INFO 8764 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-09-02 20:08:32.685  INFO 8764 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3527 ms
+2019-09-02 20:08:33.331  INFO 8764 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-09-02 20:08:33.333  WARN 8764 --- [restartedMain] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-09-02 20:08:33.555  INFO 8764 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-09-02 20:08:33.655  INFO 8764 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-09-02 20:08:33.816  INFO 8764 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2019-09-02 20:08:33.819  INFO 8764 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-09-02 20:08:34.153  INFO 8764 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-09-02 20:08:34.523  INFO 8764 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2019-09-02 20:08:47.481  INFO 8764 --- [restartedMain] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@c6eea06'
+2019-09-02 20:08:47.485  INFO 8764 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-09-02 20:08:47.564  INFO 8764 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-09-02 20:08:47.952  INFO 8764 --- [restartedMain] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2019-09-02 20:08:49.126  INFO 8764 --- [restartedMain] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2019-09-02 20:08:49.126  INFO 8764 --- [restartedMain] org.mongodb.driver.cluster               : Adding discovered server localhost:27017 to client view of cluster
+2019-09-02 20:08:49.205  INFO 8764 --- [cluster-ClusterId{value='5d6d14618a0438223c64640b', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:482}] to localhost:27017
+2019-09-02 20:08:49.211  INFO 8764 --- [cluster-ClusterId{value='5d6d14618a0438223c64640b', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 0, 9]}, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=3352540}
+2019-09-02 20:08:49.213  INFO 8764 --- [cluster-ClusterId{value='5d6d14618a0438223c64640b', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Discovered cluster type of STANDALONE
+2019-09-02 20:08:49.397  INFO 8764 --- [restartedMain] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:483}] to localhost:27017
+2019-09-02 20:08:49.567  WARN 8764 --- [restartedMain] org.apache.velocity.deprecation          : configuration key 'class.resource.loader.class' has been deprecated in favor of 'resource.loader.class.class'
+2019-09-02 20:08:49.567  WARN 8764 --- [restartedMain] org.apache.velocity.deprecation          : configuration key 'resource.loader' has been deprecated in favor of 'resource.loaders'
+2019-09-02 20:08:49.759  INFO 8764 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2019-09-02 20:08:49.912  INFO 8764 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/css/**'], []
+2019-09-02 20:08:49.912  INFO 8764 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/js/**'], []
+2019-09-02 20:08:49.913  INFO 8764 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/images/**'], []
+2019-09-02 20:08:49.970  INFO 8764 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7ac8424b, org.springframework.security.web.context.SecurityContextPersistenceFilter@700beadf, org.springframework.security.web.header.HeaderWriterFilter@595e67e9, org.springframework.web.filter.CorsFilter@7d85002b, org.springframework.security.web.csrf.CsrfFilter@4774b642, org.springframework.security.web.authentication.logout.LogoutFilter@22c80330, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@23e965e7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@59ba2532, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@64983b8c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@24a015ea, org.springframework.security.web.session.SessionManagementFilter@3530dbdf, org.springframework.security.web.access.ExceptionTranslationFilter@5fe13114, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@101973aa]
+2019-09-02 20:08:50.231  INFO 8764 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-02 20:08:50.287  WARN 8764 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-09-02 20:08:50.416  WARN 8764 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2019-09-02 20:08:50.722  INFO 8764 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-09-02 20:08:50.871  INFO 8764 --- [restartedMain] com.demo.database.seed.SeedingCaller     : seeding CategoriesTableSeeder
+2019-09-02 20:08:51.197  INFO 8764 --- [restartedMain] com.demo.database.seed.SeedingCaller     : seeded CategoriesTableSeeder
+2019-09-02 20:08:51.197  INFO 8764 --- [restartedMain] com.demo.database.seed.SeedingCaller     : ===========================
+2019-09-02 20:08:51.198  INFO 8764 --- [restartedMain] com.demo.database.seed.SeedingCaller     : seeding RolesTableSeeder
+2019-09-02 20:08:51.320  INFO 8764 --- [restartedMain] com.demo.database.seed.SeedingCaller     : seeded RolesTableSeeder
+2019-09-02 20:08:51.320  INFO 8764 --- [restartedMain] com.demo.database.seed.SeedingCaller     : ===========================
+2019-09-02 20:08:51.321  INFO 8764 --- [restartedMain] com.demo.database.seed.SeedingCaller     : seeding UsersTableSeeder
+2019-09-02 20:08:51.853  INFO 8764 --- [restartedMain] com.demo.database.seed.SeedingCaller     : seeded UsersTableSeeder
+2019-09-02 20:08:51.853  INFO 8764 --- [restartedMain] com.demo.database.seed.SeedingCaller     : ===========================
+2019-09-02 20:08:51.897  INFO 8764 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2019-09-02 20:08:51.900  INFO 8764 --- [restartedMain] com.demo.Application                     : Started Application in 23.812 seconds (JVM running for 26.617)
