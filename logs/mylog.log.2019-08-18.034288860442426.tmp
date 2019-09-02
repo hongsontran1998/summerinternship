@@ -3216,7 +3216,7 @@ The last packet sent successfully to the server was 0 milliseconds ago. The driv
 
 java.util.NoSuchElementException: No value present
 	at java.util.Optional.get(Optional.java:135) ~[na:1.8.0_201]
-	at com.demo.service.service.impl.CategoryServiceImpl.findOneById(CategoryServiceImpl.java:29) ~[classes/:na]
+	at CategoryServiceImpl.findOneById(CategoryServiceImpl.java:29) ~[classes/:na]
 	at com.demo.controller.api.impl.CategoryApiImpl.findOneById(CategoryApiImpl.java:28) ~[classes/:na]
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_201]
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_201]
@@ -4181,7 +4181,7 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 
 java.util.NoSuchElementException: No value present
 	at java.util.Optional.get(Optional.java:135) ~[na:1.8.0_201]
-	at com.demo.service.service.impl.CategoryServiceImpl.findOneById(CategoryServiceImpl.java:29) ~[classes/:na]
+	at CategoryServiceImpl.findOneById(CategoryServiceImpl.java:29) ~[classes/:na]
 	at com.demo.controller.api.impl.CategoryApiImpl.findOneById(CategoryApiImpl.java:28) ~[classes/:na]
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_201]
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_201]
@@ -7816,7 +7816,7 @@ List of constraint violations:[
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.1.7.RELEASE.jar:5.1.7.RELEASE]
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212) ~[spring-aop-5.1.7.RELEASE.jar:5.1.7.RELEASE]
 	at com.sun.proxy.$Proxy108.save(Unknown Source) ~[na:na]
-	at com.demo.service.service.impl.CategoryServiceImpl.insertOne(CategoryServiceImpl.java:25) ~[classes/:na]
+	at CategoryServiceImpl.insertOne(CategoryServiceImpl.java:25) ~[classes/:na]
 	at com.demo.controller.api.impl.CategoryApiImpl.insertOne(CategoryApiImpl.java:52) ~[classes/:na]
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_201]
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_201]
@@ -8895,7 +8895,7 @@ List of constraint violations:[
 	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.1.7.RELEASE.jar:5.1.7.RELEASE]
 	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212) ~[spring-aop-5.1.7.RELEASE.jar:5.1.7.RELEASE]
 	at com.sun.proxy.$Proxy108.save(Unknown Source) ~[na:na]
-	at com.demo.service.service.impl.CategoryServiceImpl.insertOne(CategoryServiceImpl.java:25) ~[classes/:na]
+	at CategoryServiceImpl.insertOne(CategoryServiceImpl.java:25) ~[classes/:na]
 	at com.demo.controller.api.impl.CategoryApiImpl.insertOne(CategoryApiImpl.java:53) ~[classes/:na]
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_201]
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_201]
