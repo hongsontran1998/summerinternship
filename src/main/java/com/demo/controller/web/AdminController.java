@@ -57,7 +57,8 @@ public class AdminController {
     @PostMapping("upload-ajax")
     @ResponseBody
     public String uploadAjax(@RequestParam("files") CommonsMultipartFile[] commonsMultipartFiles) {
-        storageService.storeWithThread(commonsMultipartFiles);
+        //storageService.storeWithThread(commonsMultipartFiles);
+        storageService.store(commonsMultipartFiles);
         return "OK";
     }
 

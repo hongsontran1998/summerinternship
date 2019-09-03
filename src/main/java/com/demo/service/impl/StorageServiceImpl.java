@@ -57,10 +57,12 @@ public class StorageServiceImpl implements StorageService {
         String originalFilename = file.getOriginalFilename();
         if (!"".equals(originalFilename)) {
             try {
+                String tmp = dir.getAbsolutePath() + File.separator +
+                        FilenameUtils.getBaseName(originalFilename) +
+                        "-" + System.nanoTime() + "." + FilenameUtils.getExtension(originalFilename);
+                System.out.println(tmp);
                 file.transferTo(
-                        new File(dir.getAbsolutePath() + File.separator
-                        + FilenameUtils.getBaseName(originalFilename)
-                        + "-" + System.nanoTime() + "." + FilenameUtils.getExtension(originalFilename))
+                        new File(tmp)
                 );
                 totalOfUploadedFiles++;
             } catch (IllegalStateException | IOException e) {
@@ -73,6 +75,8 @@ public class StorageServiceImpl implements StorageService {
     private File createFolder() {
         final String DIR_PATH = servletContext.getRealPath("") + uploadDir;
         File dir = new File(DIR_PATH);
+        //File dir = new File("images");
+        //File dir = new File("src/main/resources/static/images");
         if (!dir.exists()) {
             dir.mkdirs();
         }

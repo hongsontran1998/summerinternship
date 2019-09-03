@@ -44,16 +44,13 @@ public class SeedingCaller {
                     //Object obj = clazz.newInstance(); //can not auto wired => Null Pointer Exception
 
                     LOGGER.info("seeding " + clazz.getSimpleName());
-                    clazz.getDeclaredMethod(RUNNING_METHOD_NAME, new Class[]{}).invoke(obj, new Object[]{});
+                    clazz.getDeclaredMethod(RUNNING_METHOD_NAME, new Class[]{}).invoke(obj);
+                    //clazz.getDeclaredMethod(RUNNING_METHOD_NAME, new Class[]{}).invoke(obj, new Object(){});
                     LOGGER.info("seeded " + clazz.getSimpleName());
                     LOGGER.info("===========================");
                 }
             }
-        } catch (IllegalAccessException e) {
-            e.printStackTrace();
-        } catch (NoSuchMethodException e) {
-            e.printStackTrace();
-        } catch (InvocationTargetException e) {
+        } catch (InvocationTargetException | IllegalAccessException | NoSuchMethodException e) {
             e.printStackTrace();
         }
     }
