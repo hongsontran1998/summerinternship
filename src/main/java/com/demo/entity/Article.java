@@ -34,6 +34,7 @@ public class Article {
 	@Column(columnDefinition = "varchar(255) default 'sonthh'")
 	private String description;
 
+	@Column(columnDefinition = "TEXT")
 	private String detail;
 
 	private String slug;

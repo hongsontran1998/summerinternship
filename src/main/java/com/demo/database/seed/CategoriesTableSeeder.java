@@ -2,6 +2,7 @@ package com.demo.database.seed;
 
 import com.demo.database.factory.JsonFactory;
 import com.demo.entity.Category;
+import com.demo.entity.EntityState;
 import com.demo.repository.CategoryRepository;
 import com.demo.util.SlugUtil;
 import com.fasterxml.jackson.databind.JsonNode;
@@ -28,7 +29,11 @@ public class CategoriesTableSeeder implements Seeder {
         JsonNode nodeCategories = JsonFactory.getJsonNode("categories");
         if (nodeCategories != null) {
             nodeCategories.forEach(item ->
-                    categories.add(new Category(null, item.asText(), SlugUtil.makeSlug(item.asText()), null))
+                    categories.add(new Category(null,
+                            item.asText(),
+                            SlugUtil.makeSlug(item.asText()),
+                            null,
+                            Boolean.TRUE))
             );
         }
         //fake category name by faker
