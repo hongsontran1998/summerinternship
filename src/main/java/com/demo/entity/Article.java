@@ -13,7 +13,7 @@ import java.util.List;
 @Table(name = "articles")
 @Getter
 @Setter
-//@ToString
+//@ToString //StackOverflowException
 @NoArgsConstructor
 @AllArgsConstructor
 //@JsonIdentityInfo(generator = ObjectIdGenerators.IntSequenceGenerator.class, property = "@id", scope = Category.class)

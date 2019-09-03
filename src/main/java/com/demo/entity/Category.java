@@ -11,7 +11,7 @@ import java.util.List;
 @Table(name = "categories")
 @Getter
 @Setter
-//@ToString
+//@ToString //StackOverflowException
 @NoArgsConstructor
 @AllArgsConstructor
 //@RequiredArgsConstructor
