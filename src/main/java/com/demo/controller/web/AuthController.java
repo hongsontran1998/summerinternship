@@ -1,7 +1,11 @@
 package com.demo.controller.web;
 
+import com.demo.entity.Article;
+import com.demo.entity.Role;
+import com.demo.repository.ArticleRepository;
 import com.demo.repository.CategoryRepository;
 import com.demo.entity.Category;
+import com.demo.repository.RoleRepository;
 import com.demo.repository.UserRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -26,6 +30,13 @@ public class AuthController {
     private CategoryRepository categoryRepository;
 
     @Autowired
+    private RoleRepository roleRepository;
+
+    @Autowired
+    private ArticleRepository articleRepository;
+
+
+    @Autowired
     Environment env;
 
     @Value("${app.url}")
@@ -46,6 +57,8 @@ public class AuthController {
         List<Category> list = categoryRepository.findByHibernate();
 //        List<Category> list2 = categoryRepository.findAllOrFilter();
         List<Category> list3 = categoryRepository.findByJdbcTemplate();
+        List<Article> list4 = (List<Article>) articleRepository.findAll();
+        Category cat = categoryRepository.findById(1).get();
         //3 way to get application.properties value
 //        System.out.println(env.getProperty("app.url"));
 //        System.out.println(appUrl);

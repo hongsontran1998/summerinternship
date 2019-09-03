@@ -15,7 +15,8 @@ public class DatabaseSeeder extends SeedingCaller {
         this.call(new Class[]{
                 CategoriesTableSeeder.class,
                 RolesTableSeeder.class,
-                UsersTableSeeder.class
+                UsersTableSeeder.class,
+                ArticlesTableSeeder.class
                 //some seeder class
         });
     }

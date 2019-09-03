@@ -5,12 +5,13 @@ import lombok.*;
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
+import java.util.List;
 
 @Entity
 @Table(name = "categories")
 @Getter
 @Setter
-@ToString
+//@ToString
 @NoArgsConstructor
 @AllArgsConstructor
 //@RequiredArgsConstructor
@@ -26,4 +27,13 @@ public class Category {
     //@NotBlank
     //@NotNull
     private String slug;
+
+    @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    @JoinColumn(name = "category_id")
+    // @JsonIgnore
+    //@JsonBackReference
+    //@JsonManagedReference
+    private List<Article> articles;
+
+
 }

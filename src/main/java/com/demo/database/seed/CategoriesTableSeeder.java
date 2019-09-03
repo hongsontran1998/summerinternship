@@ -26,9 +26,11 @@ public class CategoriesTableSeeder implements Seeder {
         List<Category> categories = new ArrayList<>();
         //get category names from data.json
         JsonNode nodeCategories = JsonFactory.getJsonNode("categories");
-        nodeCategories.forEach(item ->
-                categories.add(new Category(null, item.asText(), SlugUtil.makeSlug(item.asText())))
-        );
+        if (nodeCategories != null) {
+            nodeCategories.forEach(item ->
+                    categories.add(new Category(null, item.asText(), SlugUtil.makeSlug(item.asText()), null))
+            );
+        }
         //fake category name by faker
 //        for (int i = 0; i < 10; i++) {
 //            categories.add(new Category()

@@ -14,12 +14,14 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 public class User implements Serializable {
+    public static final Integer STATUS_ACTIVE = 1;
+    public static final Integer STATUS_INACTIVE = 0;
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
 
-    @Column(length = 50, unique = true, nullable = false)
+    @Column(length = 100, unique = true, nullable = false)
     private String username;
 
     @Column(nullable = false)

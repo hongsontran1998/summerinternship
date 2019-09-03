@@ -1,8 +1,12 @@
 package com.demo.javacore;
 
 import com.demo.database.factory.JsonFactory;
+import com.demo.entity.Article;
+import com.demo.util.SlugUtil;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.type.CollectionType;
+import com.fasterxml.jackson.databind.type.TypeFactory;
 import com.github.javafaker.Faker;
 //import org.apache.axis.encoding.Base64;
 import org.apache.commons.lang3.ArrayUtils;
@@ -48,18 +52,28 @@ public class Backend {
 //        String decode = new String(bytes, "UTF-8");
 //        System.out.println(decode);
 
-        String str = null;
-        System.out.println(StringUtils.isEmpty(str));
-        System.out.println(StringUtils.isNotBlank("         "));
-        System.out.println(StringUtils.isNumeric("111.11"));
-        List<String> names = Arrays.asList("Arnie", "Lucy", "Beth", "Amir");
-        System.out.println(StringUtils.join(names, ";"));
-
-
-        String sentence = "The cat leapt over the big brown dog. hello";
-        // The cat leapt...
-        String abbreviated = StringUtils.abbreviate(sentence, 20);
-        System.out.println(abbreviated);
-        System.out.println(StringUtils.capitalize(sentence));
+//        String str = null;
+//        System.out.println(StringUtils.isEmpty(str));
+//        System.out.println(StringUtils.isNotBlank("         "));
+//        System.out.println(StringUtils.isNumeric("111.11"));
+//        List<String> names = Arrays.asList("Arnie", "Lucy", "Beth", "Amir");
+//        System.out.println(StringUtils.join(names, ";"));
+//
+//
+//        String sentence = "The cat leapt over the big brown dog. hello";
+//        // The cat leapt...
+//        String abbreviated = StringUtils.abbreviate(sentence, 20);
+//        System.out.println(abbreviated);
+//        System.out.println(StringUtils.capitalize(sentence));
+//        JsonNode nodeCategories = JsonFactory.getJsonNode("articles");
+//        List<Article> articles = new ArrayList<>();
+//        nodeCategories.forEach(jsonNode -> {
+//            String name = jsonNode.get("name").asText();
+//            String description = jsonNode.get("description").asText();
+//            String detail = jsonNode.get("detail").asText();
+//            String slug = SlugUtil.makeSlug(name);
+//            articles.add(new Article(null, null, name, description, detail, slug));
+//        });
+        System.out.println();
     }
 }
