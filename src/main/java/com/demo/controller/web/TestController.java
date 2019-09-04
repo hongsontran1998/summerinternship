@@ -46,7 +46,7 @@ public class TestController {
     @ResponseBody
     public String test1() {
         //Category category = categoryRepository.findById(1).get();
-        categoryRepository.deleteById(1);
+        Category c = categoryRepository.findById(1).get();
         return "";
     }
 }

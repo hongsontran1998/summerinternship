@@ -55,12 +55,15 @@ public class CategoryServiceImpl implements CategoryService {
     @Override
     public Category insertOne(Category category) {
         category.setSlug(SlugUtil.makeSlug(category.getName()));
+        category.setActive(Boolean.TRUE);
         return categoryRepository.save(category);
     }
 
     @Override
     public Category updateOne(Category category) {
-        if (findOneById(category.getId()) != null) {
+        Optional<Category> optional = categoryRepository.findById(category.getId());
+        if (optional.isPresent()) {
+            category.setActive(Boolean.TRUE);
             category.setSlug(SlugUtil.makeSlug(category.getName()));
             return categoryRepository.save(category);
         }
