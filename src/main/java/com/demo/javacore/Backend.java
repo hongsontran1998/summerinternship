@@ -2,6 +2,7 @@ package com.demo.javacore;
 
 import com.demo.database.factory.JsonFactory;
 import com.demo.entity.Article;
+import com.demo.repository.specification.CategorySpecificationsBuilder;
 import com.demo.util.SlugUtil;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -75,5 +76,6 @@ public class Backend {
 //            articles.add(new Article(null, null, name, description, detail, slug));
 //        });
         System.out.println();
+
     }
 }

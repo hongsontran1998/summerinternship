@@ -3,12 +3,15 @@ package com.demo.repository;
 import com.demo.entity.Category;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
+import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.PagingAndSortingRepository;
 import org.springframework.data.repository.query.Param;
 
 public interface CategoryRepository
-        extends PagingAndSortingRepository<Category, Integer>, CategoryRepositoryCustom {
+        extends PagingAndSortingRepository<Category, Integer>,
+                CategoryRepositoryCustom,
+                JpaSpecificationExecutor<Category> {
     //extends CrudRepository<Category, Integer> {
 
     /*

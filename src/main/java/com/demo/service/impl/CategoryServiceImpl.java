@@ -9,8 +9,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
+import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Service;
 
+import javax.persistence.criteria.CriteriaBuilder;
+import javax.persistence.criteria.CriteriaQuery;
+import javax.persistence.criteria.Predicate;
+import javax.persistence.criteria.Root;
 import java.util.Optional;
 
 @Service
@@ -22,6 +27,7 @@ public class CategoryServiceImpl implements CategoryService {
     @Override
     public Page<Category> findAllOrFilter(String searchingText, Integer offset, Integer limit, String sortBy, String direction) {
         Pageable pageable = getPageable(offset, limit, sortBy, direction);
+
         return categoryRepository.findAllOrFilter(searchingText, pageable);
     }
 
