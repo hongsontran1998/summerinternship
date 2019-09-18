@@ -20,7 +20,7 @@ import java.util.List;
 //@RequiredArgsConstructor
 //@SQLDelete(sql = "UPDATE categories SET state = 'DELETED' WHERE id = ?", check = ResultCheckStyle.COUNT)
 //@Where(clause = "state <> 'DELETED'")
-@Where(clause="is_active = 1")
+//@Where(clause="is_active = 1")
 public class Category {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

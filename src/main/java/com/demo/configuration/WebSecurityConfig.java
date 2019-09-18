@@ -72,8 +72,8 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         http.authorizeRequests().and().exceptionHandling().accessDeniedPage("/403");
         http
             .cors().and()/*rest api*/
-            .csrf().ignoringAntMatchers("/api/**").and()//csrf TODO: 8/18
-            //.httpBasic() //cách nhanh không dùng form như ở dưới
+            .csrf().ignoringAntMatchers("/api/**").and()//csr
+            //.httpBasic() //cách nhanh không dùng form như ở dướif TODO: 8/18
             .formLogin()
                 .loginPage("/login")
                 .loginProcessingUrl("/login")

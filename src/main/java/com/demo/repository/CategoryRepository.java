@@ -32,7 +32,7 @@ public interface CategoryRepository
      * */
 
     @Query(
-        value = "select c from Category c where (:q is null or c.name like %:q%)"
+        value = "select c from Category c where (:q is null or c.name like %:q%) and (c.active = true)"
     )
     Page<Category> findAllOrFilter(@Param("q") String searchingText, Pageable pageable);
 
